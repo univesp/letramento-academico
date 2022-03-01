@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+
+  <meta name="description" property="og:description"
+  content="">
+
+  <title>Univesp | Letramento Acadêmico</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Animate CSS. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <link rel="stylesheet" href="https://apps.univesp.br/common/animate.css"> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.1.css">
+  <!-- <link rel="stylesheet" href="../common/rea-geral-2.1.css">   -->
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">William Kimura</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">23300.0000000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Celso Roberto Lourenco</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100A38F8AD45AFCC2449EE864BD78216A31</mso:ContentTypeId>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
+  <!-- <div class="esconder-tela-pequena"> -->
+
+  <!-- Menu -->
+  <!--///////////////////////////////////////////////////////////////
+  Classe para nav
+  - padrão => header estático
+  - class="header-dinamico" => header possui posição fixa e é mostrado apenas quando a página está no topo (necessário ajustar padding ou margin superior e inferior do main).
+  //////////////////////////////////////////////////////////////////-->
+  <!-- <nav class="header-dinamico"> -->
+  <nav>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/traco-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <!-- Compartilhamento -->
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+
+    <div class="container">
+      <!-- Seu conteúdo -->
+
+      <div class="grid-container">
+
+          <div class="introducao-tipos">
+              <h1>Tipos de trabalho acadêmico</h1>
+
+              <img class="marca-titulo3" src="/assets/06_marcatitulo2.svg" alt="marca texto do título">
+    
+              <p style="margin-top: -2%;">A universidade, por sua natureza, tem o papel de formar
+                  profissionais <mark style="background-color: #fcee21;"><strong>(ensino);</strong></mark> produzir novos conhecimentos <mark style="background-color: #fcee21;"><strong>(pesquisa)</strong></mark> e
+                  disseminar esses conhecimentos para a sociedade <mark style="background-color: #fcee21;"><strong>(extensão)</strong></mark>.</p>
+      
+              <p style="margin-top: 7%;">Por isso, é neste lugar - pensado para desenvolver e construir
+                  conhecimentos - que o trabalho acadêmico ganha relevância, não
+                  só nas produções científicas dos professores, mas também nas
+                  produções dos alunos.</p>
+            </div>
+
+            <div class="secoes-links">
+              <img src="/assets/07_ilustrasecao01.png" alt="mulhar lendo livro. pilha de livros. globo terrestre">
+            </div>
+
+      </div>
+
+      <div class="grid-container">
+
+          <div class="introducao-tipos sub-section">
+              <h2>Por que preciso fazer um trabalho acadêmico?</h2>
+    
+              <p>O trabalho acadêmico é um momento fundamental para que você
+                  possa sistematizar o seu processo de aprendizagem no curso ou
+                  se aprofundar sobre um novo tema de seu interesse ou de
+                  importância na sua vida profissional.</p>
+      
+              <p>É através dele que você vai <mark style="background-color: #fcee21;"><strong>refletir, questionar, indagar,
+                  estabelecer relações</strong></mark>, produzir academicamente etc. Ao
+                  desenvolver este tipo de trabalho, você construirá saberes e
+                  poderá escrever e aprender com esta escrita.</p>
+            </div>
+
+            <div class="secoes-links2">
+              <img class="imagem-lendo-livro" src="/assets/08_ilustrasecao01-2.png" alt="mulhar lendo livro">
+            </div>
+
+      </div>
+
+      <p style="margin-top: 15px;" class="texto-corrido">Neste sentido, o trabalho acadêmico ganha grande relevância não só para mostrar ao seu professor quais conceitos que você aprendeu, mas também a forma como você <mark style="background-color: #fcee21;"><strong>interpreta e analisa um objeto de estudo.</strong></mark></p>
+
+      <p class="texto-corrido">Então, você, estudante universitário, deve estar ligado para compreender-se como <mark style="background-color: #fcee21;"><strong>produtor de novos conhecimentos!</strong></mark> Partimos do princípio de que você é o construtor do seu processo de aprendizagem e, por isso, vamos dar algumas recomendações neste recurso sobre como fazer trabalhos acadêmicos autorais, sem cometer nas chamadas fraudes acadêmicas.</p>
+
+      <div class="titulo-solto">
+        
+        <h2>O que são os trabalhos acadêmicos?</h2>
+
+        <p>Se você é aluno do Educação Superior, certamente já deve ter se deparado com alguns termos utilizados para definir algumas das tarefas e produções acadêmicas, mas já parou para pensar na finalidade de cada uma delas? Para que os trabalhos acadêmicos são realizados?</p>
+
+        <p>Quando você prepara, redige e entrega um trabalho por escrito, você está aprendendo! Existe um impacto do trabalho na sua vida. Além de entender melhor sobre o objeto de estudo, com a organização do trabalho, pois exige de você a <mark style="background-color: #fcee21;"><strong>organização do pensamento, disciplina, gestão do tempo, negociação</strong></mark> (se for um trabalho em colaboração ou em grupo), <mark style="background-color: #fcee21;"><strong>estudo, empenho, proatividade</strong></mark>, entre outros elementos que te formarão como um profissional melhor. Então, fazer um trabalho acadêmico é aprender, e muito!</p>
+
+        <div style="text-align: center; margin: 50px 0 50px 0;">
+          <img src="/assets/09_ilustrasecao01-3.png" alt="">
+        </div>
+
+        <p>Com a quantidade de informações que estão disponíveis na internet, as fraudes acadêmicas podem ser tentadoras em alguns momentos,
+            especialmente quando não se planeja o caminho para construir o trabalho. Por isso, é importante que você conheça ferramentas para o planejamento, construção e revisão do texto acadêmico, entendendo como um processo de construção do conhecimento.</p>
+
+        <p>Quando falamos de trabalho acadêmico na Educação Superior, estamos entendendo-o como uma <mark style="background-color: #fcee21;"><strong>produção intelectual</strong></mark> do aluno, que pode ser realizada em diferentes formatos e mídias, e com alguns objetivos específicos. Estes trabalhos podem ser: resumo e resenha, relatório técnico, artigo científico, monografia e trabalho de conclusão de curso (TCC).</p>
+
+        <p>Outros tipos de trabalhos acadêmicos também existem, mas estes são os mais comuns nas Instituições de Educação Superior (IES).
+            Lembre-se de que escrever um trabalho acadêmico é aprender! Você estará organizando o pensamento, estudando sobre um objeto de
+            estudos, tendo disciplina, sendo pesquisador, negociando com os seus colegas, etc. Desta maneira, está se formando para ser um
+            profissional melhor.</p>
+
+      </div>
+
+      <div onclick="toggleExpand()" style="margin-top: 70px;" class="dropdown-teste">
+        <h2>Você conhece os diferentes tipos de trabalho acadêmico?</h2>
+        <h2>Veja neste infográfico as características de cada um!</h2>
+        <span id="expand1" class="material-icons open-dropdown">expand_more</span>
+      </div>
+
+      <div class="card-container" style="height: 1150px;" id="container-teste">
+        <div class="card-teste"> 
+          <h3>Resumo e resenha</h3>
+          <img class="card-mark" src="/assets/10_marcatxt-info-1.svg" alt="marca texto do título">
+          <p>Não se trata de um trabalho de produção autoral, mas auxilia no estudo de textos produzidos por outros autores. É um bom instrumento para destacar as ideias centrais dos autores e/ou documentar as referências para citá-las em trabalhos futuros.</p>
+        </div>
+
+        <div class="card-teste alinhamento">
+          <h3>Relatório Técnico</h3>
+          <img class="card-mark" src="/assets/11_marcatxt-info-2.svg" alt="marca texto do título">
+          <p>Serve para registrar o caminho percorrido em um trabalho de pesquisa ou desenvolvimento de um projeto. Nesse tipo de trabalho, é comum que se retomem os objetivos do projeto e apresente-se a descrição das atividades realizadas.</p>
+        </div>
+
+        <div class="card-teste" style="height: 310px;">
+          <h3>Artigo científico</h3>
+          <img style="bottom: 12.5%;" class="card-mark" src="/assets/11_marcatxt-info-2.svg" alt="marca texto do título">
+          <p>Tem a estrutura de um trabalho científico em geral, mas apresenta as informações de forma concisa, visando a publicação em revistas e periódicos científicos. Está ligado ao conceito de divulgação científica, pois busca divulgar os resultados de uma pesquisa para a comunidade acadêmica e para a sociedade em geral.</p>
+        </div>
+
+        <div class="card-teste alinhamento" style="height: 310px;">
+          <h3>Monografia</h3>
+          <img style="bottom: 12.5%;" class="card-mark" src="/assets/10_marcatxt-info-1.svg" alt="marca texto do título">
+          <p>Discorre sobre um tema ou assunto específico. Na graduação, faz parte do processo de aprendizagem sobre como desenvolver e relatar uma pesquisa. Na pós-graduação, a tese de doutorado ou a dissertação de mestrado apresentam resultados de pesquisas amplas e rigorosas desenvolvidas pelo pesquisador.</p>
+        </div>
+
+        <div class="card-teste" style="height: 310px;">
+          <h3>Trabalho de Conclusão <br> de Curso (TCC)</h3>
+          <img style="bottom: 23%; width: 75%" class="card-mark" src="/assets/11_marcatxt-info-2.svg" alt="marca texto do título">
+          <img style="bottom: 26%;" class="card-mark" src="/assets/11_marcatxt-info-2.svg" alt="marca texto do título">
+          <p style="margin-top: -15%;">Faz parte da matriz curricular de muitos cursos de graduação. Articula os conhecimentos desenvolvidos ao longo do curso com um projeto de pesquisa a ser desenvolvido em determinado período. O formato varia dependendo do curso e das orientações de cada instituição de ensino.</p>
+        </div>
+
+        <div style="position: relative; z-index: 10; top: 43%;">
+          <p style="text-align: left;">Adaptado de SEVERINO, Antônio Joaquim. <br> <strong>Metodologia do trabalho científico.</strong> 23 ed. <br> rev. e atual. São Paulo: Cortez, 2007.</p>
+        </div>
+        
+      </div>
+
+      <!-- INICIO DO EXERCÍCIO -->
+      <div onclick="toggleExpand2()" style="margin-top: 50px;" class="dropdown-teste">
+          <h2>Se você já conhece, teste os seus conhecimentos no jogo a seguir.</h2>
+          <span id="expand2" class="material-icons open-dropdown">expand_more</span>
+      </div>
+
+      <div style="display: none" class="card-container" style="height: 1150px;" id="container-teste2">
+        
+        <div class="teste-area">
+
+          <div class="select-teste" style="margin-top: 1%;">
+            <div onclick="collapseTeste(1)">
+                <h3>Tipo de texto</h3>
+                <p id="texto-option1-div1" style="color: #000;"></p>
+                <span style="margin-top: -10%;" id="expand-teste1" class="material-icons open-dropdown">arrow_drop_down</span>
+            </div>
+            
+            
+            <div class="alternativas-area" id="alternativas1">
+              <div onclick="insereTexto(1)" class="alternativas-teste">Artigo científico</div>
+              <div onclick="insereTexto(2)" class="alternativas-teste">Monografia</div>
+              <div onclick="insereTexto(3)" class="alternativas-teste">Relatório técnico</div>
+              <div onclick="insereTexto(4)" class="alternativas-teste">Resumo e resenha</div>
+              <div onclick="insereTexto(5)" class="alternativas-teste">Trabalho de Conclusão de Curso (TCC)</div>
+            </div>
+          </div>
+
+          <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
+            <p style="margin: 3.5% 0 0 5%;">Não se trata de um trabalho de produção autoral, mas auxilia no estudo de textos produzidos por outros autores. É um bom instrumento para destacar as ideias centrais dos autores e/ou documentar as referências para citá-las em trabalhos futuros.</p>
+          </div>
+
+          <div class="resultado-teste" id="resultado-div1">
+            <img id="resultadoImg1" src="/assets/12_certo.svg" alt="icone de resposta correta">
+          </div>
+
+        </div>
+
+        <div class="teste-area">
+
+            <div class="select-teste" style="margin-top: 1%;">
+              <div onclick="collapseTeste(2)">
+                  <h3>Tipo de texto</h3>
+                  <p id="texto-option1-div2" style="color: #000;"></p>
+                  <span style="margin-top: -10%;" id="expand-teste2" class="material-icons open-dropdown">arrow_drop_down</span>
+              </div>
+
+              <div class="alternativas-area" id="alternativas2">
+                <div onclick="insereTexto(6)" class="alternativas-teste">Artigo científico</div>
+                <div onclick="insereTexto(7)" class="alternativas-teste">Monografia</div>
+                <div onclick="insereTexto(8)" class="alternativas-teste">Relatório técnico</div>
+                <div onclick="insereTexto(9)" class="alternativas-teste">Resumo e resenha</div>
+                <div onclick="insereTexto(10)" class="alternativas-teste">Trabalho de Conclusão de Curso (TCC)</div>
+              </div>
+            </div>
+  
+            <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
+              <p style="margin: 3.5% 0 0 5%;">Serve para registrar o caminho percorrido em um trabalho de pesquisa ou desenvolvimento de um projeto. Nesse tipo de trabalho, é comum que se retomem os objetivos do projeto e apresente-se a descrição das atividades realizadas.</p>
+            </div>
+  
+            <div class="resultado-teste" style="margin-top: 3%;" id="resultado-div2">
+              <img id="resultadoImg2" src="/assets/12_certo.svg" alt="icone de resposta correta">
+            </div>
+            
+          </div>
+
+          <div class="teste-area">
+
+              <div class="select-teste" style="margin-top: 1%;">
+                <div onclick="collapseTeste(3)">
+                  <h3>Tipo de texto</h3>
+                  <p id="texto-option1-div3" style="color: #000;"></p>
+                  <span style="margin-top: -10%;" id="expand-teste3" class="material-icons open-dropdown">arrow_drop_down</span>
+                </div>
+
+                <div class="alternativas-area" id="alternativas3">
+                  <div onclick="insereTexto(11)" class="alternativas-teste">Artigo científico</div>
+                  <div onclick="insereTexto(12)" class="alternativas-teste">Monografia</div>
+                  <div onclick="insereTexto(13)" class="alternativas-teste">Relatório técnico</div>
+                  <div onclick="insereTexto(14)" class="alternativas-teste">Resumo e resenha</div>
+                  <div onclick="insereTexto(15)" class="alternativas-teste">Trabalho de Conclusão de Curso (TCC)</div>
+                </div>
+              </div>
+    
+              <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
+                <p style="margin: 2% 0 0 5%;">Tem a estrutura de um trabalho científico em geral, mas apresenta as informações de forma concisa, visando a publicação em revistas e periódicos científicos. Está ligado ao conceito de divulgação científica, pois busca divulgar os resultados de uma pesquisa para a comunidade acadêmica e para a sociedade em geral. </p>
+              </div>
+    
+              <div class="resultado-teste" style="margin-top: 4.5%;" id="resultado-div3">
+                <img id="resultadoImg3" src="/assets/13_errado.svg" alt="icone de resposta correta">
+              </div>
+              
+          </div>
+
+          <div class="teste-area">
+
+              <div class="select-teste" style="margin-top: 1%;">
+                <div onclick="collapseTeste(4)">
+                  <h3>Tipo de texto</h3>
+                  <p id="texto-option1-div4" style="color: #000;"></p>
+                  <span style="margin-top: -10%;" id="expand-teste4" class="material-icons open-dropdown">arrow_drop_down</span>
+                </div>
+
+                <div class="alternativas-area" id="alternativas4">
+                  <div onclick="insereTexto(16)" class="alternativas-teste">Artigo científico</div>
+                  <div onclick="insereTexto(17)" class="alternativas-teste">Monografia</div>
+                  <div onclick="insereTexto(18)" class="alternativas-teste">Relatório técnico</div>
+                  <div onclick="insereTexto(19)" class="alternativas-teste">Resumo e resenha</div>
+                  <div onclick="insereTexto(20)" class="alternativas-teste">Trabalho de Conclusão de Curso (TCC)</div>
+                </div>
+              </div>
+    
+              <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
+                <p style="margin: 2% 0 0 5%;">Discorre sobre um tema ou assunto específico. Na graduação, faz parte do processo de aprendizagem sobre como desenvolver e relatar uma pesquisa. Na pós-graduação, a tese de doutorado ou a dissertação de mestrado apresentam resultados de pesquisas amplas e rigorosas desenvolvidas pelo pesquisador.</p>
+              </div>
+    
+              <div class="resultado-teste" style="margin-top: 4.5%;" id="resultado-div4">
+                <img id="resultadoImg4" src="/assets/12_certo.svg" alt="icone de resposta correta">
+              </div>
+              
+          </div>
+
+          <div class="teste-area">
+
+              <div class="select-teste" style="margin-top: 1%;">
+                <div onclick="collapseTeste(5)">
+                  <h3>Tipo de texto</h3>
+                  <p id="texto-option1-div5" style="color: #000;"></p>
+                  <span style="margin-top: -10%;" id="expand-teste5" class="material-icons open-dropdown">arrow_drop_down</span>
+                </div>
+
+                <div class="alternativas-area" id="alternativas5">
+                  <div onclick="insereTexto(21)" class="alternativas-teste">Artigo científico</div>
+                  <div onclick="insereTexto(22)" class="alternativas-teste">Monografia</div>
+                  <div onclick="insereTexto(23)" class="alternativas-teste">Relatório técnico</div>
+                  <div onclick="insereTexto(24)" class="alternativas-teste">Resumo e resenha</div>
+                  <div onclick="insereTexto(25)" class="alternativas-teste">Trabalho de Conclusão de Curso (TCC)</div>
+                </div>
+              </div>
+    
+              <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
+                <p style="margin: 2% 0 0 7%;">Faz parte da matriz curricular de muitos cursos de graduação. Articula os conhecimentos desenvolvidos ao longo do curso com um projeto de pesquisa a ser desenvolvido em determinado período. O formato varia dependendo do curso e das orientações de cada instituição de ensino. </p>
+              </div>
+    
+              <div class="resultado-teste" style="margin-top: 4.5%;" id="resultado-div5">
+                <img id="resultadoImg5" src="/assets/13_errado.svg" alt="icone de resposta correta">
+              </div>
+              
+          </div>
+
+          <p style="text-align: center;">Adaptado de SEVERINO, Antônio Joaquim. <strong>Metodologia do trabalho científico.</strong> 23 ed. rev. e atual. São Paulo: Cortez, 2007.</p>
+
+          <div style="text-align: center; margin: 5% 0 0 0;">
+              <button onclick="geraResultado()" class="botao-resultado">Conferir resultado</button>
+          </div>
+          
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <div class="explore">
+    <div class="titulo-explore">
+      <h3 style="margin-top: -20%;">Continue a explorar o tema:</h3>
+    </div>
+
+    <div class="itens-explore">
+      <div>
+        <a href="/index.html">
+          <img style="width: 85%;" class="livro-intro" src="/assets/14_paginicial.svg" alt="Letramento acadêmico (Página Inicial)">
+        </a>
+      </div>
+      
+      <div style="margin-left: 2%;">
+        <a onmouseover="setHover(livro2)" onmouseout="leaveHover(livro2)" href="/passo-a-passo.html">
+          <img style="width: 50%;" id="livro2" src="/assets/03_botaosecao02.svg" alt="Passo a passo do trabalho acadêmico.">
+        </a>
+      </div>
+      
+      <div style="margin-left: -8%;">
+        <a  onmouseover="setHover(livro3)" onmouseout="leaveHover(livro3)" href="/mitos-escrita-academica.html">
+          <img style="width: 50%;" id="livro3" src="/assets/04_botaosecao03.svg" alt="Mitos da escrita acadêmica.">
+        </a>
+      </div>
+      
+      <div style="margin-left: -8%;">
+        <a  onmouseover="setHover(livro4)" onmouseout="leaveHover(livro4)" href="/citacoes-e-referencias.html">
+          <img style="width: 50%;" id="livro4" src="/assets/05_botaosecao04.svg" alt="Como fazer citações e referências.">
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <!--//////////////////////////////////////////////////////
+  Classes prontas p/ footer (podem ser combinadas):
+  padrão => texto e contornos em cinza
+  class = "black" => texto e contornos em preto
+  class = "negativo" => texto e contornos em branco, sobre fundo escuro
+  class = "transparente" => fundo transparente (necessário ajustar cor dos ícones de compartilhamento nos círculos, para bater com a cor de fundo)
+  /////////////////////////////////////////////////////////-->
+  <!-- <footer class="black"> -->
+  <!-- <footer class="negativo"> -->
+  <!-- <footer class="transparente"> -->
+  <!-- <footer class="transparente black"> -->
+  <!-- <footer class="transparente negativo"> -->
+  <footer style="background-color: #000;" class="negativo">
+    <div class="container d-flex justify-content-between">
+
+      <div class="cred-rea">
+        <!-- Comente em caso de adaptação do REA -->
+          <div>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
+          <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
+          <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i class="fab fa-github"></i></a></div>
+          <div>Compartilhe: <div class="sharing"></div></div>
+
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <!-- FORMULÁRIOS DE AVALIAÇÃO -->
+      <div class="aval-rea d-flex">
+        <!-- AVALIAR RECURSO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfoe5bxjjASle0FQSNtxvEvL73yVqlXtedVCcLs0-uOYwfHmA/viewform?usp=pp_url&entry.542052009=Letramento+Acadêmico" target="_blank">Avaliar este recurso</a>
+        <!-- REPORTAR ERRO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSeE4DT6yuFY4wArPAPQ86GMbRLFwnlTLG-C-s5t2mFdRkR8bA/viewform?usp=pp_url&entry.1523910789=Letramento+Acadêmico" target="_blank">Reportar erro</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- Fim da div .esconder-tela-pequena
+  Utilizar essa div caso o REA não se adapte a todos os formatos de tela -->
+  <!-- </div> -->
+
+  <!-- //////////////////////////////////////////////////////////
+  AVISO =+960px
+  Utilizar caso o REA possua limitações quanto aos tamanhos de tela
+  Caso contrário, deletar
+  ///////////////////////////////////////////////////////////////-->
+  <!-- <div class= "container d-lg-none text-center">
+    <div class="container">
+      <a href="https://univesp.br/" target="_blank">
+        <img src="https://apps.univesp.br/common/logo-univesp-positivo.svg" alt="Logo da Univesp" height="47px" width="135px" class='img-responsive center-block' style="margin-top:4rem">
+      </a>
+    </div>
+    <img src='https://apps.univesp.br/common/aviso-tela.gif' alt="Computador Animado" height="117px" width="160px" class='img-responsive center-block' style="margin-top:3rem">
+    <div style="margin-top:.5rem">
+      <p>
+        <font style=font-family:"Barlow" color="#3b78d1" 'text-center' size="10rem"><b>OPS!</b></font>
+      </p>
+      <p>
+        <font style=font-family:"Verdana" "text-center" size="3rem">Visualize este recurso em um computador, em janela com largura mínima de 992px.</font>
+      </p>
+    </div>
+  </div> -->
+
+  <!-- CRÉDITOS -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Desenvolvimento Econômico</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+
+          <h6>Equipe</h6>
+          <p><span class="funcao">Docente responsável</span>Roberta Flaborea Favaro, Marcos Evandro Galini e Fernanda Guinoza Matuda</p>
+          <p><span class="funcao">Coordenação</span>Édison Trombeta</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Claudia Mori e Nádia Pirillo</p>
+          <p><span class="funcao">Ilustração</span>Celso Roberto Lourenço</p>
+          <p><span class="funcao">Layout</span>Henrique Inhauser Caldas</p>
+          <p><span class="funcao">Programação</span>Gabriel Gallo</p>
+          <p><span class="funcao">Revisão</span>Fulano de Tal, Ciclano de Tal</p>
+
+        </div>
+        <div class="modal-footer">
+          <p>Janeiro/2022</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    var share = $(".sharing");
+    var page_title = $(document).attr('title');
+    var page_url = window.location.href;
+    share.jsSocials({
+      shares: [
+        {
+          share: "facebook",
+          logo: "fab fa-facebook-f",
+        },
+        {
+          share: "twitter",
+          logo: "fab fa-twitter",
+        },
+        {
+          share: "whatsapp",
+          logo: "fab fa-whatsapp",
+        },
+      ],
+      url: page_url,
+      text: 'Confira o REA ' + page_title + '.',
+      showLabel: false,
+      showCount: false,
+      shareIn: "popup",
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+  <script type="text/javascript" src="javascripts/teste1.js"></script>
+
+  <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>

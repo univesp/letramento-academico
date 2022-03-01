@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "devoFazer": true,
+    "texto": "Preparar-se antes de escrever o texto."
+  },
+
+  {
+    "id": 2,
+    "devoFazer": true,
+    "texto": "Reler textos já vistos nas disciplinas do(s) curso(s)."
+  },
+
+  {
+    "id": 3,
+    "devoFazer": true,
+    "texto": "Ver os vídeos do(s) curso(s) e anotar ideias."
+  },
+
+  {
+    "id": 4,
+    "devoFazer": true,
+    "texto": "Fazer chuva de ideias “brainstorming” para entender como posso construir o trabalho."
+  },
+
+  {
+    "id": 5,
+    "devoFazer": true,
+    "texto": "Visitar bibliotecas virtuais e físicas."
+  },
+
+  {
+    "id": 6,
+    "devoFazer": true,
+    "texto": "Buscar novas leituras em revistas acadêmicas abertas e revistas de divulgação."
+  },
+
+  {
+    "id": 7,
+    "devoFazer": true,
+    "texto": "Procurar informação em recursos abertos em internet."
+  },
+
+  {
+    "id": 8,
+    "devoFazer": true,
+    "texto": "Conversar com amigos."
+  },
+
+  {
+    "id": 9,
+    "devoFazer": true,
+    "texto": "Conversar com pessoas especialistas no tema."
+  },
+
+  {
+    "id": 10,
+    "devoFazer": true,
+    "texto": "Planejar tempos para escrever o texto."
+  },
+
+  {
+    "id": 11,
+    "devoFazer": true,
+    "texto": "Revisar o texto depois de feito."
+  },
+
+  {
+    "id": 12,
+    "devoFazer": false,
+    "texto": "Escrever de cabeça, pois já se sabe muito sobre o assunto."
+  },
+
+  {
+    "id": 13,
+    "devoFazer": false,
+    "texto": "Tem gente vendendo o trabalho pronto! É factível a comprar!"
+  },
+
+  {
+    "id": 14,
+    "devoFazer": false,
+    "texto": "Achar trabalhos semelhantes."
+  },
+
+  {
+    "id": 15,
+    "devoFazer": false,
+    "texto": "Aproveitar partes de trabalhos já feitos."
+  },
+
+  {
+    "id": 16,
+    "devoFazer": false,
+    "texto": "Aproveitar todo o trabalho."
+  },
+
+  {
+    "id": 17,
+    "devoFazer": false,
+    "texto": "Encontrar um trabalho igualzinho na internet e baixá-lo."
+  },
+
+  {
+    "id": 18,
+    "devoFazer": false,
+    "texto": "Procurar trabalhos já feitos por colegas que já realizaram a disciplina."
+  },
+
+  {
+    "id": 19,
+    "devoFazer": false,
+    "texto": "Solicitar que façam trabalhos para mim (terceirizar os trabalhos)."
+  },
+
+  {
+    "id": 20,
+    "devoFazer": false,
+    "texto": "Copiar de outros lugares informações sem a devida citação (plágio)."
+  }
+  
+]

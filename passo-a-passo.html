@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+
+  <meta name="description" property="og:description"
+  content="">
+
+  <title>Univesp | Letramento Acadêmico</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Animate CSS. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <link rel="stylesheet" href="https://apps.univesp.br/common/animate.css"> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.1.css">
+  <!-- <link rel="stylesheet" href="../common/rea-geral-2.1.css">   -->
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">William Kimura</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">23300.0000000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Celso Roberto Lourenco</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100A38F8AD45AFCC2449EE864BD78216A31</mso:ContentTypeId>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
+  <!-- <div class="esconder-tela-pequena"> -->
+
+  <!-- Menu -->
+  <!--///////////////////////////////////////////////////////////////
+  Classe para nav
+  - padrão => header estático
+  - class="header-dinamico" => header possui posição fixa e é mostrado apenas quando a página está no topo (necessário ajustar padding ou margin superior e inferior do main).
+  //////////////////////////////////////////////////////////////////-->
+  <!-- <nav class="header-dinamico"> -->
+  <nav>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/traco-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <!-- Compartilhamento -->
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+
+    <div class="container">
+      <!-- Seu conteúdo -->
+
+      <div class="grid-container">
+        <div class="introducao-tipos">
+          <h1>Passo a passo do trabalho acadêmico</h1>
+
+          <img style="width: 122%;" class="marca-titulo3" src="/assets/00_marcatitulo1.svg" alt="marca texto do título">
+
+          <p style="margin-top: -2%;">Elaborar trabalhos acadêmicos significa seguir um caminho de construção de conhecimentos. Não é da noite para o dia que conseguimos realizá-lo. Por isso, não deixe para última hora para escrever o seu trabalho acadêmico! Fazer com pressa ou “só para entregar” pode resultar na busca por caminhos mais fáceis e rápidos e, em alguns contextos, não lícitos.  </p>
+  
+          <p style="margin-top: 7%;">Além do tempo, é importante que você (e seu grupo, se for um trabalho em colaboração) considere os seguintes passos:</p>
+        </div>
+
+        <div class="secoes-links">
+          <img src="/assets/07_ilustrasecao01.png" alt="mulhar lendo livro. pilha de livros. globo terrestre">
+        </div>
+      </div>
+
+      <div class="info-container">
+
+          <div class="info-card">
+            <div>
+              <img src="/assets/15_info-1.svg" alt="imagem de ampulheta">
+            </div>
+
+            <div class="info-conteudo">
+              <h2>1. Planeje seu tempo:</h2>
+              <p>Planeje em que momento você vai se sentar para escrever o seu texto. Escolha uma ou duas horas do seu dia e só pense no seu trabalho. Procure um lugar calmo e tranquilo para otimizar a sua concentração. A cada meia hora dê uma pausa ativa, olhe para longe da tela do computador, mas continue pensando no tema!</p>
+            </div>
+            
+          </div>
+
+          <div class="info-card">
+            <div>
+              <img src="/assets/16_info-2.svg" alt="imagem de">
+            </div>
+
+            <div class="info-conteudo">
+              <h2>2. Organização Inicial:</h2>
+              <p>Faça um mapa mental, um “brainstorming”, sobre o que você sabe e o que não sabe sobre o tema.</p>
+            </div>
+            
+          </div>
+
+          <div class="info-card">
+            <div>
+              <img src="/assets/17_info-3.svg" alt="imagem de um livro aberto">
+            </div>
+
+            <div class="info-conteudo">
+              <h2>3. Estude o conteúdo:</h2>
+              <p>Leia textos já vistos nas disciplinas dos seus cursos e busque novos conteúdos em bibliotecas (virtuais ou físicas), banco de dissertações e teses de mestrado e doutorado, jornais e revistas de divulgação científica, revistas acadêmicas, internet geral, vídeos do Youtube de canais oficiais e converse com amigos e especialistas. Tudo isto irá te ajudar!</p>
+            </div>
+            
+          </div>
+
+          <div class="info-card">
+            <div>
+              <img src="/assets/18_info-4.svg" alt="imagem de um lápis">
+            </div>
+
+            <div class="info-conteudo">
+              <h2>4. Escreva uma primeira versão:</h2>
+              <p>Após o estudo, é hora da escrita do documento. Para esta primeira versão tente escrever os principais pontos a serem tratados no texto.</p>
+            </div>
+            
+          </div>
+
+          <div class="info-card">
+            <div>
+              <img src="/assets/19_info-5.svg" alt="imagem de um notebook">
+            </div>
+
+            <div class="info-conteudo">
+              <h2>5. Reescrita do texto:</h2>
+              <p>Releia o que já fez, revise o que for necessário e continue com a escrita. Vá mais a fundo no texto. Traga citações que ajudem a justificar a sua ideia. Lembre-se de que a estrutura de um parágrafo acadêmico é composta por uma ideia inicial, um argumento (exemplo ou citação de autores), e o fechamento do parágrafo unindo com a primeira ideia. O texto deve ser elaborado por ideias concatenadas em um bloco lógico e coerente.</p>
+            </div>
+            
+          </div>
+
+          <div class="info-card">
+            <div>
+              <img src="/assets/20_info-6.svg" alt="imagem de uma lupa">
+            </div>
+
+            <div class="info-conteudo">
+              <h2>6. Revisão de texto:</h2>
+              <p>Durante a revisão leia uma primeira vez todo o texto com base nas ideias gerais, e uma segunda vez com base na escrita (normas da língua portuguesa, linguagem acadêmica). </p>
+
+              <p>Responda as perguntas: O texto está bem escrito (estrutura geral do texto, parágrafo acadêmico, normas ABNT, gramática, lógica, coesão e coerência)? O meu leitor vai entender o que eu quero dizer? A informação que quero transmitir está clara> Se for um trabalho em grupo, é importante ter tempo para a negociação entre os participantes, da escritura dos documentos que devem ser enviados. Se possível, peça para uma outra pessoa realiza a leitura crítica do texto para ajudar no processo de revisão. Além disso, não se esqueça de conferir as normas técnicas da Associação Brasileira de Normas Técnicas (ABNT) para as citações e referência. </p>
+            </div>
+            
+          </div>
+
+      </div>
+
+      <div class="titulo-solto">
+        <p>Para que todo esse processo ocorra bem, é importante <mark style="background-color: #9eff9e;"><strong>gerenciar o seu tempo!</strong></mark> Então, reflita: em quais momentos ao longo da semana você pode se organizar para trabalhar no seu texto acadêmico? De manhã? De tarde? De noite? Sábados? Domingos? Em que dias da semana? Ainda, qual o prazo para a entrega do trabalho acadêmico? Como vou me organizar para entregar o trabalho no prazo?</p>
+
+        <p>Quando você considerar que já terminou o texto, que tal pedir a uma outra pessoa para lê-lo e retroalimentá-lo? Assim você saberá o que pode melhorar ainda mais. Nada de ficar medo ou vergonha! Um bom escritor é formado com base nos constantes erros e acertos. Só aprendemos a fazer um bolo fazendo! Só aprendemos a andar de bicicleta ou dirigir um carro se tentarmos!</p>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <div class="destaque">
+    <p>Mas, nos trabalhos acadêmicos, o que posso fazer para recolher ideias? Elaborar um texto acadêmico não é algo tão simples, mas com certeza nada impossível.</p>
+
+    <p>Nenhuma ideia sai do nada. Para escrever um texto, temos que entender a lógica do tema. A primeira pergunta que devo fazer é: onde posso buscar informação para entender sobre o tema e poder organizar as minhas ideias?</p>
+
+    <p>Com certeza, você já tem ideias iniciais, mas outras ações devem ser feitas. Das opções abaixo, qual você considera que deve fazer e as que não deve fazer?</p>
+  </div>
+
+
+  <!--EXERCÍCIO-->
+  <div class="exe2-container">
+
+    <div class="exe2-content">
+      <h3 style="font-size: 27px;">O que devo fazer?</h3>
+      <img style="bottom: 4%; width: 90%;" class="marca-titulo3" src="/assets/22_marcatxt.svg" alt="marca texto do título">
+    </div>
+
+    <div class="linha-divisória exe2-content">
+      <img src="/assets/23_divisoria.svg" alt="linha divisória">
+    </div>
+
+    <div class="exe2-content">
+      <h3 style="font-size: 27px;">O que não devo fazer?</h3>
+      <img style="bottom: 4.5%; width: 110%;" class="marca-titulo3" src="/assets/22_marcatxt.svg" alt="marca texto do título">
+      <div id="nao-fazer-coluna">
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="exe2Container">
+
+  </div>
+  
+
+  <div class="seta-esquerda">
+    <img id="setaEsquerda" style="cursor: pointer;" width="10%" src="/assets/24_seta.svg" alt="imagem seta direita">
+  </div>
+
+  <div class="seta-direita">
+    <img onclick="setaRight()" id="setaDireita" style="cursor: pointer;" width="10%" src="/assets/24_seta.svg" alt="imagem seta direita">
+  </div>
+
+  <div style="text-align: center; margin: 0 0 -30px 0;">
+      <button onclick="teste()" id="exe2" style="background-color: #9eff9e;" class="botao-resultado">Conferir resultado</button>
+  </div>
+
+
+
+  <!--SEÇÃO EXPLORE MAIS-->
+  <div class="explore">
+      <div class="titulo-explore">
+        <h3 style="margin-top: -20%;">Continue a explorar o tema:</h3>
+      </div>
+  
+      <div class="itens-explore">
+        <div>
+          <a href="/index.html">
+            <img style="width: 85%;" class="livro-intro" src="/assets/14_paginicial.svg" alt="Letramento acadêmico (Página Inicial)">
+          </a>
+        </div>
+        
+        <div style="margin-left: 2%;">
+            <a onmouseover="setHover(livro1)" onmouseout="leaveHover(livro1)" href="/tipos-trabalho-academico.html">
+              <img style="width: 50%;" id="livro1" src="/assets/02_botaosecao01.svg" alt="Tipos de trabalho acadêmico.">
+            </a>
+        </div>
+        
+        <div style="margin-left: -8%;">
+          <a  onmouseover="setHover(livro3)" onmouseout="leaveHover(livro3)" href="/mitos-escrita-academica.html">
+            <img style="width: 50%;" id="livro3" src="/assets/04_botaosecao03.svg" alt="Mitos da escrita acadêmica.">
+          </a>
+        </div>
+        
+        <div style="margin-left: -8%;">
+          <a  onmouseover="setHover(livro4)" onmouseout="leaveHover(livro4)" href="/citacoes-e-referencias.html">
+            <img style="width: 50%;" id="livro4" src="/assets/05_botaosecao04.svg" alt="Como fazer citações e referências.">
+          </a>
+        </div>
+  
+      </div>
+    </div>
+
+
+  <!-- RODAPÉ -->
+  <!--//////////////////////////////////////////////////////
+  Classes prontas p/ footer (podem ser combinadas):
+  padrão => texto e contornos em cinza
+  class = "black" => texto e contornos em preto
+  class = "negativo" => texto e contornos em branco, sobre fundo escuro
+  class = "transparente" => fundo transparente (necessário ajustar cor dos ícones de compartilhamento nos círculos, para bater com a cor de fundo)
+  /////////////////////////////////////////////////////////-->
+  <!-- <footer class="black"> -->
+  <!-- <footer class="negativo"> -->
+  <!-- <footer class="transparente"> -->
+  <!-- <footer class="transparente black"> -->
+  <!-- <footer class="transparente negativo"> -->
+  <footer style="background-color: #000;" class="negativo">
+    <div class="container d-flex justify-content-between">
+
+      <div class="cred-rea">
+        <!-- Comente em caso de adaptação do REA -->
+          <div>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
+          <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
+          <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i class="fab fa-github"></i></a></div>
+          <div>Compartilhe: <div class="sharing"></div></div>
+
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <!-- FORMULÁRIOS DE AVALIAÇÃO -->
+      <div class="aval-rea d-flex">
+        <!-- AVALIAR RECURSO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfoe5bxjjASle0FQSNtxvEvL73yVqlXtedVCcLs0-uOYwfHmA/viewform?usp=pp_url&entry.542052009=Letramento+Acadêmico" target="_blank">Avaliar este recurso</a>
+        <!-- REPORTAR ERRO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSeE4DT6yuFY4wArPAPQ86GMbRLFwnlTLG-C-s5t2mFdRkR8bA/viewform?usp=pp_url&entry.1523910789=Letramento+Acadêmico" target="_blank">Reportar erro</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- Fim da div .esconder-tela-pequena
+  Utilizar essa div caso o REA não se adapte a todos os formatos de tela -->
+  <!-- </div> -->
+
+  <!-- //////////////////////////////////////////////////////////
+  AVISO =+960px
+  Utilizar caso o REA possua limitações quanto aos tamanhos de tela
+  Caso contrário, deletar
+  ///////////////////////////////////////////////////////////////-->
+  <!-- <div class= "container d-lg-none text-center">
+    <div class="container">
+      <a href="https://univesp.br/" target="_blank">
+        <img src="https://apps.univesp.br/common/logo-univesp-positivo.svg" alt="Logo da Univesp" height="47px" width="135px" class='img-responsive center-block' style="margin-top:4rem">
+      </a>
+    </div>
+    <img src='https://apps.univesp.br/common/aviso-tela.gif' alt="Computador Animado" height="117px" width="160px" class='img-responsive center-block' style="margin-top:3rem">
+    <div style="margin-top:.5rem">
+      <p>
+        <font style=font-family:"Barlow" color="#3b78d1" 'text-center' size="10rem"><b>OPS!</b></font>
+      </p>
+      <p>
+        <font style=font-family:"Verdana" "text-center" size="3rem">Visualize este recurso em um computador, em janela com largura mínima de 992px.</font>
+      </p>
+    </div>
+  </div> -->
+
+  <!-- CRÉDITOS -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Desenvolvimento Econômico</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+
+          <h6>Equipe</h6>
+          <p><span class="funcao">Docente responsável</span>Roberta Flaborea Favaro, Marcos Evandro Galini e Fernanda Guinoza Matuda</p>
+          <p><span class="funcao">Coordenação</span>Édison Trombeta</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Claudia Mori e Nádia Pirillo</p>
+          <p><span class="funcao">Ilustração</span>Celso Roberto Lourenço</p>
+          <p><span class="funcao">Layout</span>Henrique Inhauser Caldas</p>
+          <p><span class="funcao">Programação</span>Gabriel Gallo</p>
+          <p><span class="funcao">Revisão</span>Fulano de Tal, Ciclano de Tal</p>
+
+        </div>
+        <div class="modal-footer">
+          <p>Janeiro/2022</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    var share = $(".sharing");
+    var page_title = $(document).attr('title');
+    var page_url = window.location.href;
+    share.jsSocials({
+      shares: [
+        {
+          share: "facebook",
+          logo: "fab fa-facebook-f",
+        },
+        {
+          share: "twitter",
+          logo: "fab fa-twitter",
+        },
+        {
+          share: "whatsapp",
+          logo: "fab fa-whatsapp",
+        },
+      ],
+      url: page_url,
+      text: 'Confira o REA ' + page_title + '.',
+      showLabel: false,
+      showCount: false,
+      shareIn: "popup",
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+  <script type="text/javascript" src="javascripts/teste2.js"></script>
+
+  <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>

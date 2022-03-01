@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="assets/fb-share.png">
+  <meta name="author" content="Univesp">
+
+  <meta name="description" property="og:description"
+  content="">
+
+  <title>Univesp | Letramento Acadêmico</title>
+
+  <link rel="shortcut icon" href="https://apps.univesp.br/common/favicon.ico" type="image/x-icon"/>
+
+  <!-- Arquivos Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Ícones por Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Ícones por Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Tipografia institucional por Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,700|Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Noto Serif' rel='stylesheet'>
+
+  <!-- Compartilhamento por jsSocials -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+  <!-- Animate CSS. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <link rel="stylesheet" href="https://apps.univesp.br/common/animate.css"> -->
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://apps.univesp.br/common/rea-geral-2.1.css">
+  <!-- <link rel="stylesheet" href="../common/rea-geral-2.1.css">   -->
+  <link rel="stylesheet" href="stylesheets/nav_footer.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">William Kimura</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">23300.0000000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Celso Roberto Lourenco</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100A38F8AD45AFCC2449EE864BD78216A31</mso:ContentTypeId>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body class="d-flex flex-column">
+
+  <!-- Utilizar essa DIV caso o REA não se adapte a todos os tamanhos de tela -->
+  <!-- <div class="esconder-tela-pequena"> -->
+
+  <!-- Menu -->
+  <!--///////////////////////////////////////////////////////////////
+  Classe para nav
+  - padrão => header estático
+  - class="header-dinamico" => header possui posição fixa e é mostrado apenas quando a página está no topo (necessário ajustar padding ou margin superior e inferior do main).
+  //////////////////////////////////////////////////////////////////-->
+  <!-- <nav class="header-dinamico"> -->
+  <nav>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a class="pularNavegacao" href="#conteudoPrincipal">Pular para Conteúdo Principal</a>
+        <a href="https://univesp.br/" target="_blank">
+          <img src="https://apps.univesp.br/common/traco-negativa.svg" alt="Link para site institucional. Logotipo da universidade formado pela palavra Univesp, sendo a letra V estilizada.">
+          <!-- outras opções de img src: colorida-negativa.svg, traco-positiva.svg, traco-negativa.svg -->
+        </a>
+      </div>
+      <!-- Compartilhamento -->
+      <ul class="nav justify-content-end">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="material-icons" aria-label="Opções de Compartilhamento">share</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="sharing"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo -->
+  <main id="conteudoPrincipal">
+
+    <div class="container">
+      <!-- Seu conteúdo -->
+
+      <div class="grid-container">
+        <div class="introducao-tipos">
+          <h1>Mitos da <br> escrita acadêmica</h1>
+
+          <img style="width: 115%;" class="marca-titulo3" src="/assets/22_marcatxt.svg" alt="marca texto do título">
+
+          <p style="margin-top: -8%;">A escrita acadêmica, ou escrita científica, é a linguagem utilizada para a divulgação de conhecimentos por meio da publicação de textos dentro da comunidade científica. Ela deve ser utilizada em trabalhos acadêmicos, como artigos, dissertações e teses, por exemplo.</p>
+  
+          <p style="margin-top: 7%;">A escrita acadêmica é caracterizada pela impessoalidade (ou seja, o texto não pode revelar opiniões pessoais) e argumentação (o texto deve promover uma reflexão crítica).</p>
+        </div>
+
+        <div class="secoes-links">
+          <img src="/assets/07_ilustrasecao01.png" alt="mulhar lendo livro. pilha de livros. globo terrestre">
+        </div>
+      </div>
+
+      <div class="titulo-solto">
+        <p>Escrever um texto científico pode assustar algumas pessoas em um primeiro momento. Alguns pensamentos negativos podem surgir:</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 2%;">
+        <p style="font-weight: bold;">- Eu não consigo.</p>
+        <p style="font-weight: bold;">- Eu não sei.</p>
+        <p style="font-weight: bold;">- Eu não sou capaz.</p>
+      </div>
+
+      <div style="margin-top: 1%;" class="titulo-solto">
+        <p>Se isso já aconteceu com você, faça o seguinte: primeiro, não dê atenção a esses pensamentos. Depois, faça o exercício a seguir para tirar da cabeça alguns mitos relacionados à escrita acadêmica. Você verá que todos nós somos capazes de escrever um bom texto – basta praticar e ler muito!</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <div style="background-color: #9fffff; height: 180px;" class="destaque">
+
+    <p style="margin-left: -3%;">Vamos refletir sobre alguns mitos a respeito da escrita acadêmica? </p>
+
+    <p style="margin-top: 1%; margin-left: -3%;">Indique se as afirmações a seguir são Mito ou Verdade:</p>
+
+  </div>
+
+
+  <!--EXERCÍCIO-->
+  <div class="exe3-container">
+
+    <div class="exe3-row">
+      <div class="card-teste-exe3">
+        <p>Em uma ou duas horas consigo fazer um bom texto acadêmico.</p>
+      </div>
+      <div onclick="toggleResposta(1)" class="exe3-card card-v" id="card-v1">Verdadeiro</div>
+      <div onclick="toggleResposta(2)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f1">Falso</div>
+    </div>
+    <div style="border-color: #ff9cff;" class="justificativa-exe3">
+      <p><strong><mark style="background-color: #ff33cc">FALSO</mark> -</strong> o importante é gerenciar o seu tempo para fazer uma boa entrega. Dedicar tempo é importante para se fazer um bom texto.</p>
+    </div>
+
+    <div style="margin-top: -1%;" class="exe3-row">
+      <div class="card-teste-exe3">
+        <p>As pessoas já nascem sabendo escrever um bom texto, é um dom.</p>
+      </div>
+      <div onclick="toggleResposta(3)" class="exe3-card card-v" id="card-v2">Verdadeiro</div>
+      <div onclick="toggleResposta(4)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f2">Falso</div>
+    </div>
+    <div style="border-color: #ff9cff;" class="justificativa-exe3">
+      <p><strong><mark style="background-color: #ff33cc">FALSO</mark> -</strong> as pessoas não nascem sabendo, mas se esforçam para trabalhar nas falhas que vão sendo observadas e apontadas. É importante esforçar-se dia a dia para escrever cada vez melhor.</p>
+    </div>
+
+    <div style="margin-top: -1%;" class="exe3-row">
+      <div class="card-teste-exe3">
+        <p>Escrever é colocar no papel algo da minha cabeça, pois já sei muito sobre o assunto.</p>
+      </div>
+      <div onclick="toggleResposta(5)" class="exe3-card card-v" id="card-v3">Verdadeiro</div>
+      <div onclick="toggleResposta(6)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f3">Falso</div>
+    </div>
+    <div style="border-color: #ff9cff;" class="justificativa-exe3">
+      <p><strong><mark style="background-color: #ff33cc">FALSO</mark> -</strong> o planejamento da escrita é fundamental para escrever um bom texto. Estudar também é algo fundamental para escrever bem.</p>
+    </div>
+
+    <div style="margin-top: -1%;" class="exe3-row">
+      <div class="card-teste-exe3">
+        <p>A escrita pressupõe saber sobre o uso da gramática.</p>
+      </div>
+      <div onclick="toggleResposta(7)" class="exe3-card card-v" id="card-v4">Verdadeiro</div>
+      <div onclick="toggleResposta(8)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f4">Falso</div>
+    </div>
+    <div style="border-color: #9fffff;" class="justificativa-exe3">
+      <p><strong><mark style="background-color: #9fffff">VERDADEIRO</mark> -</strong> sim, é necessário saber sobre os usos da língua escrita e isso envolve o conhecimento da gramática. Mas, não se preocupe: não é preciso conhecer a nomenclatura e descrever regras (por exemplo, subjuntivo, pretérito imperfeito, sujeito, predicado, etc.), pois o mais importante é saber usar bem a língua escrita. Um bom exercício para desenvolver esse conhecimento é estar em contato com bons textos: ler mais pode te tornar um escritor melhor!</p>
+    </div>
+
+    <div style="margin-top: -1%;" class="exe3-row">
+      <div class="card-teste-exe3">
+        <p>As pessoas entram na universidade sabendo fazer bons textos.</p>
+      </div>
+      <div onclick="toggleResposta(9)" class="exe3-card card-v" id="card-v5">Verdadeiro</div>
+      <div onclick="toggleResposta(10)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f5">Falso</div>
+    </div>
+    <div style="border-color: #ff9cff;" class="justificativa-exe3">
+      <p><strong><mark style="background-color: #ff33cc">FALSO</mark> -</strong> um bom escritor é construído diariamente. Quanto mais lemos e escrevemos, mais saberemos como escrever.</p>
+    </div>
+
+    <div style="margin-top: -1%;" class="exe3-row">
+      <div class="card-teste-exe3">
+        <p>Se eu não sei escrever bem um texto acadêmico, melhor nem tentar!</p>
+      </div>
+      <div onclick="toggleResposta(11)" class="exe3-card card-v" id="card-v6">Verdadeiro</div>
+      <div onclick="toggleResposta(12)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f6">Falso</div>
+    </div>
+    <div style="border-color: #ff9cff;" class="justificativa-exe3">
+      <p><strong><mark style="background-color: #ff33cc">FALSO</mark> -</strong> se você não tentar e provar que consegue, não vai ter valido a pena estar na universidade construindo conhecimento. Você será apenas um “consumidor” de conteúdos e não um “produtor de conhecimentos”.</p>
+    </div>
+
+    <div style="margin-top: -1%;" class="exe3-row">
+      <div class="card-teste-exe3">
+        <p>Se tenho medo de escrever, melhor não escrever porque sei que ninguém entender.</p>
+      </div>
+      <div onclick="toggleResposta(13)" class="exe3-card card-v" id="card-v7">Verdadeiro</div>
+      <div onclick="toggleResposta(14)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f7">Falso</div>
+    </div>
+    <div style="border-color: #ff9cff;" class="justificativa-exe3">
+      <p><strong><mark style="background-color: #ff33cc">FALSO</mark> -</strong> Muitos de nós temos medo de escrever porque os outros não vão entender. Mas, se você não tentar e persistir, nunca vai melhorar. Um exercício importante é tentar se colocar no lugar do leitor e verificar se ele entenderia o seu texto.</p>
+    </div>
+
+    <div style="margin-top: -1%;" class="exe3-row">
+      <div class="card-teste-exe3">
+        <p>Eu escrevo e tudo sai perfeito!</p>
+      </div>
+      <div onclick="toggleResposta(15)" class="exe3-card card-v" id="card-v8">Verdadeiro</div>
+      <div onclick="toggleResposta(16)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f8">Falso</div>
+    </div>
+    <div style="border-color: #ff9cff;" class="justificativa-exe3">
+      <p><strong><mark style="background-color: #ff33cc">FALSO</mark> -</strong> um bom texto deve ser revisado pelo menos três vezes até que esteja pronto para ser entregue.</p>
+    </div>
+
+    <div style="margin-top: -1%;" class="exe3-row">
+      <div class="card-teste-exe3">
+        <p>Meu avaliador vai julgar o que estou fazendo, por isso, devo escrever com receio dele.</p>
+      </div>
+      <div onclick="toggleResposta(17)" class="exe3-card card-v" id="card-v9">Verdadeiro</div>
+      <div onclick="toggleResposta(18)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f9">Falso</div>
+    </div>
+    <div style="border-color: #ff9cff;" class="justificativa-exe3">
+      <p><strong><mark style="background-color: #ff33cc">FALSO</mark> -</strong> Na universidade sabemos que todos estão aprendendo. Então, não fique com medo de ser avaliado. Lembre-se de receber o feedback do seu avaliador como apontamentos para que você possa sempre melhorar. A aprendizagem da escrita se dá ao longo da vida!</p>
+    </div>
+
+    <div style="text-align: center; margin: 5% 0 -50px 0;">
+        <button onclick="geraResultado()" id="botao-exe3" style="background-color: #9fffff;" class="botao-resultado">Conferir resultado</button>
+    </div>
+
+  </div>
+
+
+  <!--SEÇÃO EXPLORE MAIS-->
+  <div class="explore">
+      <div class="titulo-explore">
+        <h3 style="margin-top: -20%;">Continue a explorar o tema:</h3>
+      </div>
+  
+      <div class="itens-explore">
+        <div>
+          <a href="/index.html">
+            <img style="width: 85%;" class="livro-intro" src="/assets/14_paginicial.svg" alt="Letramento acadêmico (Página Inicial)">
+          </a>
+        </div>
+        
+        <div style="margin-left: 2%;">
+            <a onmouseover="setHover(livro1)" onmouseout="leaveHover(livro1)" href="/tipos-trabalho-academico.html">
+              <img style="width: 50%;" id="livro1" src="/assets/02_botaosecao01.svg" alt="Tipos de trabalho acadêmico.">
+            </a>
+        </div>
+        
+        <div style="margin-left: -8%;">
+          <a onmouseover="setHover(livro2)" onmouseout="leaveHover(livro2)" href="/passo-a-passo.html">
+            <img style="width: 50%;" id="livro2" src="/assets/03_botaosecao02.svg" alt="Passo a passo do trabalho acadêmico.">
+          </a>
+        </div>
+        
+        <div style="margin-left: -8%;">
+          <a  onmouseover="setHover(livro4)" onmouseout="leaveHover(livro4)" href="/citacoes-e-referencias.html">
+            <img style="width: 50%;" id="livro4" src="/assets/05_botaosecao04.svg" alt="Como fazer citações e referências.">
+          </a>
+        </div>
+  
+      </div>
+    </div>
+
+  <!-- RODAPÉ -->
+  <!--//////////////////////////////////////////////////////
+  Classes prontas p/ footer (podem ser combinadas):
+  padrão => texto e contornos em cinza
+  class = "black" => texto e contornos em preto
+  class = "negativo" => texto e contornos em branco, sobre fundo escuro
+  class = "transparente" => fundo transparente (necessário ajustar cor dos ícones de compartilhamento nos círculos, para bater com a cor de fundo)
+  /////////////////////////////////////////////////////////-->
+  <!-- <footer class="black"> -->
+  <!-- <footer class="negativo"> -->
+  <!-- <footer class="transparente"> -->
+  <!-- <footer class="transparente black"> -->
+  <!-- <footer class="transparente negativo"> -->
+  <footer style="background-color: #000;" class="negativo">
+    <div class="container d-flex justify-content-between">
+
+      <div class="cred-rea">
+        <!-- Comente em caso de adaptação do REA -->
+          <div>Recurso Educacional Aberto (REA) desenvolvido pela <a href="https://univesp.br/" target="blank">Univesp</a>, disponível sob licença <a href="http://apps.univesp.br/common/license_MIT_2020.txt" target="_blank">MIT</a>.
+          Você pode utilizá-lo, compartilhá-lo e modificá-lo.</div>
+          <div><button class="btn btn-link" data-toggle="modal" data-target="#creditos">Créditos</button></div>
+          <div><a href="#" target="_blank" aria-label="GitHub" style="white-space:nowrap;">GitHub <i class="fab fa-github"></i></a></div>
+          <div>Compartilhe: <div class="sharing"></div></div>
+
+        <!-- Descomente em caso de adaptação do REA -->
+        <!-- <p>
+          <span>Recurso Educacional Aberto (REA) adaptado por SEU NOME.</span>
+          <span><a href="#">Versão original da Univesp</a></span>
+        </p> -->
+      </div>
+
+      <!-- FORMULÁRIOS DE AVALIAÇÃO -->
+      <div class="aval-rea d-flex">
+        <!-- AVALIAR RECURSO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfoe5bxjjASle0FQSNtxvEvL73yVqlXtedVCcLs0-uOYwfHmA/viewform?usp=pp_url&entry.542052009=Letramento+Acadêmico" target="_blank">Avaliar este recurso</a>
+        <!-- REPORTAR ERRO -->
+        <!-- Atualizar "Nome+do+Recurso" -->
+        <a class="btn btn-secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSeE4DT6yuFY4wArPAPQ86GMbRLFwnlTLG-C-s5t2mFdRkR8bA/viewform?usp=pp_url&entry.1523910789=Letramento+Acadêmico" target="_blank">Reportar erro</a>
+      </div>
+
+    </div>
+  </footer>
+  <!-- Fim do rodapé -->
+
+  <!-- Fim da div .esconder-tela-pequena
+  Utilizar essa div caso o REA não se adapte a todos os formatos de tela -->
+  <!-- </div> -->
+
+  <!-- //////////////////////////////////////////////////////////
+  AVISO =+960px
+  Utilizar caso o REA possua limitações quanto aos tamanhos de tela
+  Caso contrário, deletar
+  ///////////////////////////////////////////////////////////////-->
+  <!-- <div class= "container d-lg-none text-center">
+    <div class="container">
+      <a href="https://univesp.br/" target="_blank">
+        <img src="https://apps.univesp.br/common/logo-univesp-positivo.svg" alt="Logo da Univesp" height="47px" width="135px" class='img-responsive center-block' style="margin-top:4rem">
+      </a>
+    </div>
+    <img src='https://apps.univesp.br/common/aviso-tela.gif' alt="Computador Animado" height="117px" width="160px" class='img-responsive center-block' style="margin-top:3rem">
+    <div style="margin-top:.5rem">
+      <p>
+        <font style=font-family:"Barlow" color="#3b78d1" 'text-center' size="10rem"><b>OPS!</b></font>
+      </p>
+      <p>
+        <font style=font-family:"Verdana" "text-center" size="3rem">Visualize este recurso em um computador, em janela com largura mínima de 992px.</font>
+      </p>
+    </div>
+  </div> -->
+
+  <!-- CRÉDITOS -->
+  <div class="modal fade" id="creditos" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <h6>Governo do Estado de São Paulo</h6>
+          <p>Secretaria de Desenvolvimento Econômico</p>
+
+          <h6>UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO – UNIVESP</h6>
+          <p><span class="funcao">Presidente</span>Rodolfo Jardim de Azevedo</p>
+          <p><span class="funcao">Diretora Acadêmica</span>Simone Telles Martins Ramos</p>
+
+          <h6>Equipe</h6>
+          <p><span class="funcao">Docente responsável</span>Roberta Flaborea Favaro, Marcos Evandro Galini e Fernanda Guinoza Matuda</p>
+          <p><span class="funcao">Coordenação</span>Édison Trombeta</p>
+          <p><span class="funcao">Roteirização e Design Instrucional</span>Claudia Mori e Nádia Pirillo</p>
+          <p><span class="funcao">Ilustração</span>Celso Roberto Lourenço</p>
+          <p><span class="funcao">Layout</span>Henrique Inhauser Caldas</p>
+          <p><span class="funcao">Programação</span>Gabriel Gallo</p>
+          <p><span class="funcao">Revisão</span>Fulano de Tal, Ciclano de Tal</p>
+
+        </div>
+        <div class="modal-footer">
+          <p>Janeiro/2022</p>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquivos Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://apps.univesp.br/common/jquery-ui-touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+  <!-- jsSocials -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+  <script>
+    var share = $(".sharing");
+    var page_title = $(document).attr('title');
+    var page_url = window.location.href;
+    share.jsSocials({
+      shares: [
+        {
+          share: "facebook",
+          logo: "fab fa-facebook-f",
+        },
+        {
+          share: "twitter",
+          logo: "fab fa-twitter",
+        },
+        {
+          share: "whatsapp",
+          logo: "fab fa-whatsapp",
+        },
+      ],
+      url: page_url,
+      text: 'Confira o REA ' + page_title + '.',
+      showLabel: false,
+      showCount: false,
+      shareIn: "popup",
+    });
+  </script>
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="javascripts/events.js"></script>
+  <script type="text/javascript" src="javascripts/teste3.js"></script>
+
+  <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
+  <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+  <!-- Analytics. Remova em caso de reutilização do REA -->
+  <script src="https://apps.univesp.br/common/analytics.js"></script>
+
+</body>
+
+</html>
