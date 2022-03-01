@@ -1,86 +1,114 @@
+// Variáveis/elementos
 const arrayTextos = new Request('./data/exe2.json');
+let setaDireita = document.querySelector('#setaDireita');
+let setaEsquerda = document.querySelector('#setaEsquerda');
+let click = 1;
+let json = {}
+let caixaDoMeio = document.querySelector(".exe2Container");
+let fazer = document.querySelector("#fazer")
+let naoFazer = document.querySelector("#nao-fazer")
+let btnVerifica = document.querySelector("#exe2");
 
-$(document).ready(function(){
-  let div = document.querySelector(".exe2Container");
-  let div2 = document.createElement('div');
-  let p = document.createElement('p');
-
-  div2.appendChild(p);
-  div.appendChild(div2).classList.add('card-teste-exe2');
-
-  p.innerHTML = 'Preparar-se antes de escrever o texto.';
-
-  return div;
-})
-
-let click = 2;
+//Setters
+setaDireita.addEventListener('click', fSetaDireita)
+setaEsquerda.addEventListener('click', fSetaEsquerda)
+btnVerifica.addEventListener('click', fVerifica)
 
 
-function criaElemento(){
 
-  fetch(arrayTextos)
-  .then(response => response.json())
-  .then(data => {
-  data.map((dado)=>{
-    let texto = dado.texto;
-    let id = dado.id;
-    
+//Funções
 
-    if(id === click){
-      let div = document.querySelector(".exe2Container");
-    let div2 = document.createElement('div');
-    let p = document.createElement('p');
-
-    div2.appendChild(p);
-    div.appendChild(div2).classList.add('card-teste-exe2');
-
-    p.innerHTML = texto;
-
-    return div;
+function fVerifica(){
+  json.map(item =>{
+    if(item.devoFazerGab == item.devoFazer){
+      fCorreto(item.id)
     }
-    
-    
+    else{
+      fErrado(item.id)
+    }
   })
-})
-.then(()=>{
+}
+function fCorreto(idjson){
+  let elemento = document.querySelector('div[data-id="' + idjson + '"] > img')
+  elemento.src = '/assets/12_certo.svg'
+  elemento.style.display = 'inherit'
+}
+function fErrado(idjson){
+  let elemento = document.querySelector('div[data-id="' + idjson + '"] > img')
+  elemento.src = '/assets/13_errado.svg'
+  elemento.style.display = 'inherit'
+}
+
+function primeiroPasso(){
+  let texto = json[0].texto;
+  let elemento = criaElemento(texto, 'card-teste-exe2');
+  caixaDoMeio.appendChild(elemento)
+}
+
+function fSetaDireita(texto){
   if(click < 22){
-    click++;
-  console.log(click);
-  }else{
-    return;
+    apagarCaixaDoMeio()
+    atualizaJsonDevoFazer(click-1, false)
+    let elemento1 = criaElemento(json[click].texto, 'card-teste-exe2');
+    caixaDoMeio.appendChild(elemento1);
+
+
+    let elemento2 = criaElemento(json[click-1].texto, 'card-teste-exe2');
+    elemento2.dataset.id = json[click-1].id
+    naoFazer.appendChild(elemento2);
+    adicionaClick()
   }
-
-})
-
 }
 
+function fSetaEsquerda(texto){
+  if(click < 22){
+    apagarCaixaDoMeio()
+    atualizaJsonDevoFazer(click-1, true)
+    let elemento1 = criaElemento(json[click].texto, 'card-teste-exe2');
+    caixaDoMeio.appendChild(elemento1);
 
-let botao = document.querySelector('#setaDireita');
-botao.addEventListener('click', criaElemento)
-
-
-function setaRight(){
-  let coluna = document.querySelector('#nao-fazer-coluna');
-  
-  coluna.innerHTML = "TESTANDO"
-  //chama busca - let conteudo = busca()
-
-  //construir elemento - let elemento = criaElemento(conteudo)
-
-  //atualizar caixa - atualizaCaixa()
-
-  //buscar coluna -> appendChild na coluna - coluna.appendChild(caixa)
+    let elemento2 = criaElemento(json[click-1].texto, 'card-teste-exe2');
+    fazer.appendChild(elemento2);
+    elemento2.dataset.id = json[click-1].id
+    adicionaClick()
+  }
 }
 
-//buscar as 2 setas
+function criaElemento(texto, classe){
+  let div = document.createElement('div');
+  div.classList.add(classe)
+  let p = document.createElement('p');
+  div.appendChild(p);
+  let img = document.createElement('img')
+  img.style.width = '15px'
+  img.style.height = '15px'
+  img.style.display = 'none'
+  div.appendChild(img);
+  p.innerHTML = texto;
+  return div
+}
 
-//buscar a caixa
+function leJSON(){
+  fetch(arrayTextos)
+  .then(response => {
+    return(response.json());
+  }).then(data => {
+    json = data;
+    primeiroPasso()
+    return data
+  })
+}
 
-//atribuir funções de click fn setaLeft e fn setaRight
-//criar fn busca - return caixa.innerHTML
+function apagarCaixaDoMeio(){
+  caixaDoMeio.innerHTML = ""
+}
 
-//criar função criaElemento(texto)
+function adicionaClick(){
+  click++;
+}
 
-//criar função atualizaCaixa 
-//criar array global com os textos
-//append elemento
+function atualizaJsonDevoFazer(i, value){
+  json[i].devoFazer = value;
+}
+
+leJSON()
