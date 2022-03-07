@@ -1,21 +1,39 @@
+//Variáveis
+
+let alternativas1 = document.getElementById('alternativas1');
+let alternativas2 = document.getElementById('alternativas2');
+let alternativas3 = document.getElementById('alternativas3');
+let alternativas4 = document.getElementById('alternativas4');
+let alternativas5 = document.getElementById('alternativas5');
+
+let arrowText = document.getElementById('expand-teste1').innerText;
+let arrow = document.getElementById('expand-teste1');
+let arrowText2 = document.getElementById('expand-teste2').innerText;
+let arrow2 = document.getElementById('expand-teste2');
+let arrowText3 = document.getElementById('expand-teste3').innerText;
+let arrow3 = document.getElementById('expand-teste3');
+let arrowText4 = document.getElementById('expand-teste4').innerText;
+let arrow4 = document.getElementById('expand-teste4');
+let arrowText5 = document.getElementById('expand-teste5').innerText;
+let arrow5 = document.getElementById('expand-teste5');
+
+let paragrafo1Div1 = document.getElementById('texto-option1-div1');
+let paragrafo1Div2 = document.getElementById('texto-option1-div2');
+let paragrafo1Div3 = document.getElementById('texto-option1-div3');
+let paragrafo1Div4 = document.getElementById('texto-option1-div4');
+let paragrafo1Div5 = document.getElementById('texto-option1-div5');
+
+let option1 = "Artigo científico";
+let option2 = "Monografia";
+let option3 = "Relatório técnico";
+let option4 = "Resumo e resenha";
+let option5 = "Trabalho de Conclusão de Curso (TCC)";
+
+
+  
+//Funções
+
 function collapseTeste(e){
-  let alternativas1 = document.getElementById('alternativas1');
-  let alternativas2 = document.getElementById('alternativas2');
-  let alternativas3 = document.getElementById('alternativas3');
-  let alternativas4 = document.getElementById('alternativas4');
-  let alternativas5 = document.getElementById('alternativas5');
-
-  let arrowText = document.getElementById('expand-teste1').innerText;
-  let arrow = document.getElementById('expand-teste1');
-  let arrowText2 = document.getElementById('expand-teste2').innerText;
-  let arrow2 = document.getElementById('expand-teste2');
-  let arrowText3 = document.getElementById('expand-teste3').innerText;
-  let arrow3 = document.getElementById('expand-teste3');
-  let arrowText4 = document.getElementById('expand-teste4').innerText;
-  let arrow4 = document.getElementById('expand-teste4');
-  let arrowText5 = document.getElementById('expand-teste5').innerText;
-  let arrow5 = document.getElementById('expand-teste5');
-
   if(e === 1 && arrowText === "arrow_drop_down"){
     arrow.innerHTML = "arrow_drop_up"
     alternativas1.style.display = "block";
@@ -59,29 +77,6 @@ function collapseTeste(e){
 
 //////INSERINDO TEXTO NO PARAGRAFO//////////////
 function insereTexto(e){
-  const option1 = "Artigo científico";
-  const option2 = "Monografia";
-  const option3 = "Relatório técnico";
-  const option4 = "Resumo e resenha";
-  const option5 = "Trabalho de Conclusão de Curso (TCC)";
-
-  let paragrafo1Div1 = document.getElementById('texto-option1-div1');
-  let paragrafo1Div2 = document.getElementById('texto-option1-div2');
-  let paragrafo1Div3 = document.getElementById('texto-option1-div3');
-  let paragrafo1Div4 = document.getElementById('texto-option1-div4');
-  let paragrafo1Div5 = document.getElementById('texto-option1-div5');
-
-  let alternativas1 = document.getElementById('alternativas1');
-  let alternativas2 = document.getElementById('alternativas2');
-  let alternativas3 = document.getElementById('alternativas3');
-  let alternativas4 = document.getElementById('alternativas4');
-  let alternativas5 = document.getElementById('alternativas5');
-
-  let arrow = document.getElementById('expand-teste1');
-  let arrow2 = document.getElementById('expand-teste2');
-  let arrow3 = document.getElementById('expand-teste3');
-  let arrow4 = document.getElementById('expand-teste4');
-  let arrow5 = document.getElementById('expand-teste5');
 
   if(e === 1){
     paragrafo1Div1.innerHTML = option1;
@@ -261,11 +256,6 @@ function insereTexto(e){
 
 ////// FUNÇÃO QUE GERA O RESULTADO ////////////
 function geraResultado(){
-  const option1 = "Artigo científico";
-  const option2 = "Monografia";
-  const option3 = "Relatório técnico";
-  const option4 = "Resumo e resenha";
-  const option5 = "Trabalho de Conclusão de Curso (TCC)";
 
   let paragrafoDiv1 = document.getElementById('texto-option1-div1').innerText;
   let paragrafoDiv2 = document.getElementById('texto-option1-div2').innerText;
