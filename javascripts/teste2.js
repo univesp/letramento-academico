@@ -65,9 +65,7 @@ function fSetaDireita(texto){
       let elemento1 = criaElemento(json[click].texto, 'card-teste-exe2');
       caixaDoMeio.appendChild(elemento1);
     }else{
-      setaDireita.style.display = "none";
-      setaEsquerda.style.display = "none";
-      caixaDoMeio.style.display = "none";
+      apagaSetaseCaixaDoMeio()
     }    
     
   }
@@ -91,9 +89,7 @@ function fSetaEsquerda(texto){
       let elemento1 = criaElemento(json[click].texto, 'card-teste-exe2');
       caixaDoMeio.appendChild(elemento1);  
     }else{
-      setaDireita.style.display = "none";
-      setaEsquerda.style.display = "none";
-      caixaDoMeio.style.display = "none";
+      apagaSetaseCaixaDoMeio()
     }
     
   }
@@ -122,6 +118,12 @@ function leJSON(){
     primeiroPasso()
     return data
   })
+}
+
+function apagaSetaseCaixaDoMeio(){
+  setaDireita.style.display = "none";
+  setaEsquerda.style.display = "none";
+  caixaDoMeio.style.display = "none";
 }
 
 function apagarCaixaDoMeio(){
