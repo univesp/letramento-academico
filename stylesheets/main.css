@@ -65,6 +65,9 @@ nav .jssocials-shares{
   background-color: #9fffff;
   padding: 0 0.2em;
 }
+.mitos mark{
+  background-color: #ff33cc;
+}
 
 .marca-titulo{
   z-index: -10;
@@ -149,9 +152,15 @@ nav .jssocials-shares{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 0;
+  outline: none;
 }
 .dropdown-teste:hover{
   background-color: #ffff7d;
+}
+.dropdown-teste:focus{
+  border: 0;
+  outline: none;
 }
 
 .open-dropdown{
@@ -436,6 +445,7 @@ nav .jssocials-shares{
   width: 81%;
   margin: 1.5% 0 0 9.5%;
   display: none;
+  border-color: #ff9cff;
 }
 
 .justificativa-exe3 p{
