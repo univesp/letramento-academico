@@ -154,6 +154,7 @@ nav .jssocials-shares{
   justify-content: center;
   border: 0;
   outline: none;
+  padding-top: 15px;
 }
 .dropdown-teste:hover{
   background-color: #ffff7d;
@@ -333,6 +334,16 @@ nav .jssocials-shares{
 
 .info-card img{
   width: 110px;
+}
+
+.info-card:not(:last-of-type) .info-card-imagem::after{
+  content: "";
+    position: absolute;
+    height: 1225px;
+    border-left: 10px dotted #9fffff;
+    top: 70%;
+    left: 34%;
+    z-index: -1;
 }
 
 .info-conteudo{
