@@ -339,10 +339,10 @@ nav .jssocials-shares{
 .info-card:not(:last-of-type) .info-card-imagem::after{
   content: "";
     position: absolute;
-    height: 1225px;
+    height: 1370px;
     border-left: 10px dotted #9fffff;
-    top: 70%;
-    left: 34%;
+    top: 85%;
+    left: 29%;
     z-index: -1;
 }
 
@@ -616,4 +616,16 @@ nav .jssocials-shares{
   width: 85%;
   text-align: left;
   margin-top: 3%;
+}
+
+@media screen and (min-width: 1440px) {
+  .info-card:not(:last-of-type) .info-card-imagem::after{
+    content: "";
+      position: absolute;
+      height: 1225px;
+      border-left: 10px dotted #9fffff;
+      top: 70%;
+      left: 34%;
+      z-index: -1;
+  }
 }
