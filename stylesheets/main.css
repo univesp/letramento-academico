@@ -340,10 +340,10 @@ nav .jssocials-shares{
 .info-card:not(:last-of-type) .info-card-imagem::after{
   content: "";
     position: absolute;
-    height: 1470px;
+    height: 1320px;
     border-left: 10px dotted #9fffff;
-    top: 85%;
-    left: 29%;
+    top: 110%;
+    left: 28%;
     z-index: -1;
 }
 
@@ -618,6 +618,57 @@ nav .jssocials-shares{
   text-align: left;
   margin-top: 3%;
 }
+
+
+.alternativas-exe1{
+    width: 230px;
+    height: 100px;
+    border: 0;
+    background-color: #fcee21;
+    font-size: 1.1em;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='54' viewBox='0 0 24 24' width='84' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 45%;
+    background-position-y: 50px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding: 1rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.alternativas-exe1 option{
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.select-exe1-box{
+  margin-top: -80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-exe1-box > span{
+  font-size: 21px;
+  font-family: 'Noto Serif', sans-serif;
+  font-weight: bold;
+  color: black;
+  margin-top: 10%;
+  margin-left: 10%;
+  position: relative;
+  z-index: 1;
+}
+
 
 @media screen and (min-width: 1440px) {
   .info-card:not(:last-of-type) .info-card-imagem::after{
