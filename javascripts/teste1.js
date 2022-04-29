@@ -34,6 +34,9 @@ function geraResultado(){
   let texto4 = select4.value;
   let texto5 = select5.value;
 
+  let botao = document.querySelector('.botao-resultado');
+  let botaoTexto = document.querySelector('.botao-resultado').innerText;
+
   if(texto1 === "" || texto2 === "" || texto3 === "" || texto4 === "" || texto5 === ""){
     alert("Por favor, selecione todas as respostas.");
   }else{
@@ -42,6 +45,19 @@ function geraResultado(){
     resultadoDiv3.style.display = "block";
     resultadoDiv4.style.display = "block";
     resultadoDiv5.style.display = "block";
+
+    select1.setAttribute('disabled', true);
+    select1.style.cursor = "default";
+    select2.setAttribute('disabled', true);
+    select2.style.cursor = "default";
+    select3.setAttribute('disabled', true);
+    select3.style.cursor = "default";
+    select4.setAttribute('disabled', true);
+    select4.style.cursor = "default";
+    select5.setAttribute('disabled', true);
+    select5.style.cursor = "default";
+
+    botao.innerHTML = "Tentar novamente";
   }  
 
   if(texto1 === text4){
@@ -72,6 +88,10 @@ function geraResultado(){
     imagem5.setAttribute('src', '/assets/12_certo.svg');
   }else{
     imagem5.setAttribute('src', '/assets/13_errado.svg');
+  }
+
+  if(botaoTexto === "Tentar novamente"){
+    document.location.reload(true);
   }
   
 }
