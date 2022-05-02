@@ -624,7 +624,7 @@ nav .jssocials-shares{
     width: 230px;
     height: 100px;
     border: 0;
-    background-color: #fcee21;
+    background-color: #dfdfdf;
     font-size: 1.1em;
 
     -webkit-appearance: none;
@@ -667,6 +667,21 @@ nav .jssocials-shares{
   margin-left: 10%;
   position: relative;
   z-index: 1;
+}
+
+.resposta-box-exe1{
+  background-color: #fcee21;
+  width: 580px;
+  padding: 0.1px;
+  margin-bottom: 30px;
+  margin-top: -20px;
+  margin-left: 29%;
+  height: 40px;
+}
+
+.resposta-box-exe1 p{
+  margin-left: 5%;
+  margin-top: 1.3%;
 }
 
 

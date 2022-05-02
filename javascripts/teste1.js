@@ -24,6 +24,12 @@ const text3 = "option3";
 const text4 = "option4";
 const text5 = "option5";
 
+const resposta1 = "Resumo e resenha";
+const resposta2 = "Relatório técnico";
+const resposta3 = "Artigo científico";
+const resposta4 = "Monografia";
+const resposta5 = "Trabalho de Conclusão de Curso (TCC)";
+
   
 //Funções
 
@@ -33,9 +39,6 @@ function geraResultado(){
   let texto3 = select3.value;
   let texto4 = select4.value;
   let texto5 = select5.value;
-
-  let botao = document.querySelector('.botao-resultado');
-  let botaoTexto = document.querySelector('.botao-resultado').innerText;
 
   if(texto1 === "" || texto2 === "" || texto3 === "" || texto4 === "" || texto5 === ""){
     alert("Por favor, selecione todas as respostas.");
@@ -57,9 +60,32 @@ function geraResultado(){
     select5.setAttribute('disabled', true);
     select5.style.cursor = "default";
 
-    botao.innerHTML = "Tentar novamente";
+    let botao = document.querySelector('.botao-resultado');
+
+    botao.disabled = true;
+    botao.style.cursor = "default";
+
+    let areaTeste = document.querySelectorAll('.teste-area');
+    let id = 1;
+
+    areaTeste.forEach(e =>  {
+      let resposta = document.createElement('div');
+      resposta.classList.add('resposta-box-exe1');
+      let customId = 'resposta-exe-' + String(id);
+      resposta.setAttribute('id', customId);
+      id++
+      let p = document.createElement('p');
+      resposta.appendChild(p);
+      
+      p.innerHTML = "Resposta certa: " + resposta1.bold() + '.';
+      
+      
+
+      e.after(resposta);
+    })
   }  
 
+  //Seta a imagem de acordo com a resposta
   if(texto1 === text4){
     imagem1.setAttribute('src', '/assets/12_certo.svg');
   }else{
@@ -89,9 +115,47 @@ function geraResultado(){
   }else{
     imagem5.setAttribute('src', '/assets/13_errado.svg');
   }
+  
+}
 
-  if(botaoTexto === "Tentar novamente"){
-    document.location.reload(true);
+
+function toggleValueSelect(){
+  let valueSelected1 = document.getElementById('alternativas1').value;
+  let valueSelected2 = document.getElementById('alternativas2').value;
+  let valueSelected3 = document.getElementById('alternativas3').value;
+  let valueSelected4 = document.getElementById('alternativas4').value;
+  let valueSelected5 = document.getElementById('alternativas5').value;
+
+  if(valueSelected1 !== ""){
+    select1.style.backgroundColor = "#feec21";
+  }else{
+    select1.style.backgroundColor = "#dfdfdf";
+  }
+
+  if(valueSelected2 !== ""){
+    select2.style.backgroundColor = "#feec21";
+  }else{
+    select2.style.backgroundColor = "#dfdfdf";
+  }
+
+  if(valueSelected3 !== ""){
+    select3.style.backgroundColor = "#feec21";
+  }else{
+    select3.style.backgroundColor = "#dfdfdf";
+  }
+
+  if(valueSelected4 !== ""){
+    select4.style.backgroundColor = "#feec21";
+  }else{
+    select4.style.backgroundColor = "#dfdfdf";
+  }
+
+  if(valueSelected5 !== ""){
+    select5.style.backgroundColor = "#feec21";
+  }else{
+    select5.style.backgroundColor = "#dfdfdf";
   }
   
 }
+
+
