@@ -413,6 +413,7 @@ nav .jssocials-shares{
   flex-direction: row;
   align-items: center;
   justify-content: center;  
+  margin-top: -2%;
 }
 
 .card-teste-exe3{
@@ -448,6 +449,7 @@ nav .jssocials-shares{
   margin-top: 5.5%;
   cursor: pointer;
   font-weight: bold;
+  background-color: #fff;
 }
 
 .justificativa-exe3{
@@ -694,5 +696,10 @@ nav .jssocials-shares{
       top: 70%;
       left: 34%;
       z-index: -1;
+  }
+
+  .justificativa-exe3{
+    width: 72%;
+    margin: 1.5% 0 0 14%;
   }
 }

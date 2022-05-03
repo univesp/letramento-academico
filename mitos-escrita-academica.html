@@ -148,104 +148,102 @@
       <div class="card-teste-exe3">
         <p>Em uma ou duas horas consigo fazer um bom texto acadêmico.</p>
       </div>
-      <button onclick="toggleResposta(1)" class="exe3-card card-v" id="card-v1">Verdadeiro</button>
-      <button onclick="toggleResposta(2)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f1">Falso</button>
+      <button onclick="geraResultado(1), changeColor()" class="exe3-card card-v" id="card-v1">Verdadeiro</button>
+      <button onclick="geraResultado(2), changeColorFalse()" style="margin-left: 2%;" class="exe3-card card-f" id="card-f1">Falso</button>
     </div>
-    <div class="justificativa-exe3">
+    <div class="justificativa-exe3" id="justificativaExe3_1">
       <p><strong><mark>FALSO</mark> -</strong> o importante é gerenciar o seu tempo para fazer uma boa entrega. Dedicar tempo é importante para se fazer um bom texto.</p>
     </div>
 
-    <div style="margin-top: -1%;" class="exe3-row">
+    <div class="exe3-row">
       <div class="card-teste-exe3">
         <p>As pessoas já nascem sabendo escrever um bom texto, é um dom.</p>
       </div>
-      <button onclick="toggleResposta(3)" class="exe3-card card-v" id="card-v2">Verdadeiro</button>
-      <button onclick="toggleResposta(4)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f2">Falso</button>
+      <button onclick="geraResultado(3)" class="exe3-card card-v" id="card-v2">Verdadeiro</button>
+      <button onclick="geraResultado(4)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f2">Falso</button>
     </div>
-    <div class="justificativa-exe3">
+    <div class="justificativa-exe3" id="justificativaExe3_2">
       <p><strong><mark>FALSO</mark> -</strong> as pessoas não nascem sabendo, mas se esforçam para trabalhar nas falhas que vão sendo observadas e apontadas. É importante esforçar-se dia a dia para escrever cada vez melhor.</p>
     </div>
 
-    <div style="margin-top: -1%;" class="exe3-row">
+    <div class="exe3-row">
       <div class="card-teste-exe3">
         <p>Escrever é colocar no papel algo da minha cabeça, pois já sei muito sobre o assunto.</p>
       </div>
-      <button onclick="toggleResposta(5)" class="exe3-card card-v" id="card-v3">Verdadeiro</button>
-      <button onclick="toggleResposta(6)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f3">Falso</button>
+      <button onclick="geraResultado(5)" class="exe3-card card-v" id="card-v3">Verdadeiro</button>
+      <button onclick="geraResultado(6)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f3">Falso</button>
     </div>
-    <div class="justificativa-exe3">
+    <div class="justificativa-exe3" id="justificativaExe3_3">
       <p><strong><mark>FALSO</mark> -</strong> o planejamento da escrita é fundamental para escrever um bom texto. Estudar também é algo fundamental para escrever bem.</p>
     </div>
 
-    <div style="margin-top: -1%;" class="exe3-row">
+    <div class="exe3-row">
       <div class="card-teste-exe3">
         <p>A escrita pressupõe saber sobre o uso da gramática.</p>
       </div>
-      <button onclick="toggleResposta(7)" class="exe3-card card-v" id="card-v4">Verdadeiro</button>
-      <button onclick="toggleResposta(8)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f4">Falso</button>
+      <button onclick="geraResultado(7)" class="exe3-card card-v" id="card-v4">Verdadeiro</button>
+      <button onclick="geraResultado(8)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f4">Falso</button>
     </div>
-    <div style="border-color: #9fffff;" class="justificativa-exe3">
+    <div style="border-color: #9fffff;" class="justificativa-exe3" id="justificativaExe3_4">
       <p><strong><mark style="background-color: #9fffff">VERDADEIRO</mark> -</strong> sim, é necessário saber sobre os usos da língua escrita e isso envolve o conhecimento da gramática. Mas, não se preocupe: não é preciso conhecer a nomenclatura e descrever regras (por exemplo, subjuntivo, pretérito imperfeito, sujeito, predicado, etc.), pois o mais importante é saber usar bem a língua escrita. Um bom exercício para desenvolver esse conhecimento é estar em contato com bons textos: ler mais pode te tornar um escritor melhor!</p>
     </div>
 
-    <div style="margin-top: -1%;" class="exe3-row">
+    <div class="exe3-row">
       <div class="card-teste-exe3">
         <p>As pessoas entram na universidade sabendo fazer bons textos.</p>
       </div>
-      <button onclick="toggleResposta(9)" class="exe3-card card-v" id="card-v5">Verdadeiro</button>
-      <button onclick="toggleResposta(10)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f5">Falso</button>
+      <button onclick="geraResultado(9)" class="exe3-card card-v" id="card-v5">Verdadeiro</button>
+      <button onclick="geraResultado(10)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f5">Falso</button>
     </div>
-    <div class="justificativa-exe3">
+    <div class="justificativa-exe3" id="justificativaExe3_5">
       <p><strong><mark>FALSO</mark> -</strong> um bom escritor é construído diariamente. Quanto mais lemos e escrevemos, mais saberemos como escrever.</p>
     </div>
 
-    <div style="margin-top: -1%;" class="exe3-row">
+    <div class="exe3-row">
       <div class="card-teste-exe3">
         <p>Se eu não sei escrever bem um texto acadêmico, melhor nem tentar!</p>
       </div>
-      <button onclick="toggleResposta(11)" class="exe3-card card-v" id="card-v6">Verdadeiro</button>
-      <button onclick="toggleResposta(12)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f6">Falso</button>
+      <button onclick="geraResultado(11)" class="exe3-card card-v" id="card-v6">Verdadeiro</button>
+      <button onclick="geraResultado(12)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f6">Falso</button>
     </div>
-    <div class="justificativa-exe3">
+    <div class="justificativa-exe3" id="justificativaExe3_6">
       <p><strong><mark>FALSO</mark> -</strong> se você não tentar e provar que consegue, não vai ter valido a pena estar na universidade construindo conhecimento. Você será apenas um “consumidor” de conteúdos e não um “produtor de conhecimentos”.</p>
     </div>
 
-    <div style="margin-top: -1%;" class="exe3-row">
+    <div class="exe3-row">
       <div class="card-teste-exe3">
         <p>Se tenho medo de escrever, melhor não escrever porque sei que ninguém entender.</p>
       </div>
-      <button onclick="toggleResposta(13)" class="exe3-card card-v" id="card-v7">Verdadeiro</button>
-      <button onclick="toggleResposta(14)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f7">Falso</button>
+      <button onclick="geraResultado(13)" class="exe3-card card-v" id="card-v7">Verdadeiro</button>
+      <button onclick="geraResultado(14)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f7">Falso</button>
     </div>
-    <div class="justificativa-exe3">
+    <div class="justificativa-exe3" id="justificativaExe3_7">
       <p><strong><mark>FALSO</mark> -</strong> Muitos de nós temos medo de escrever porque os outros não vão entender. Mas, se você não tentar e persistir, nunca vai melhorar. Um exercício importante é tentar se colocar no lugar do leitor e verificar se ele entenderia o seu texto.</p>
     </div>
 
-    <div style="margin-top: -1%;" class="exe3-row">
+    <div class="exe3-row">
       <div class="card-teste-exe3">
         <p>Eu escrevo e tudo sai perfeito!</p>
       </div>
-      <button onclick="toggleResposta(15)" class="exe3-card card-v" id="card-v8">Verdadeiro</button>
-      <button onclick="toggleResposta(16)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f8">Falso</button>
+      <button onclick="geraResultado(15)" class="exe3-card card-v" id="card-v8">Verdadeiro</button>
+      <button onclick="geraResultado(16)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f8">Falso</button>
     </div>
-    <div class="justificativa-exe3">
+    <div class="justificativa-exe3" id="justificativaExe3_8">
       <p><strong><mark>FALSO</mark> -</strong> um bom texto deve ser revisado pelo menos três vezes até que esteja pronto para ser entregue.</p>
     </div>
 
-    <div style="margin-top: -1%;" class="exe3-row">
+    <div class="exe3-row">
       <div class="card-teste-exe3">
         <p>Meu avaliador vai julgar o que estou fazendo, por isso, devo escrever com receio dele.</p>
       </div>
-      <button onclick="toggleResposta(17)" class="exe3-card card-v" id="card-v9">Verdadeiro</button>
-      <button onclick="toggleResposta(18)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f9">Falso</button>
+      <button onclick="geraResultado(17)" class="exe3-card card-v" id="card-v9">Verdadeiro</button>
+      <button onclick="geraResultado(18)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f9">Falso</button>
     </div>
-    <div class="justificativa-exe3">
+    <div class="justificativa-exe3" id="justificativaExe3_9">
       <p><strong><mark>FALSO</mark> -</strong> Na universidade sabemos que todos estão aprendendo. Então, não fique com medo de ser avaliado. Lembre-se de receber o feedback do seu avaliador como apontamentos para que você possa sempre melhorar. A aprendizagem da escrita se dá ao longo da vida!</p>
     </div>
 
-    <div style="text-align: center; margin: 5% 0 -50px 0;">
-        <button onclick="geraResultado()" id="botao-exe3" style="background-color: #9fffff;" class="botao-resultado">Conferir resultado</button>
-    </div>
+   
 
   </div>
 
