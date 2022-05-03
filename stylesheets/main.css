@@ -49,7 +49,7 @@ nav .jssocials-shares{
   color: black;
 }
 
-.tipos-trabalho mark{
+.tipos-trabalho mark, #pagina-1 mark{
   background-color: #fcee21;
   padding: 0 0.2em;
 }

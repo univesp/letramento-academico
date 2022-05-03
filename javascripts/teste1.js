@@ -1,5 +1,4 @@
 //Variáveis
-
 let imagem1 = document.getElementById('resultadoImg1');
 let imagem2 = document.getElementById('resultadoImg2');
 let imagem3 = document.getElementById('resultadoImg3');
@@ -43,49 +42,69 @@ function geraResultado(){
   if(texto1 === "" || texto2 === "" || texto3 === "" || texto4 === "" || texto5 === ""){
     alert("Por favor, selecione todas as respostas.");
   }else{
+    
+    //mostrando a div dos icones de certo e errado
     resultadoDiv1.style.display = "block";
     resultadoDiv2.style.display = "block";
     resultadoDiv3.style.display = "block";
     resultadoDiv4.style.display = "block";
     resultadoDiv5.style.display = "block";
 
+    //desabilitando os selects depois de finalizar o exercício
     select1.setAttribute('disabled', true);
     select1.style.cursor = "default";
+    select1.style.color = "#000";
     select2.setAttribute('disabled', true);
     select2.style.cursor = "default";
+    select2.style.color = "#000";
     select3.setAttribute('disabled', true);
     select3.style.cursor = "default";
+    select3.style.color = "#000";
     select4.setAttribute('disabled', true);
     select4.style.cursor = "default";
+    select4.style.color = "#000";
     select5.setAttribute('disabled', true);
     select5.style.cursor = "default";
+    select5.style.color = "#000";
 
+    //desabilitando botão depois de finalizar o exercício
     let botao = document.querySelector('.botao-resultado');
-
     botao.disabled = true;
     botao.style.cursor = "default";
 
+
+    //Criando divs das respostas corretas
     let areaTeste = document.querySelectorAll('.teste-area');
     let id = 1;
 
     areaTeste.forEach(e =>  {
       let resposta = document.createElement('div');
       resposta.classList.add('resposta-box-exe1');
-      let customId = 'resposta-exe-' + String(id);
-      resposta.setAttribute('id', customId);
-      id++
+      
       let p = document.createElement('p');
+      let customId = 'resposta-exe-' + String(id);
+      p.setAttribute('id', customId);
+      id++
       resposta.appendChild(p);
       
-      p.innerHTML = "Resposta certa: " + resposta1.bold() + '.';
-      
-      
-
       e.after(resposta);
     })
   }  
 
-  //Seta a imagem de acordo com a resposta
+    // Mostrando as respostas corretas
+    let respostaCerta1 = document.getElementById('resposta-exe-1')
+    respostaCerta1.innerHTML = "Resposta certa: " + resposta1.bold() + '.';
+    let respostaCerta2 = document.getElementById('resposta-exe-2')
+    respostaCerta2.innerHTML = "Resposta certa: " + resposta2.bold() + '.';
+    let respostaCerta3 = document.getElementById('resposta-exe-3')
+    respostaCerta3.innerHTML = "Resposta certa: " + resposta3.bold() + '.';
+    let respostaCerta4 = document.getElementById('resposta-exe-4')
+    respostaCerta4.innerHTML = "Resposta certa: " + resposta4.bold() + '.';
+    let respostaCerta5 = document.getElementById('resposta-exe-5')
+    respostaCerta5.innerHTML = "Resposta certa: " + resposta5.bold() + '.';
+
+
+  //Seta os icones de certo ou errado de acordo com a resposta
   if(texto1 === text4){
     imagem1.setAttribute('src', '/assets/12_certo.svg');
   }else{
@@ -119,6 +138,7 @@ function geraResultado(){
 }
 
 
+// alterando a cor de fundo dos selects
 function toggleValueSelect(){
   let valueSelected1 = document.getElementById('alternativas1').value;
   let valueSelected2 = document.getElementById('alternativas2').value;
@@ -157,5 +177,3 @@ function toggleValueSelect(){
   }
   
 }
-
-
