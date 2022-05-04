@@ -164,107 +164,92 @@
 
       <div class="options-area">
 
-        <div class="select-teste-secao4">
-          <div onclick="collapseTeste(1)">
-            <p id="texto-option1-div1">Escolha uma opção</p>
-            
-            <span style="margin-top: -10%;" id="expand-teste1" class="material-icons open-secao4">arrow_drop_down</span>
-          </div>
-
-          <div class="alternativas-area" id="alternativas1">
-            <div onclick="insereTexto(1)" class="alternativas-teste">Nome, SOBRENOME</div>
-            <div onclick="insereTexto(2)" class="alternativas-teste">SOBRENOME, Nome</div>
-            <div onclick="insereTexto(3)" class="alternativas-teste">SOBRENOME, NOME</div>
-            <div onclick="insereTexto(4)" class="alternativas-teste">SOBRENOME, nome</div>
-          </div>
-        </div>
-
-        <span style="position: relative; top: 55px; left: 2px;"> .</span>
-
-        <div class="select-teste-secao4">
-          <div onclick="collapseTeste(2)">
-            <p id="texto-option1-div2">Escolha uma opção</p>
-            <span style="margin-top: -10%;" id="expand-teste2" class="material-icons open-secao4">arrow_drop_down</span>
-          </div>
-
-          <div class="alternativas-area" id="alternativas2">
-            <div onclick="insereTexto(5)" class="alternativas-teste">TÍTULO DO LIVRO</div>
-            <div onclick="insereTexto(6)" class="alternativas-teste">Título do livro</div>
-            <div onclick="insereTexto(7)" class="alternativas-teste"><strong>TÍTULO DO LIVRO</strong></div>
-            <div onclick="insereTexto(8)" class="alternativas-teste"><strong>Título do livro</strong></div>
+        <div class="select-exe4-box">
+          <select class="alternativas-exe1" id="alternativas1" onchange="toggleValueSelect()">
+            <option value="">Escolha uma opção</option>
+            <option value="option1">Nome, SOBRENOME</option>
+            <option value="option2">SOBRENOME, Nome</option>
+            <option value="option3">SOBRENOME, NOME</option>
+            <option value="option4">SOBRENOME, nome</option>
+          </select>
+          <hr>
+          <div>
+            <span style="margin-top: -10%; margin-left: 100px;" id="expand-teste4" class="material-icons open-secao4">arrow_drop_down</span>
           </div>
         </div>
 
-        <span style="position: relative; top: 55px; left: 2px;"> .</span>
+        <span style="position: relative; top: 40px; left: 2px;"> .</span>
 
-        <div class="select-teste-secao4">
-          <div onclick="collapseTeste(3)">
-            <p id="texto-option1-div3">Escolha uma opção</p>
-            <span style="margin-top: -10%;" id="expand-teste3" class="material-icons open-secao4">arrow_drop_down</span>
-          </div>
-
-          <div class="alternativas-area" id="alternativas3">
-            <div onclick="insereTexto(9)" class="alternativas-teste"><strong>Cidade</strong></div>
-            <div onclick="insereTexto(10)" class="alternativas-teste"><strong>CIDADE</strong></div>
-            <div onclick="insereTexto(11)" class="alternativas-teste">Cidade</div>
-            <div onclick="insereTexto(12)" class="alternativas-teste">CIDADE</div>
-          </div>
-        </div>
-
-        <span style="position: relative; top: 55px; left: 2px;"> :</span>
-
-        <div class="select-teste-secao4">
-          <div onclick="collapseTeste(4)">
-            <p id="texto-option1-div4">Escolha uma opção</p>
-            <span style="margin-top: -10%;" id="expand-teste4" class="material-icons open-secao4">arrow_drop_down</span>
-          </div>
-
-          <div class="alternativas-area" id="alternativas4">
-            <div onclick="insereTexto(13)" class="alternativas-teste">Editora</div>
-            <div onclick="insereTexto(14)" class="alternativas-teste">EDITORA</div>
-            <div onclick="insereTexto(15)" class="alternativas-teste"><strong>Editora</strong></div>
-            <div onclick="insereTexto(16)" class="alternativas-teste"><strong>EDITORA</strong></div>
+        <div class="select-exe4-box">
+          <select class="alternativas-exe1" id="alternativas2" onchange="toggleValueSelect()">
+            <option value="">Escolha uma opção</option>
+            <option value="option5">TÍTULO DO LIVRO</option>
+            <option value="option6">Título do livro</option>
+            <option value="option7" class="bold-option">TÍTULO DO LIVRO</option>
+            <option value="option8" class="bold-option">Título do livro</option>
+          </select>
+          <hr>
+          <div>
+            <span style="margin-top: -10%; margin-left: 100px;" id="expand-teste4" class="material-icons open-secao4">arrow_drop_down</span>
           </div>
         </div>
 
-        <span style="position: relative; top: 55px; left: 2px;">, ano.</span>
+        <span style="position: relative; top: 40px; left: 2px;"> .</span>
+
+        <div class="select-exe4-box">
+          <select class="alternativas-exe1" id="alternativas3" onchange="toggleValueSelect()">
+            <option value="">Escolha uma opção</option>
+            <option value="option9" class="bold-option">Cidade</option>
+            <option value="option10" class="bold-option">CIDADE</option>
+            <option value="option11">Cidade</option>
+            <option value="option12">CIDADE</option>
+          </select>
+          <hr>
+          <div>
+            <span style="margin-top: -10%; margin-left: 100px;" id="expand-teste4" class="material-icons open-secao4">arrow_drop_down</span>
+          </div>
+        </div>
+
+        <span style="position: relative; top: 40px; left: 2px;"> :</span>
+
+        <div class="select-exe4-box">
+          <select class="alternativas-exe1" id="alternativas4" onchange="toggleValueSelect()">
+            <option value="">Escolha uma opção</option>
+            <option value="option5">Editora</option>
+            <option value="option6">EDITORA</option>
+            <option value="option7" class="bold-option">Editora</option>
+            <option value="option8" class="bold-option">EDITORA</option>
+          </select>
+          <hr>
+          <div>
+            <span style="margin-top: -10%; margin-left: 100px;" id="expand-teste4" class="material-icons open-secao4">arrow_drop_down</span>
+          </div>
+        </div>
+
+        <span style="position: relative; top: 40px; left: 3px;">, ano.</span>
         
       </div>
       
 
-      <div style="text-align: center; margin: 5% 0 -50px 0;">
+      <div style="text-align: center; margin: 4% 0 -50px 0;">
         <button onclick="geraResultado()" id="botao-exe3" style="background-color: #9fffff;" class="botao-resultado">Conferir resultado</button>
       </div>
 
       <div class="resultado-secao4">
         <p>Resposta:</p>
 
-        <div class="respostas-secao4">
+        <div class="resposta-completa">          
           <span class="resposta-box">
-            SOBRENOME, Nome
+            SOBRENOME, Nome.   
           </span>
-          <span class="span-teste-secao4">.</span>
-          
           <span class="resposta-box">
-            <strong>Título do livro</strong>
+            <strong>Título do livro.</strong>
           </span>
-          <span class="span-teste-secao4">.</span>
-  
           <span class="resposta-box">
-            Cidade
+            Cidade:
           </span>
-          <span class="span-teste-secao4">:</span>
-  
           <span class="resposta-box">
-            Editora
-          </span>
-
-          <span style="margin-left: 1%;">, ano.</span>
-        </div>
-
-        <div class="resposta-completa">
-          <span class="resposta-box">
-            SOBRENOME, Nome. <strong>Título do livro.</strong> Cidade: Editora, ano.
+            Editora, ano.
           </span>
         </div>
         
