@@ -304,6 +304,10 @@ nav .jssocials-shares{
   font-weight: bold;
 }
 
+.detaque-mitos{
+  margin-left: -2%;
+}
+
 .destaque-secao4{
   background-color: #ff9cff;
   width: 100%;
@@ -696,6 +700,10 @@ nav .jssocials-shares{
       top: 70%;
       left: 34%;
       z-index: -1;
+  }
+
+  .detaque-mitos{
+    margin-left: 19%;
   }
 
   .justificativa-exe3{
