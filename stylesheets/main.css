@@ -487,7 +487,7 @@ nav .jssocials-shares{
 }
 
 .resultado-secao4{
-  margin-top: 7%;
+  margin-top: 4%;
   display: none;
 }
 .resultado-secao4 p:nth-child(1){
@@ -719,6 +719,12 @@ nav .jssocials-shares{
 
 .bold-option{
   font-weight: bold !important;
+}
+
+.icone-resultado-exe4{
+  height: 50px;
+  margin-left: 105px;
+  display: none;
 }
 
 
