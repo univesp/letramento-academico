@@ -546,7 +546,7 @@ nav .jssocials-shares{
 }
 
 .exercicio2-secao4{
-  margin: 5% 0 0 -10%;
+  margin: 5% 0 0 -2%;
 }
 
 .exercicio2-container{
@@ -600,8 +600,7 @@ nav .jssocials-shares{
 
 .resultado-teste-secao4{
   width: 50px;
-  margin-left: 10%;
-  margin-top: 0;
+  margin-left: -5%;
   display: none;
 }
 
@@ -705,9 +704,7 @@ nav .jssocials-shares{
   padding: 15px;
   height: 55px;
   font-size: 16px;
-  border-radius: 2px;
-
-   
+  border-radius: 2px;   
 }
 
 .select-exe4-box hr{
@@ -725,6 +722,70 @@ nav .jssocials-shares{
   height: 50px;
   margin-left: 105px;
   display: none;
+}
+
+#selectExe4Box1{
+  margin-top: -120px;
+}
+#selectExe4Box2{
+  margin-top: -150px;
+}
+#selectExe4Box3{
+  margin-top: -95px;
+}
+
+.select-exe4-box2 select{ 
+  background-color: #f2f2f2;
+  color: #212529;
+  border: 0;
+  outline: none;
+  width: 330px;
+  padding: 15px;
+  height: 85px;
+  font-size: 16px;
+  border-radius: 2px;   
+  font-weight: bold;
+}
+
+.alternativas-exe4{
+  width: 230px;
+  height: 100px;
+  border: 0;
+  background-color: #dfdfdf;
+  font-size: 1.1em;
+  outline: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='54' viewBox='0 0 24 24' width='84' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 45%;
+  background-position-y: 40px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-left: 25px;
+  margin-top: 10px;
+  padding: 1rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.alternativas-exe4 option{
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.resultado-exercicio4-2{
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
+
+.resultado-exercicio4-2 p{
+  font-size: 16px;
+  font-family: 'Noto Serif', sans-serif;
 }
 
 
