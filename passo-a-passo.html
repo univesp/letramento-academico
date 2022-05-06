@@ -215,42 +215,45 @@
 
     <!--EXERCÍCIO-->
 
-    <div class="exe2-container">
-
-      <div id = "fazer" class="exe2-content">
-        <h3 style="font-size: 27px;">O que devo fazer?</h3>
-        <img style="bottom: 4%; width: 90%;" class="marca-titulo3" src="/assets/22_marcatxt.svg" alt="marca texto do título">
-      </div>
-
-      <div class="linha-divisória exe2-content">
-        <img src="/assets/23_divisoria.svg" alt="linha divisória">
-      </div>
-
-      <div id = "nao-fazer" class="exe2-content">
-        <h3 style="font-size: 27px;">O que não devo fazer?</h3>
-        <img style="bottom: 4.5%; width: 110%;" class="marca-titulo3" src="/assets/22_marcatxt.svg" alt="marca texto do título">
-        <div id="nao-fazer-coluna">
-
-        </div>
-      </div>
-
-    </div>
-
     <div class="exe2Container">
 
     </div>
     
 
     <div class="seta-esquerda">
-      <img id="setaEsquerda" style="cursor: pointer;" width="10%" src="/assets/24_seta.svg" alt="imagem seta direita">
+      <div class="box-alternativa-exe2" id="setaEsquerda">
+        Devo fazer
+      </div> 
     </div>
 
     <div class="seta-direita">
-      <img id="setaDireita" style="cursor: pointer;" width="10%" src="/assets/24_seta.svg" alt="imagem seta direita">
+      <div class="box-alternativa2-exe2" id="setaDireita">
+        Não devo fazer
+      </div> 
     </div>
 
-    <div style="text-align: center; margin: 3% 0 -30px 0;">
-        <button id="exe2" style="background-color: #9eff9e;" class="botao-resultado">Conferir resultado</button>
+    
+    <div style="text-align: center; margin: 0 0 -50px 0; display: none;">
+      <button id="exe2" style="background-color: #9eff9e;" class="botao-resultado">Conferir resultado</button>
+    </div>
+
+    <div class="exe2-container" style="display: none;">
+
+      <div id ="fazer" class="exe2-content">
+        <h3 style="font-size: 27px;">O que devo fazer?</h3>
+        
+      </div>
+
+      
+
+      <div id = "nao-fazer" class="exe2-content">
+        <h3 style="font-size: 27px;">O que não devo fazer?</h3>
+        
+        <div id="nao-fazer-coluna">
+
+        </div>
+      </div>
+
     </div>
 
   <!--FIM EXERCÍCIO-->

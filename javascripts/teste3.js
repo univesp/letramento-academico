@@ -42,9 +42,11 @@ function geraResultado(numero){
   })
 }
 
-function changeColor(){
-  let color1 = document.getElementById('card-v1');
-  let color2 = document.getElementById('card-f1');
+function changeColor(e){
+  let string = Math.ceil(e/2);   
+
+  let color1 = document.getElementById('card-v' + string);
+  let color2 = document.getElementById('card-f' + string);
   color1.style.backgroundColor = "#9fffff";
   color1.disabled = true;
   color1.style.cursor = "default";
@@ -53,9 +55,11 @@ function changeColor(){
   color2.style.cursor = "default";
 }
 
-function changeColorFalse(){
-  let color1 = document.getElementById('card-v1');
-  let color2 = document.getElementById('card-f1');
+function changeColorFalse(e){
+  let string = Math.ceil(e/2);
+
+  let color1 = document.getElementById('card-v' + string);
+  let color2 = document.getElementById('card-f' + string);
   color2.style.backgroundColor = "#ff9cff";
   color2.disabled = true;
   color2.style.cursor = "default";

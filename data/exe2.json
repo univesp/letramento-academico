@@ -79,63 +79,63 @@
   {
     "id": 12,
     "devoFazerGab": false,
-    "devoFazer": false,
+    "devoFazer": true,
     "texto": "Escrever de cabeça, pois já se sabe muito sobre o assunto."
   },
 
   {
     "id": 13,
     "devoFazerGab": false,
-    "devoFazer": false,
+    "devoFazer": true,
     "texto": "Tem gente vendendo o trabalho pronto! É factível a comprar!"
   },
 
   {
     "id": 14,
     "devoFazerGab": false,
-    "devoFazer": false,
+    "devoFazer": true,
     "texto": "Achar trabalhos semelhantes."
   },
 
   {
     "id": 15,
     "devoFazerGab": false,
-    "devoFazer": false,
+    "devoFazer": true,
     "texto": "Aproveitar partes de trabalhos já feitos."
   },
 
   {
     "id": 16,
     "devoFazerGab": false,
-    "devoFazer": false,
+    "devoFazer": true,
     "texto": "Aproveitar todo o trabalho."
   },
 
   {
     "id": 17,
     "devoFazerGab": false,
-    "devoFazer": false,
+    "devoFazer": true,
     "texto": "Encontrar um trabalho igualzinho na internet e baixá-lo."
   },
 
   {
     "id": 18,
     "devoFazerGab": false,
-    "devoFazer": false,
+    "devoFazer": true,
     "texto": "Procurar trabalhos já feitos por colegas que já realizaram a disciplina."
   },
 
   {
     "id": 19,
     "devoFazerGab": false,
-    "devoFazer": false,
+    "devoFazer": true,
     "texto": "Solicitar que façam trabalhos para mim (terceirizar os trabalhos)."
   },
 
   {
     "id": 20,
     "devoFazerGab": false,
-    "devoFazerG": false,
+    "devoFazer": true,
     "texto": "Copiar de outros lugares informações sem a devida citação (plágio)."
   }
   
