@@ -68,6 +68,8 @@ function geraResultado2(){
     botao.disabled = true;
     botao.style.cursor = "default";
 
+    window.scrollTo(0, 3800);
+
   }else{
     alert("Por favor, selecione todas as respostas.");
   }

@@ -461,6 +461,20 @@ nav .jssocials-shares{
   background-color: #fff;
 }
 
+.card-v:hover{
+  background-image: url(/assets/22_marcatxt.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+.card-f:hover{
+  background-image: url(/assets/28_marcatxt4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
 .justificativa-exe3{
   border: 2px solid black;
   min-height: 100px;

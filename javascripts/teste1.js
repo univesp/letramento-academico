@@ -89,6 +89,8 @@ function geraResultado(){
       
       e.after(resposta);
     })
+
+    window.scrollTo(0, 2200);
   }  
 
     // Mostrando as respostas corretas
