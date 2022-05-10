@@ -57,6 +57,13 @@ nav .jssocials-shares{
   color: black;
 }
 
+.introducao-tipos-titulo{
+  background-image: url(/assets/06_marcatitulo2.svg);
+  background-repeat: no-repeat;
+  background-position: 0 94%;
+  background-size: 75%;
+}
+
 .tipos-trabalho mark, #pagina-1 mark{
   background-color: #fcee21;
   padding: 0 0.2em;
@@ -237,7 +244,7 @@ nav .jssocials-shares{
 .card-teste p{
   width: 90%;
   text-align: left;
-  margin: -3% 0 0 7%;
+  margin: 5% 0 0 7%;
 }
 
 .alinhamento{
@@ -245,10 +252,25 @@ nav .jssocials-shares{
   top: 40%;
 }
 
-.card-mark{
-  width: 60%;
-  position: relative;
-  bottom: 14%;
+.card-teste:nth-child(1) h3, .card-teste:nth-child(4) h3{
+  background-image: url(/assets/10_marcatxt-info-1.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 800px 130%;
+}
+
+.card-teste:nth-child(2) h3, .card-teste:nth-child(3) h3{
+  background-image: url(/assets/11_marcatxt-info-2.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 800px 130%;
+}
+
+.card-teste:nth-child(5) h3{
+  background-image: url(/assets/11_marcatxt-info-2.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 800px 100%;
 }
 
 .teste-area{
