@@ -114,23 +114,6 @@ nav .jssocials-shares{
   background-color: #ff33cc;
 }
 
-.marca-titulo{
-  z-index: -10;
-  position: relative;
-  bottom: 27%;
-}
-.marca-titulo2{
-  z-index: -10;
-  position: relative;
-  bottom: 18%;
-}
-.marca-titulo3{
-  z-index: -10;
-  position: relative;
-  bottom: 14%;
-  right: 4%;
-}
-
 .secoes-links{
   margin-left: 15%;
 }
