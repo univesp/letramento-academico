@@ -171,187 +171,197 @@
       </div>
 
 
-      <p style="margin-top: 50px;">
-        <button onclick="toggleExpand()" class="dropdown-teste" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-          <h2 style="font-size: 21px;">Você conhece os diferentes tipos de trabalho acadêmico? <br> Veja neste infográfico as características de cada um!</h2>
-          <span id="expand1" class="material-icons open-dropdown">expand_more</span>
-        </button>
-      </p>
-      <div class="collapse" id="collapseExample">
-        <div class="card-container" id="container-teste">
-          <div class="card-teste "> 
-            <h3>Resumo e resenha</h3>
-            <p>Não se trata de um trabalho de produção autoral, mas auxilia no estudo de textos produzidos por outros autores. É um bom instrumento para destacar as ideias centrais dos autores e/ou documentar as referências para citá-las em trabalhos futuros.</p>
-          </div>
-  
-          <div class="card-teste alinhamento">
-            <h3>Relatório Técnico</h3>
-            <p>Serve para registrar o caminho percorrido em um trabalho de pesquisa ou desenvolvimento de um projeto. Nesse tipo de trabalho, é comum que se retomem os objetivos do projeto e apresente-se a descrição das atividades realizadas.</p>
-          </div>
-  
-          <div class="card-teste" style="height: 310px;">
-            <h3>Artigo científico</h3>
-            <p>Tem a estrutura de um trabalho científico em geral, mas apresenta as informações de forma concisa, visando a publicação em revistas e periódicos científicos. Está ligado ao conceito de divulgação científica, pois busca divulgar os resultados de uma pesquisa para a comunidade acadêmica e para a sociedade em geral.</p>
-          </div>
-  
-          <div class="card-teste alinhamento" style="height: 310px;">
-            <h3>Monografia</h3>
-            <p>Discorre sobre um tema ou assunto específico. Na graduação, faz parte do processo de aprendizagem sobre como desenvolver e relatar uma pesquisa. Na pós-graduação, a tese de doutorado ou a dissertação de mestrado apresentam resultados de pesquisas amplas e rigorosas desenvolvidas pelo pesquisador.</p>
-          </div>
-  
-          <div class="card-teste" style="height: 310px;">
-            <h3>Trabalho de Conclusão <br> de Curso (TCC)</h3>
-            <p >Faz parte da matriz curricular de muitos cursos de graduação. Articula os conhecimentos desenvolvidos ao longo do curso com um projeto de pesquisa a ser desenvolvido em determinado período. O formato varia dependendo do curso e das orientações de cada instituição de ensino.</p>
-          </div>
-  
-          <div style="position: relative; z-index: 10; top: 43%;">
-            <p style="text-align: left;">Adaptado de SEVERINO, Antônio Joaquim. <br> <strong>Metodologia do trabalho científico.</strong> 23 ed. <br> rev. e atual. São Paulo: Cortez, 2007.</p>
-          </div>
-          
-        </div>
-      </div>
 
-      
 
-      <!-- INICIO DO EXERCÍCIO -->
-      <p style="margin-top: 50px;">
-        <button onclick="toggleExpand2()" class="dropdown-teste" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-          <h2 style="font-size: 21px;">Se você já conhece, teste os seus conhecimentos no jogo a seguir.</h2>
-          <span id="expand2" class="material-icons open-dropdown">expand_more</span>
-        </button>
-      </p>
 
-      <div class="collapse" id="collapseExample2">
-        <div style="display: block" class="card-container2" id="container-teste2">
+
+      <div class="accordion" id="accordionExample">
+        <div style="margin-top: 50px;">
+
+          <button onclick="toggleExpand()" class="dropdown-teste" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <h2 style="font-size: 21px;">Você conhece os diferentes tipos de trabalho acadêmico? <br> Veja neste infográfico as características de cada um!</h2>
+            <span id="expand1" class="material-icons open-dropdown">expand_more</span>
+          </button>
         
-          <div class="teste-area">
-  
-            <div class="select-exe1-box">
-              <span>Tipo de texto</span>
-              <select class="alternativas-exe1" id="alternativas1" onchange="toggleValueSelect()">
-                <option value="">------ Selecione ------</option>
-                <option value="option1">Artigo científico</option>
-                <option value="option2">Monografia</option>
-                <option value="option3">Relatório técnico</option>
-                <option value="option4">Resumo e resenha</option>
-                <option title="Trabalho de Conclusão de Curso" value="option5">TCC</option>
-              </select>
-            </div>
-  
-            <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
-              <p style="margin: 3.5% 0 0 5%;">Não se trata de um trabalho de produção autoral, mas auxilia no estudo de textos produzidos por outros autores. É um bom instrumento para destacar as ideias centrais dos autores e/ou documentar as referências para citá-las em trabalhos futuros.</p>
-            </div>
-  
-            <div class="resultado-teste" id="resultado-div1">
-              <img id="resultadoImg1" src="/assets/12_certo.svg" alt="icone de resposta correta">
-            </div>
-  
-          </div>
-  
-          <div class="teste-area">
-  
-            <div class="select-exe1-box">
-              <span>Tipo de texto</span>
-              <select class="alternativas-exe1" id="alternativas2" onchange="toggleValueSelect()">
-                <option value="">------ Selecione ------</option>
-                <option value="option1">Artigo científico</option>
-                <option value="option2">Monografia</option>
-                <option value="option3">Relatório técnico</option>
-                <option value="option4">Resumo e resenha</option>
-                <option title="Trabalho de Conclusão de Curso" value="option5">TCC</option>
-              </select>
-            </div>
-    
-              <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
-                <p style="margin: 3.5% 0 0 5%;">Serve para registrar o caminho percorrido em um trabalho de pesquisa ou desenvolvimento de um projeto. Nesse tipo de trabalho, é comum que se retomem os objetivos do projeto e apresente-se a descrição das atividades realizadas.</p>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-container" id="container-teste">
+              <div class="card-teste "> 
+                <h3>Resumo e resenha</h3>
+                <p>Não se trata de um trabalho de produção autoral, mas auxilia no estudo de textos produzidos por outros autores. É um bom instrumento para destacar as ideias centrais dos autores e/ou documentar as referências para citá-las em trabalhos futuros.</p>
               </div>
-    
-              <div class="resultado-teste" style="margin-top: 3%;" id="resultado-div2">
-                <img id="resultadoImg2" src="/assets/12_certo.svg" alt="icone de resposta correta">
+      
+              <div class="card-teste alinhamento">
+                <h3>Relatório Técnico</h3>
+                <p>Serve para registrar o caminho percorrido em um trabalho de pesquisa ou desenvolvimento de um projeto. Nesse tipo de trabalho, é comum que se retomem os objetivos do projeto e apresente-se a descrição das atividades realizadas.</p>
+              </div>
+      
+              <div class="card-teste" style="height: 310px;">
+                <h3>Artigo científico</h3>
+                <p>Tem a estrutura de um trabalho científico em geral, mas apresenta as informações de forma concisa, visando a publicação em revistas e periódicos científicos. Está ligado ao conceito de divulgação científica, pois busca divulgar os resultados de uma pesquisa para a comunidade acadêmica e para a sociedade em geral.</p>
+              </div>
+      
+              <div class="card-teste alinhamento" style="height: 310px;">
+                <h3>Monografia</h3>
+                <p>Discorre sobre um tema ou assunto específico. Na graduação, faz parte do processo de aprendizagem sobre como desenvolver e relatar uma pesquisa. Na pós-graduação, a tese de doutorado ou a dissertação de mestrado apresentam resultados de pesquisas amplas e rigorosas desenvolvidas pelo pesquisador.</p>
+              </div>
+      
+              <div class="card-teste" style="height: 310px;">
+                <h3>Trabalho de Conclusão <br> de Curso (TCC)</h3>
+                <p >Faz parte da matriz curricular de muitos cursos de graduação. Articula os conhecimentos desenvolvidos ao longo do curso com um projeto de pesquisa a ser desenvolvido em determinado período. O formato varia dependendo do curso e das orientações de cada instituição de ensino.</p>
+              </div>
+      
+              <div style="position: relative; z-index: 10; top: 43%;">
+                <p style="text-align: left;">Adaptado de SEVERINO, Antônio Joaquim. <br> <strong>Metodologia do trabalho científico.</strong> 23 ed. <br> rev. e atual. São Paulo: Cortez, 2007.</p>
               </div>
               
             </div>
-  
-            <div class="teste-area">
-  
-              <div class="select-exe1-box">
-                <span>Tipo de texto</span>
-                <select class="alternativas-exe1" id="alternativas3" onchange="toggleValueSelect()">
-                  <option value="">------ Selecione ------</option>
-                  <option value="option1">Artigo científico</option>
-                  <option value="option2">Monografia</option>
-                  <option value="option3">Relatório técnico</option>
-                  <option value="option4">Resumo e resenha</option>
-                  <option title="Trabalho de Conclusão de Curso" value="option5">TCC</option>
-                </select>
-              </div>
-      
-                <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
-                  <p style="margin: 2% 0 0 5%;">Tem a estrutura de um trabalho científico em geral, mas apresenta as informações de forma concisa, visando a publicação em revistas e periódicos científicos. Está ligado ao conceito de divulgação científica, pois busca divulgar os resultados de uma pesquisa para a comunidade acadêmica e para a sociedade em geral. </p>
-                </div>
-      
-                <div class="resultado-teste" style="margin-top: 4.5%;" id="resultado-div3">
-                  <img id="resultadoImg3" src="/assets/13_errado.svg" alt="icone de resposta correta">
-                </div>
-                
-            </div>
-  
-            <div class="teste-area">
-  
-              <div class="select-exe1-box">
-                <span>Tipo de texto</span>
-                <select class="alternativas-exe1" id="alternativas4" onchange="toggleValueSelect()">
-                  <option value="">------ Selecione ------</option>
-                  <option value="option1">Artigo científico</option>
-                  <option value="option2">Monografia</option>
-                  <option value="option3">Relatório técnico</option>
-                  <option value="option4">Resumo e resenha</option>
-                  <option title="Trabalho de Conclusão de Curso" value="option5">TCC</option>
-                </select>
-              </div>
-      
-                <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
-                  <p style="margin: 2% 0 0 5%;">Discorre sobre um tema ou assunto específico. Na graduação, faz parte do processo de aprendizagem sobre como desenvolver e relatar uma pesquisa. Na pós-graduação, a tese de doutorado ou a dissertação de mestrado apresentam resultados de pesquisas amplas e rigorosas desenvolvidas pelo pesquisador.</p>
-                </div>
-      
-                <div class="resultado-teste" style="margin-top: 4.5%;" id="resultado-div4">
-                  <img id="resultadoImg4" src="/assets/12_certo.svg" alt="icone de resposta correta">
-                </div>
-                
-            </div>
-  
-            <div class="teste-area">
-  
-              <div class="select-exe1-box">
-                <span>Tipo de texto</span>
-                <select class="alternativas-exe1" id="alternativas5" onchange="toggleValueSelect()">
-                  <option value="">------ Selecione ------</option>
-                  <option value="option1">Artigo científico</option>
-                  <option value="option2">Monografia</option>
-                  <option value="option3">Relatório técnico</option>
-                  <option value="option4">Resumo e resenha</option>
-                  <option title="Trabalho de Conclusão de Curso" value="option5">TCC</option>
-                </select>
-              </div>
-      
-                <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
-                  <p style="margin: 2% 0 0 7%;">Faz parte da matriz curricular de muitos cursos de graduação. Articula os conhecimentos desenvolvidos ao longo do curso com um projeto de pesquisa a ser desenvolvido em determinado período. O formato varia dependendo do curso e das orientações de cada instituição de ensino. </p>
-                </div>
-      
-                <div class="resultado-teste" style="margin-top: 4.5%;" id="resultado-div5">
-                  <img id="resultadoImg5" src="/assets/13_errado.svg" alt="icone de resposta correta">
-                </div>
-                
-            </div>
-  
-            <p style="text-align: center;">Adaptado de SEVERINO, Antônio Joaquim. <strong>Metodologia do trabalho científico.</strong> 23 ed. rev. e atual. São Paulo: Cortez, 2007.</p>
-  
-            <div style="text-align: center; margin: 5% 0 0 0;">
-                <button type="button" onclick="geraResultado()" class="botao-resultado">Conferir resultado</button>
-            </div>
-            
-  
+          </div>
+
         </div>
+
+        <!-- INICIO DO EXERCÍCIO -->
+        <div style="margin-top: 50px;">
+          
+          <button onclick="toggleExpand2()" class="dropdown-teste" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <h2 style="font-size: 21px;">Se você já conhece, teste os seus conhecimentos no jogo a seguir.</h2>
+            <span id="expand2" class="material-icons open-dropdown">expand_more</span>
+          </button>
+           
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div style="display: block" class="card-container2" id="container-teste2">
+        
+              <div class="teste-area">
+      
+                <div class="select-exe1-box">
+                  <span>Tipo de texto</span>
+                  <select class="alternativas-exe1" id="alternativas1" onchange="toggleValueSelect()">
+                    <option value="">------ Selecione ------</option>
+                    <option value="option1">Artigo científico</option>
+                    <option value="option2">Monografia</option>
+                    <option value="option3">Relatório técnico</option>
+                    <option value="option4">Resumo e resenha</option>
+                    <option title="Trabalho de Conclusão de Curso" value="option5">TCC</option>
+                  </select>
+                </div>
+      
+                <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
+                  <p style="margin: 3.5% 0 0 5%;">Não se trata de um trabalho de produção autoral, mas auxilia no estudo de textos produzidos por outros autores. É um bom instrumento para destacar as ideias centrais dos autores e/ou documentar as referências para citá-las em trabalhos futuros.</p>
+                </div>
+      
+                <div class="resultado-teste" id="resultado-div1">
+                  <img id="resultadoImg1" src="/assets/12_certo.svg" alt="icone de resposta correta">
+                </div>
+      
+              </div>
+      
+              <div class="teste-area">
+      
+                <div class="select-exe1-box">
+                  <span>Tipo de texto</span>
+                  <select class="alternativas-exe1" id="alternativas2" onchange="toggleValueSelect()">
+                    <option value="">------ Selecione ------</option>
+                    <option value="option1">Artigo científico</option>
+                    <option value="option2">Monografia</option>
+                    <option value="option3">Relatório técnico</option>
+                    <option value="option4">Resumo e resenha</option>
+                    <option title="Trabalho de Conclusão de Curso" value="option5">TCC</option>
+                  </select>
+                </div>
+        
+                  <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
+                    <p style="margin: 3.5% 0 0 5%;">Serve para registrar o caminho percorrido em um trabalho de pesquisa ou desenvolvimento de um projeto. Nesse tipo de trabalho, é comum que se retomem os objetivos do projeto e apresente-se a descrição das atividades realizadas.</p>
+                  </div>
+        
+                  <div class="resultado-teste" style="margin-top: 3%;" id="resultado-div2">
+                    <img id="resultadoImg2" src="/assets/12_certo.svg" alt="icone de resposta correta">
+                  </div>
+                  
+                </div>
+      
+                <div class="teste-area">
+      
+                  <div class="select-exe1-box">
+                    <span>Tipo de texto</span>
+                    <select class="alternativas-exe1" id="alternativas3" onchange="toggleValueSelect()">
+                      <option value="">------ Selecione ------</option>
+                      <option value="option1">Artigo científico</option>
+                      <option value="option2">Monografia</option>
+                      <option value="option3">Relatório técnico</option>
+                      <option value="option4">Resumo e resenha</option>
+                      <option title="Trabalho de Conclusão de Curso" value="option5">TCC</option>
+                    </select>
+                  </div>
+          
+                    <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
+                      <p style="margin: 2% 0 0 5%;">Tem a estrutura de um trabalho científico em geral, mas apresenta as informações de forma concisa, visando a publicação em revistas e periódicos científicos. Está ligado ao conceito de divulgação científica, pois busca divulgar os resultados de uma pesquisa para a comunidade acadêmica e para a sociedade em geral. </p>
+                    </div>
+          
+                    <div class="resultado-teste" style="margin-top: 4.5%;" id="resultado-div3">
+                      <img id="resultadoImg3" src="/assets/13_errado.svg" alt="icone de resposta correta">
+                    </div>
+                    
+                </div>
+      
+                <div class="teste-area">
+      
+                  <div class="select-exe1-box">
+                    <span>Tipo de texto</span>
+                    <select class="alternativas-exe1" id="alternativas4" onchange="toggleValueSelect()">
+                      <option value="">------ Selecione ------</option>
+                      <option value="option1">Artigo científico</option>
+                      <option value="option2">Monografia</option>
+                      <option value="option3">Relatório técnico</option>
+                      <option value="option4">Resumo e resenha</option>
+                      <option title="Trabalho de Conclusão de Curso" value="option5">TCC</option>
+                    </select>
+                  </div>
+          
+                    <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
+                      <p style="margin: 2% 0 0 5%;">Discorre sobre um tema ou assunto específico. Na graduação, faz parte do processo de aprendizagem sobre como desenvolver e relatar uma pesquisa. Na pós-graduação, a tese de doutorado ou a dissertação de mestrado apresentam resultados de pesquisas amplas e rigorosas desenvolvidas pelo pesquisador.</p>
+                    </div>
+          
+                    <div class="resultado-teste" style="margin-top: 4.5%;" id="resultado-div4">
+                      <img id="resultadoImg4" src="/assets/12_certo.svg" alt="icone de resposta correta">
+                    </div>
+                    
+                </div>
+      
+                <div class="teste-area">
+      
+                  <div class="select-exe1-box">
+                    <span>Tipo de texto</span>
+                    <select class="alternativas-exe1" id="alternativas5" onchange="toggleValueSelect()">
+                      <option value="">------ Selecione ------</option>
+                      <option value="option1">Artigo científico</option>
+                      <option value="option2">Monografia</option>
+                      <option value="option3">Relatório técnico</option>
+                      <option value="option4">Resumo e resenha</option>
+                      <option title="Trabalho de Conclusão de Curso" value="option5">TCC</option>
+                    </select>
+                  </div>
+          
+                    <div style="margin: 1% 0 5% 3%; width: 590px; height: 145px;" class="card-teste">
+                      <p style="margin: 2% 0 0 7%;">Faz parte da matriz curricular de muitos cursos de graduação. Articula os conhecimentos desenvolvidos ao longo do curso com um projeto de pesquisa a ser desenvolvido em determinado período. O formato varia dependendo do curso e das orientações de cada instituição de ensino. </p>
+                    </div>
+          
+                    <div class="resultado-teste" style="margin-top: 4.5%;" id="resultado-div5">
+                      <img id="resultadoImg5" src="/assets/13_errado.svg" alt="icone de resposta correta">
+                    </div>
+                    
+                </div>
+      
+                <p style="text-align: center;">Adaptado de SEVERINO, Antônio Joaquim. <strong>Metodologia do trabalho científico.</strong> 23 ed. rev. e atual. São Paulo: Cortez, 2007.</p>
+      
+                <div style="text-align: center; margin: 5% 0 0 0;">
+                    <button type="button" onclick="geraResultado()" class="botao-resultado">Conferir resultado</button>
+                </div>
+                
+      
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
