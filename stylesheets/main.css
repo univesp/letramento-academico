@@ -36,6 +36,14 @@ nav .jssocials-shares{
 
 .introducao p{
   width: 115%;
+  margin-top: 5%;
+}
+
+.titulo-rea{
+  background-image: url(/assets/00_marcatitulo1.svg), url(/assets/01_marcatxt2.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 5% 40%, 5% 95%;
+  background-size: auto, 85%;
 }
 
 .introducao-tipos p{
@@ -95,6 +103,19 @@ nav .jssocials-shares{
 }
 .livro-intro2{
   width: 41.11%;
+}
+
+#livro1:hover{
+  background-image: url(/assets/02_botaosecao01-hover.svg);
+}
+#livro2:hover{
+  background-image: url(/assets/03_botaosecao02-hover.svg);
+}
+#livro3:hover{
+  background-image: url(/assets/04_botaosecao03-hover.svg);
+}
+#livro4:hover{
+  background-image: url(/assets/05_botaosecao04-hover.svg);
 }
 
 .secoes-links a{
