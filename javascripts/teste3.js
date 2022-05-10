@@ -53,6 +53,7 @@ function changeColor(e){
   color1.style.color = "#121212";
   color2.disabled = true;
   color2.style.cursor = "default";
+  color2.style.backgroundImage = "none";
 }
 
 function changeColorFalse(e){
@@ -66,4 +67,5 @@ function changeColorFalse(e){
   color2.style.color = "#121212";
   color1.disabled = true;
   color1.style.cursor = "default";
+  color1.style.backgroundImage = "none";
 }
