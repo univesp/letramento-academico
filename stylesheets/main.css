@@ -64,6 +64,36 @@ nav .jssocials-shares{
   background-size: 75%;
 }
 
+.passo-titulo{
+  background-image: url(/assets/00_marcatitulo1.svg);
+  background-repeat: no-repeat;
+  background-position: 0 94%;
+  background-size: 100%;
+}
+
+.mitos-titulo{
+  background-image: url(/assets/25_marcatitulo3.svg);
+  background-repeat: no-repeat;
+  background-position: 0 94%;
+  background-size: 93%;
+}
+
+.citacoes-titulo{
+  background-image: url(/assets/27_marcatitulo4.svg);
+  background-repeat: no-repeat;
+  background-position: 0 94%;
+  background-size: 60%;
+}
+
+.secao4-titulo-teste{
+  background-image: url(/assets/28_marcatxt4.svg);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 220px;
+  background-origin: content-box;
+  margin-bottom: 25px;
+}
+
 .tipos-trabalho mark, #pagina-1 mark{
   background-color: #fcee21;
   padding: 0 0.2em;
@@ -614,7 +644,7 @@ nav .jssocials-shares{
 }
 
 .options-area{
-  margin-top: 2%; 
+  margin-top: 7%; 
   margin-bottom: 2%;
   display: flex;
   width: 100%;
@@ -922,7 +952,7 @@ nav .jssocials-shares{
       position: absolute;
       height: 1325px;
       border-left: 10px dotted #9fffff;
-      top: 68%;
+      top: 70%;
       left: 34%;
       z-index: -1;
   }
