@@ -69,28 +69,22 @@ function leaveHover(id){
 function toggleExpand(){
   let expand01 = document.getElementById('expand1');
   let spanTexto = document.getElementById('expand1').innerText;
-  let container = document.getElementById('container-teste');
 
   if(spanTexto === "expand_more"){
     expand01.innerHTML = "expand_less";
-    container.style.display = "grid";
   }else{
     expand01.innerHTML = "expand_more";
-    container.style.display = "none";
   }  
 }
 
 function toggleExpand2(){
   let expand02 = document.getElementById('expand2');
   let spanTexto2 = document.getElementById('expand2').innerText;
-  let container2 = document.getElementById('container-teste2');
 
   if(spanTexto2 === "expand_more"){
     expand02.innerHTML = "expand_less";
-    container2.style.display = "block";
   }else{
     expand02.innerHTML = "expand_more";
-    container2.style.display = "none";
   }  
 }
 

@@ -90,7 +90,12 @@ function geraResultado(){
       e.after(resposta);
     })
 
+    //scrolla pagina para inicio do teste depois de conferir resultado
     window.scrollTo(0, 2200);
+
+    //aumenta area do exercício depois de conferir resultado
+    let areaExe = document.querySelector('.card-container2');
+    areaExe.style.height = "1500px";
   }  
 
     // Mostrando as respostas corretas

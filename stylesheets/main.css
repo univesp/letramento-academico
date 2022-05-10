@@ -170,14 +170,27 @@ nav .jssocials-shares{
 }
 
 .card-container{
-  display: none;
+  display: grid;
   grid-template-columns: 50% 50%;
-  margin-top: 20px;
   margin-left: 5%;
   background-color: #ffffa0;
   width: 92%;
   margin-top: 0;
   justify-items: center;
+  height: 1150px;
+  margin-top: -16px;
+}
+
+.card-container2{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 5%;
+  background-color: #ffffa0;
+  width: 92%;
+  margin-top: 0;
+  justify-items: center;
+  height: 1250px;
+  margin-top: -16px;
 }
 
 .card-teste{
