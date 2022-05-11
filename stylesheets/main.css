@@ -486,6 +486,23 @@ nav .jssocials-shares{
   justify-content: center;
 }
 
+.num-box-exe2{
+  margin-top: 70px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.progress{
+  width: 34.5%;
+  margin-top: 25px;
+  margin-left: 33%;
+}
+
+.progress-bar{
+  width: 0%;
+  background-color: #9eff9e;
+}
+
 .exe3-row{
   display: flex;
   flex-direction: row;

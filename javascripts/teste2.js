@@ -11,6 +11,11 @@ let fazer = document.querySelector("#fazer");
 let naoFazer = document.querySelector("#nao-fazer");
 let btnVerifica = document.querySelector("#exe2");
 let index = 0;
+let progress = document.querySelector('.progress');
+let newProgress = 0;
+let clickProgresso = 0;
+let $counter = $('.progress-bar');
+let numBoxCounter = 1;
 
 //Setters
 setaDireita.addEventListener('click', fSetaDireita);
@@ -50,14 +55,19 @@ function fErrado(idjson){
 
 function primeiroPasso(){
   let texto = json[0].texto;
-  let elemento = criaElemento(texto, 'card-teste-exe2');
+  let elemento = criaElemento(texto, 'card-teste-exe2', '1','1/20');
   caixaDoMeio.appendChild(elemento)
 }
 
 function fSetaDireita(texto){
+  newProgress = newProgress + 5;
+
+  $counter.attr('aria-valuenow', newProgress+'%').css('width', newProgress+'%');
+  
+
   if(click < numTextos){
 
-    let elemento2 = criaElemento(json[click].texto, 'card-teste-exe2-coluna', 'coluna-naoDevoFazer');
+    let elemento2 = criaElemento(json[click].texto, 'card-teste-exe2-coluna', 'coluna-naoDevoFazer', ' ');
     elemento2.dataset.id = json[click].id;
     naoFazer.appendChild(elemento2);
 
@@ -66,21 +76,27 @@ function fSetaDireita(texto){
       apagarCaixaDoMeio();
       atualizaJsonDevoFazer(index, false);
       index++;
-      let elemento1 = criaElemento(json[click].texto, 'card-teste-exe2');
+      numBoxCounter++;
+      let elemento1 = criaElemento(json[click].texto, 'card-teste-exe2', 'card-teste-exe2', String(numBoxCounter)+'/20');
       caixaDoMeio.appendChild(elemento1);
     }else{
-      apagaSetaseCaixaDoMeio();
-      mostraResultado();
-      fVerifica();
+      setTimeout(() => {apagaSetaseCaixaDoMeio()}, 1000);
+      setTimeout(() => {mostraResultado()}, 1000);
+      setTimeout(() => {fVerifica()}, 1000);
     }    
     
   }
 }
 
 function fSetaEsquerda(texto){
+  newProgress = newProgress + 5;
+
+  $counter.attr('aria-valuenow', newProgress+'%').css('width', newProgress+'%');
+  
+
   if(click < numTextos){
     //Construção do elemento 
-    let elemento2 = criaElemento(json[click].texto, 'card-teste-exe2-coluna', 'coluna-devoFazer');
+    let elemento2 = criaElemento(json[click].texto, 'card-teste-exe2-coluna', 'coluna-devoFazer', '');
     fazer.appendChild(elemento2);
     elemento2.dataset.id = json[click].id;
 
@@ -93,29 +109,34 @@ function fSetaEsquerda(texto){
       apagarCaixaDoMeio();
       atualizaJsonDevoFazer(index, true);
       index++;
-      let elemento1 = criaElemento(json[click].texto, 'card-teste-exe2');
+      numBoxCounter++;
+      let elemento1 = criaElemento(json[click].texto, 'card-teste-exe2', 'card-teste-exe2', String(numBoxCounter)+'/20');
       caixaDoMeio.appendChild(elemento1);  
     }else{
-      apagaSetaseCaixaDoMeio();
-      mostraResultado();
-      fVerifica();
+      setTimeout(() => {apagaSetaseCaixaDoMeio()}, 1000);
+      setTimeout(() => {mostraResultado()}, 1000);
+      setTimeout(() => {fVerifica()}, 1000);
     }
     
   }
 }
 
-function criaElemento(texto, classe, classe2){
+function criaElemento(texto, classe, classe2, numBox){
   let div = document.createElement('div');
   div.classList.add(classe);
   div.classList.add(classe2);
   let p = document.createElement('p');
+  let span = document.createElement('span');
+  span.classList.add('num-box-exe2')
   div.appendChild(p);
+  div.appendChild(span);
   let img = document.createElement('img')
   img.style.width = '35px'
   img.style.height = '35px'
   img.style.display = 'none'
   div.appendChild(img);
   p.innerHTML = texto;
+  span.innerHTML = numBox;
   return div
 }
 
@@ -134,6 +155,7 @@ function apagaSetaseCaixaDoMeio(){
   setaDireita.style.display = "none";
   setaEsquerda.style.display = "none";
   caixaDoMeio.style.display = "none";
+  progress.style.display = "none";
 }
 
 function apagarCaixaDoMeio(){
@@ -146,7 +168,7 @@ function adicionaClick(){
 
 function atualizaJsonDevoFazer(i, value){
   //console.log(json, click, 'i: ' + i)
-  console.log(value);
+  
   json[i].devoFazer = value;
 }
 
