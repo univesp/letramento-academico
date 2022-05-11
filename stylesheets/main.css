@@ -46,6 +46,26 @@ nav .jssocials-shares{
   background-size: auto, 85%;
 }
 
+.explore-inicial{
+  background-image: url(/assets/10_marcatxt-info-1.svg);
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+  background-size: 65%;
+}
+.explore-inicial h3{
+  margin-left: 2%;
+}
+
+.explore-inicial2{
+  background-image: url(/assets/11_marcatxt-info-2.svg);
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+  background-size: 58%;
+}
+.explore-inicial2 h3{
+  margin-left: 2%;
+}
+
 .introducao-tipos p{
   width: 110%;
 }
@@ -89,8 +109,7 @@ nav .jssocials-shares{
   background-image: url(/assets/28_marcatxt4.svg);
   background-repeat: no-repeat;
   background-position: 0;
-  background-size: 220px;
-  background-origin: content-box;
+  background-size: 170px;
   margin-bottom: 25px;
 }
 
