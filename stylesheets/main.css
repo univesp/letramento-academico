@@ -40,14 +40,14 @@ nav .jssocials-shares{
 }
 
 .titulo-rea{
-  background-image: url(/assets/00_marcatitulo1.svg), url(/assets/01_marcatxt2.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/00_marcatitulo1.svg), url(https://apps.univesp.br/letramento-academico/assets/01_marcatxt2.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: 5% 40%, 5% 95%;
   background-size: auto, 85%;
 }
 
 .explore-inicial{
-  background-image: url(/assets/10_marcatxt-info-1.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/10_marcatxt-info-1.svg);
   background-repeat: no-repeat;
   background-position: 0 40%;
   background-size: 65%;
@@ -57,7 +57,7 @@ nav .jssocials-shares{
 }
 
 .explore-inicial2{
-  background-image: url(/assets/11_marcatxt-info-2.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/11_marcatxt-info-2.svg);
   background-repeat: no-repeat;
   background-position: 0 40%;
   background-size: 58%;
@@ -78,35 +78,35 @@ nav .jssocials-shares{
 }
 
 .introducao-tipos-titulo{
-  background-image: url(/assets/06_marcatitulo2.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/06_marcatitulo2.svg);
   background-repeat: no-repeat;
   background-position: 0 94%;
   background-size: 75%;
 }
 
 .passo-titulo{
-  background-image: url(/assets/00_marcatitulo1.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/00_marcatitulo1.svg);
   background-repeat: no-repeat;
   background-position: 0 94%;
   background-size: 100%;
 }
 
 .mitos-titulo{
-  background-image: url(/assets/25_marcatitulo3.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/25_marcatitulo3.svg);
   background-repeat: no-repeat;
   background-position: 0 94%;
   background-size: 93%;
 }
 
 .citacoes-titulo{
-  background-image: url(/assets/27_marcatitulo4.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/27_marcatitulo4.svg);
   background-repeat: no-repeat;
   background-position: 0 94%;
   background-size: 60%;
 }
 
 .secao4-titulo-teste{
-  background-image: url(/assets/28_marcatxt4.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/28_marcatxt4.svg);
   background-repeat: no-repeat;
   background-position: 0;
   background-size: 170px;
@@ -145,16 +145,16 @@ nav .jssocials-shares{
 }
 
 #livro1:hover{
-  background-image: url(/assets/02_botaosecao01-hover.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/02_botaosecao01-hover.svg);
 }
 #livro2:hover{
-  background-image: url(/assets/03_botaosecao02-hover.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/03_botaosecao02-hover.svg);
 }
 #livro3:hover{
-  background-image: url(/assets/04_botaosecao03-hover.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/04_botaosecao03-hover.svg);
 }
 #livro4:hover{
-  background-image: url(/assets/05_botaosecao04-hover.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/05_botaosecao04-hover.svg);
 }
 
 .secoes-links a{
@@ -285,21 +285,21 @@ nav .jssocials-shares{
 }
 
 .card-teste:nth-child(1) h3, .card-teste:nth-child(4) h3{
-  background-image: url(/assets/10_marcatxt-info-1.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/10_marcatxt-info-1.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: 800px 130%;
 }
 
 .card-teste:nth-child(2) h3, .card-teste:nth-child(3) h3{
-  background-image: url(/assets/11_marcatxt-info-2.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/11_marcatxt-info-2.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: 800px 130%;
 }
 
 .card-teste:nth-child(5) h3{
-  background-image: url(/assets/11_marcatxt-info-2.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/11_marcatxt-info-2.svg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: 800px 100%;
@@ -567,14 +567,14 @@ nav .jssocials-shares{
 }
 
 .card-v:hover{
-  background-image: url(/assets/22_marcatxt.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/22_marcatxt.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
 }
 
 .card-f:hover{
-  background-image: url(/assets/28_marcatxt4.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/28_marcatxt4.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
@@ -832,7 +832,7 @@ nav .jssocials-shares{
   margin-left: 17%;
 }
 .box-alternativa-exe2:hover{
-  background-image: url(/assets/22_marcatxt.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/22_marcatxt.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
@@ -855,14 +855,14 @@ nav .jssocials-shares{
   margin-left: -270px;
 }
 .box-alternativa2-exe2:hover{
-  background-image: url(/assets/28_marcatxt4.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/28_marcatxt4.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%;
 }
 
 .exe2-content h3{
-  background-image: url(/assets/22_marcatxt.svg);
+  background-image: url(https://apps.univesp.br/letramento-academico/assets/22_marcatxt.svg);
   background-repeat: no-repeat;
   background-size: 100%;
 }

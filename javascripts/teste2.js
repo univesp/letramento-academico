@@ -17,6 +17,8 @@ let clickProgresso = 0;
 let $counter = $('.progress-bar');
 let numBoxCounter = 1;
 
+let baseURL = 'https://apps.univesp.br/letramento-academico/assets/';
+
 //Setters
 setaDireita.addEventListener('click', fSetaDireita);
 setaEsquerda.addEventListener('click', fSetaEsquerda);
@@ -44,12 +46,12 @@ function fVerifica(){
 }
 function fCorreto(idjson){
   let elemento = document.querySelector('div[data-id="' + idjson + '"] > img')
-  elemento.src = '/assets/12_certo.svg'
+  elemento.src = baseURL+'12_certo.svg'
   elemento.style.display = 'inherit'
 }
 function fErrado(idjson){
   let elemento = document.querySelector('div[data-id="' + idjson + '"] > img')
-  elemento.src = '/assets/13_errado.svg'
+  elemento.src = baseURL+'13_errado.svg'
   elemento.style.display = 'inherit'
 }
 

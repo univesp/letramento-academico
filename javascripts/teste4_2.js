@@ -6,6 +6,10 @@ let imagem1Exe2 = document.getElementById('resultadoImg1-exe2');
 let imagem2Exe2 = document.getElementById('resultadoImg2-exe2');
 let imagem3Exe2 = document.getElementById('resultadoImg3-exe2');
 
+let baseURL2 = 'https://apps.univesp.br/letramento-academico/assets/';
+
+console.log('estou aqui')
+
 
 function geraResultado2(){
 
@@ -24,21 +28,21 @@ function geraResultado2(){
 
     //Seta os icones de certo ou errado de acordo com a resposta
     if(valueSelected1Exe2 === "option1"){
-      imagem1Exe2.setAttribute('src', '/assets/12_certo.svg');
+      imagem1Exe2.setAttribute('src', baseURL2+'12_certo.svg');
     }else{
-      imagem1Exe2.setAttribute('src', '/assets/13_errado.svg');
+      imagem1Exe2.setAttribute('src', baseURL2+'13_errado.svg');
     }
 
     if(valueSelected2Exe2 === "option5"){
-      imagem2Exe2.setAttribute('src', '/assets/12_certo.svg');
+      imagem2Exe2.setAttribute('src', baseURL2+'12_certo.svg');
     }else{
-      imagem2Exe2.setAttribute('src', '/assets/13_errado.svg');
+      imagem2Exe2.setAttribute('src', baseURL2+'13_errado.svg');
     }
 
     if(valueSelected3Exe2 === "option9"){
-      imagem3Exe2.setAttribute('src', '/assets/12_certo.svg');
+      imagem3Exe2.setAttribute('src', baseURL2+'12_certo.svg');
     }else{
-      imagem3Exe2.setAttribute('src', '/assets/13_errado.svg');
+      imagem3Exe2.setAttribute('src', baseURL2+'13_errado.svg');
     }
 
     let expandIconExe2 = document.querySelectorAll('.alternativas-exe4');
