@@ -964,6 +964,10 @@ nav .jssocials-shares{
   font-family: 'Noto Serif', sans-serif;
 }
 
+.pagina4-titulo-secao{
+  margin-left: 119px;
+}
+
 
 @media screen and (min-width: 1440px) {
   .info-card:not(:last-of-type) .info-card-imagem::after{
@@ -996,5 +1000,9 @@ nav .jssocials-shares{
   }
   .box-alternativa2-exe2{
     margin-left: -390px;
+  }
+
+  .pagina4-titulo-secao{
+    margin-left: 358px;
   }
 }
