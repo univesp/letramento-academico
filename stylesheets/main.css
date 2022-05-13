@@ -965,7 +965,8 @@ nav .jssocials-shares{
 }
 
 .pagina4-titulo-secao{
-  margin-left: 119px;
+  margin-left: 108px;
+  width: 82%;
 }
 
 
@@ -1004,5 +1005,6 @@ nav .jssocials-shares{
 
   .pagina4-titulo-secao{
     margin-left: 358px;
+    width: 60%;
   }
 }
