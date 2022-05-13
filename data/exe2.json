@@ -1,139 +1,139 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "devoFazerGab": true,
     "devoFazer":false,
     "texto": "Preparar-se antes de escrever o texto."
   },
 
   {
-    "id": 2,
+    "id": 1,
     "devoFazerGab": true,
     "devoFazer": false,
     "texto": "Reler textos já vistos nas disciplinas do(s) curso(s)."
   },
 
   {
-    "id": 3,
+    "id": 2,
     "devoFazerGab": true,
     "devoFazer":false,
     "texto": "Ver os vídeos do(s) curso(s) e anotar ideias."
   },
 
   {
-    "id": 4,
+    "id": 3,
     "devoFazerGab": true,
     "devoFazer":false,
     "texto": "Fazer chuva de ideias “brainstorming” para entender como posso construir o trabalho."
   },
 
   {
-    "id": 5,
+    "id": 4,
     "devoFazerGab": true,
     "devoFazer":false,
     "texto": "Visitar bibliotecas virtuais e físicas."
   },
 
   {
-    "id": 6,
+    "id": 5,
     "devoFazerGab": true,
     "devoFazer":false,
     "texto": "Buscar novas leituras em revistas acadêmicas abertas e revistas de divulgação."
   },
 
   {
-    "id": 7,
+    "id": 6,
     "devoFazerGab": true,
     "devoFazer":false,
     "texto": "Procurar informação em recursos abertos em internet."
   },
 
   {
-    "id": 8,
+    "id": 7,
     "devoFazerGab": true,
     "devoFazer":false,
     "texto": "Conversar com amigos."
   },
 
   {
-    "id": 9,
+    "id": 8,
     "devoFazerGab": true,
     "devoFazer":false,
     "texto": "Conversar com pessoas especialistas no tema."
   },
 
   {
-    "id": 10,
+    "id": 9,
     "devoFazerGab": true,
     "devoFazer":false,
     "texto": "Planejar tempos para escrever o texto."
   },
 
   {
-    "id": 11,
+    "id": 10,
     "devoFazerGab": true,
     "devoFazer":false,
     "texto": "Revisar o texto depois de feito."
   },
 
   {
-    "id": 12,
+    "id": 11,
     "devoFazerGab": false,
     "devoFazer": true,
     "texto": "Escrever de cabeça, pois já se sabe muito sobre o assunto."
   },
 
   {
-    "id": 13,
+    "id": 12,
     "devoFazerGab": false,
     "devoFazer": true,
     "texto": "Tem gente vendendo o trabalho pronto! É factível a comprar!"
   },
 
   {
-    "id": 14,
+    "id": 13,
     "devoFazerGab": false,
     "devoFazer": true,
     "texto": "Achar trabalhos semelhantes."
   },
 
   {
-    "id": 15,
+    "id": 14,
     "devoFazerGab": false,
     "devoFazer": true,
     "texto": "Aproveitar partes de trabalhos já feitos."
   },
 
   {
-    "id": 16,
+    "id": 15,
     "devoFazerGab": false,
     "devoFazer": true,
     "texto": "Aproveitar todo o trabalho."
   },
 
   {
-    "id": 17,
+    "id": 16,
     "devoFazerGab": false,
     "devoFazer": true,
     "texto": "Encontrar um trabalho igualzinho na internet e baixá-lo."
   },
 
   {
-    "id": 18,
+    "id": 17,
     "devoFazerGab": false,
     "devoFazer": true,
     "texto": "Procurar trabalhos já feitos por colegas que já realizaram a disciplina."
   },
 
   {
-    "id": 19,
+    "id": 18,
     "devoFazerGab": false,
     "devoFazer": true,
     "texto": "Solicitar que façam trabalhos para mim (terceirizar os trabalhos)."
   },
 
   {
-    "id": 20,
+    "id": 19,
     "devoFazerGab": false,
     "devoFazer": true,
     "texto": "Copiar de outros lugares informações sem a devida citação (plágio)."
