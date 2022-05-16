@@ -69,48 +69,33 @@ function geraResultado(){
     select5.style.cursor = "default";
     select5.style.color = "#000";
 
-    //desabilitando botão depois de finalizar o exercício
+    //mudando texto do botão e mostrando botão de mostrar respostas
     let botao = document.querySelector('.botao-resultado');
-    botao.disabled = true;
-    botao.style.cursor = "default";
-
-
-    //Criando divs das respostas corretas
-    let areaTeste = document.querySelectorAll('.teste-area');
-    let id = 1;
-
-    areaTeste.forEach(e =>  {
-      let resposta = document.createElement('div');
-      resposta.classList.add('resposta-box-exe1');
+    let botao2 = document.querySelector('.botao-respostas');
+    
+    if(botao.innerText === "Conferir resultado"){
+      botao.innerHTML = "Tentar novamente";
+      botao2.style.display = 'inline';
+    } else if(botao.innerText === "Tentar novamente"){
       
-      let p = document.createElement('p');
-      let customId = 'resposta-exe-' + String(id);
-      p.setAttribute('id', customId);
-      id++
-      resposta.appendChild(p);
+      //scrolla pagina para inicio do teste depois de conferir resultado
+      window.scrollTo(0, 2200);
+
+      resetaExercicio();
+
+      //desabilitando botões depois de finalizar o exercício
       
-      e.after(resposta);
-    })
+      botao.innerHTML = "Conferir resultado";
+      
+      botao2.style.display = "none";
+    }
+    
 
     //scrolla pagina para inicio do teste depois de conferir resultado
     window.scrollTo(0, 2200);
 
-    //aumenta area do exercício depois de conferir resultado
-    let areaExe = document.querySelector('.card-container2');
-    areaExe.style.height = "1500px";
+    
   }  
-
-    // Mostrando as respostas corretas
-    let respostaCerta1 = document.getElementById('resposta-exe-1')
-    respostaCerta1.innerHTML = "Resposta certa: " + resposta1.bold() + '.';
-    let respostaCerta2 = document.getElementById('resposta-exe-2')
-    respostaCerta2.innerHTML = "Resposta certa: " + resposta2.bold() + '.';
-    let respostaCerta3 = document.getElementById('resposta-exe-3')
-    respostaCerta3.innerHTML = "Resposta certa: " + resposta3.bold() + '.';
-    let respostaCerta4 = document.getElementById('resposta-exe-4')
-    respostaCerta4.innerHTML = "Resposta certa: " + resposta4.bold() + '.';
-    let respostaCerta5 = document.getElementById('resposta-exe-5')
-    respostaCerta5.innerHTML = "Resposta certa: " + resposta5.bold() + '.';
 
 
   //Seta os icones de certo ou errado de acordo com a resposta
@@ -185,4 +170,76 @@ function toggleValueSelect(){
     select5.style.backgroundColor = "#dfdfdf";
   }
   
+}
+
+function mostraRespostas(){
+  //Criando divs das respostas corretas
+  let areaTeste = document.querySelectorAll('.teste-area');
+  let id = 1;
+
+  areaTeste.forEach(e =>  {
+    let resposta = document.createElement('div');
+    resposta.classList.add('resposta-box-exe1');
+    
+    let p = document.createElement('p');
+    let customId = 'resposta-exe-' + String(id);
+    p.setAttribute('id', customId);
+    id++
+    resposta.appendChild(p);
+    
+    e.after(resposta);
+  })
+
+  // Mostrando as respostas corretas
+  let respostaCerta1 = document.getElementById('resposta-exe-1')
+  respostaCerta1.innerHTML = "Resposta certa: " + resposta1.bold() + '.';
+  let respostaCerta2 = document.getElementById('resposta-exe-2')
+  respostaCerta2.innerHTML = "Resposta certa: " + resposta2.bold() + '.';
+  let respostaCerta3 = document.getElementById('resposta-exe-3')
+  respostaCerta3.innerHTML = "Resposta certa: " + resposta3.bold() + '.';
+  let respostaCerta4 = document.getElementById('resposta-exe-4')
+  respostaCerta4.innerHTML = "Resposta certa: " + resposta4.bold() + '.';
+  let respostaCerta5 = document.getElementById('resposta-exe-5')
+  respostaCerta5.innerHTML = "Resposta certa: " + resposta5.bold() + '.';
+
+  //scrolla pagina para inicio do teste depois de conferir resultado
+  window.scrollTo(0, 2200);
+
+  //aumenta area do exercício depois de conferir resultado
+  let areaExe = document.querySelector('.card-container2');
+  areaExe.style.height = "1500px";
+
+  //desabilitando botões depois de finalizar o exercício
+  let botao = document.querySelector('.botao-resultado');
+  let botao2 = document.querySelector('.botao-respostas');
+  botao.disabled = true;
+  botao.style.cursor = "default";
+  botao2.disabled = true;
+  botao2.style.cursor = "default";
+}
+
+function resetaExercicio(){
+  //escondendo a div dos icones de certo e errado
+  resultadoDiv1.style.display = "none";
+  resultadoDiv2.style.display = "none";
+  resultadoDiv3.style.display = "none";
+  resultadoDiv4.style.display = "none";
+  resultadoDiv5.style.display = "none";
+
+  //habilitando os selects depois de finalizar o exercício
+  select1.removeAttribute('disabled');
+  select1.style.cursor = "pointer";
+  select1.style.color = "#000";
+  select2.removeAttribute('disabled');
+  select2.style.cursor = "pointer";
+  select2.style.color = "#000";
+  select3.removeAttribute('disabled');
+  select3.style.cursor = "pointer";
+  select3.style.color = "#000";
+  select4.removeAttribute('disabled');
+  select4.style.cursor = "pointer";
+  select4.style.color = "#000";
+  select5.removeAttribute('disabled');
+  select5.style.cursor = "pointer";
+  select5.style.color = "#000";
 }

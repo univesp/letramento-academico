@@ -815,6 +815,11 @@ nav .jssocials-shares{
   margin-top: 1.3%;
 }
 
+.botao-respostas{
+  margin-left: 50px;
+  display: none;
+}
+
 .box-alternativa-exe2{
   border: 4px solid #000;
   width: 190px;
