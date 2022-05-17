@@ -16,6 +16,7 @@ let naoFazer = document.querySelector("#nao-fazer");
 let btnVerifica = document.querySelector("#exe2");
 let progress = document.querySelector('.progress');
 let $counter = $('.progress-bar');
+let botoes = document.querySelector('.botoes-exe2');
 
 //Funções
 let leJSON = function() {
@@ -61,9 +62,18 @@ let fSeta = function(){
     }
     //se click = 20 revela o resultado
     else{
+      setaDireita.disabled = true;
+      setaDireita.style.cursor = "default";
+      setaDireita.classList.remove('box-alternativa2-exe2');
+      setaDireita.classList.add('box-alternativa2-exe2-done');
+      setaEsquerda.disabled = true;
+      setaEsquerda.style.cursor = "default";
+      setaEsquerda.classList.remove('box-alternativa-exe2');
+      setaEsquerda.classList.add('box-alternativa-exe2-done');
       setTimeout(() => {apagaSetaseCaixaDoMeio()}, 1000);
       setTimeout(() => {mostraResultado()}, 1000);
       setTimeout(() => {fVerifica()}, 1000);
+      setTimeout(() => {mostraBotoes()}, 1000);
     }
   }  
 }
@@ -110,6 +120,16 @@ let criaElemento = function(texto, classe, classe2, numBox) {
   span.innerHTML = numBox;
   return div
 }
+
+let criaResposta = function(texto, classe) {
+  let div = document.createElement('div');
+  div.classList.add(classe);
+  let p = document.createElement('p');
+  div.appendChild(p);
+  p.innerHTML = texto;
+  return div
+}
+
 let apagaSetaseCaixaDoMeio = function() {
   setaDireita.style.display = "none";
   setaEsquerda.style.display = "none";
@@ -128,6 +148,42 @@ let atualizaJsonDevoFazer = function(i, value) {
 let mostraResultado = function() {
   resultado.style.display = "flex";
 }
+let mostraBotoes = function(){
+  botoes.style.display = 'block';
+}
+
+function tentarNovamente(){
+  document.location.reload(true);
+
+  //scrolla pagina para inicio do teste depois de conferir resultado
+  window.scrollTo(0, 2200);
+}
+
+function mostraRespostas(){
+  //apaga cards das colunas
+  let cards = document.querySelectorAll('.card-teste-exe2-coluna');
+  cards.forEach(e => {
+    (e).remove()
+  })
+
+  //criando cards nas divs corretas
+  json.map(item => {
+    let respostas = criaResposta(item.texto, 'card-teste-exe2-coluna');
+
+    if(item.devoFazerGab === true){
+      fazer.appendChild(respostas)
+    }else{
+      naoFazer.appendChild(respostas)
+    }
+  })
+
+ //Apagando botões depois de finalizar o exercício
+ botoes.style.display = "none";
+
+ //scrolla pagina para inicio do teste depois de conferir resultado
+ window.scrollTo(0, 2700);
+ 
+}
 
 //Setters
 setaDireita.addEventListener('click', fSeta);
@@ -136,3 +192,5 @@ btnVerifica.addEventListener('click', fVerifica);
 
 //Início do processamento
 leJSON()
+
+
