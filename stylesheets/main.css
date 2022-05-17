@@ -1052,6 +1052,17 @@ nav .jssocials-shares{
     margin: 1.5% 0 0 14%;
   }
 
+  .justificativa-exe3:nth-child(1) p{
+    width: 100%;
+  }
+
+  .justificativa-exe3 img{
+    width: 2.5%;
+    position: absolute;
+    right: 18%;
+    margin-top: 0.2%;
+  }
+
   .box-alternativa-exe2{
     margin-top: 4%;
     margin-left: 20%;

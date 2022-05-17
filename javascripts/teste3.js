@@ -12,31 +12,31 @@ function geraResultado(numero){
 
   document.querySelectorAll(".exe3-card").forEach(el=>{
     if(numero === 1 || numero === 2){
-      justificativa1.style.display = "block"
+      justificativa1.style.display = "flex"
     }
     if(numero === 3 || numero === 4){
-      justificativa2.style.display = "block"
+      justificativa2.style.display = "flex"
     }
     if(numero === 5 || numero === 6){
-      justificativa3.style.display = "block"
+      justificativa3.style.display = "flex"
     }
     if(numero === 7 || numero === 8){
-      justificativa4.style.display = "block"
+      justificativa4.style.display = "flex"
     }
     if(numero === 9 || numero === 10){
-      justificativa5.style.display = "block"
+      justificativa5.style.display = "flex"
     }
     if(numero === 11 || numero === 12){
-      justificativa6.style.display = "block"
+      justificativa6.style.display = "flex"
     }
     if(numero === 13 || numero === 14){
-      justificativa7.style.display = "block"
+      justificativa7.style.display = "flex"
     }
     if(numero === 15 || numero === 16){
-      justificativa8.style.display = "block"
+      justificativa8.style.display = "flex"
     }
     if(numero === 17 || numero === 18){
-      justificativa9.style.display = "block"
+      justificativa9.style.display = "flex"
     }
     
   })
