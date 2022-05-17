@@ -600,6 +600,13 @@ nav .jssocials-shares{
   line-height: 2;
 }
 
+.justificativa-exe3 img{
+  width: 4%;
+  position: absolute;
+  right: 13%;
+  margin-top: 0.2%;
+}
+
 .textos-secao4{
   display: flex;
   justify-content: center;
