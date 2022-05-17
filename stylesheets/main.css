@@ -863,7 +863,7 @@ nav .jssocials-shares{
   justify-content: center;
   font-family: 'Noto Serif', sans-serif;
   margin-top: 6%;
-  margin-left: 20%;
+  margin-left: 17%;
   background-color: #fff;
   outline: none;
 }
@@ -910,7 +910,7 @@ nav .jssocials-shares{
   justify-content: center;
   font-family: 'Noto Serif', sans-serif;
   margin-top: -35px;
-  margin-left: -400px;
+  margin-left: -270px;
   background-color: #fff;
   outline: none;
 }
@@ -1033,8 +1033,8 @@ nav .jssocials-shares{
       position: absolute;
       height: 1325px;
       border-left: 10px dotted #9fffff;
-      top: 64%;
-      left: 35.5%;
+      top: 68%;
+      left: 34%;
       z-index: -1;
   }
 
@@ -1074,5 +1074,13 @@ nav .jssocials-shares{
   .pagina4-titulo-secao{
     margin-left: 358px;
     width: 60%;
+  }
+
+  .box-alternativa-exe2-done{
+    margin-left: 20%;
+  }
+
+  .box-alternativa2-exe2-done{
+    margin-left: -400px; 
   }
 }

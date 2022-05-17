@@ -156,7 +156,7 @@ function tentarNovamente(){
   document.location.reload(true);
 
   //scrolla pagina para inicio do teste depois de conferir resultado
-  window.scrollTo(0, 2200);
+  window.scrollTo(0, 2300);
 }
 
 function mostraRespostas(){
@@ -181,7 +181,7 @@ function mostraRespostas(){
  botoes.style.display = "none";
 
  //scrolla pagina para inicio do teste depois de conferir resultado
- window.scrollTo(0, 2700);
+ window.scrollTo(0, 2600);
  
 }
 
