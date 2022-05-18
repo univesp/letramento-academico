@@ -9,26 +9,44 @@ let imagem2 = document.getElementById('resultadoImg2');
 let imagem3 = document.getElementById('resultadoImg3');
 let imagem4 = document.getElementById('resultadoImg4');
 
+let resultado = document.querySelector('.resultado-secao4');
+
 let baseURL = 'https://apps.univesp.br/letramento-academico/assets/';
 
 function geraResultado(){
-  let resultado = document.querySelector('.resultado-secao4');
+  
   let valueSelected1 = document.getElementById('alternativas1').value;
   let valueSelected2 = document.getElementById('alternativas2').value;
   let valueSelected3 = document.getElementById('alternativas3').value;
   let valueSelected4 = document.getElementById('alternativas4').value;
 
   if(valueSelected1 !== "" && valueSelected2 !== "" && valueSelected3 !== "" && valueSelected4 !== ""){
-    resultado.style.display = "block";
+    
     imagem1.style.display = "block";
     imagem2.style.display = "block";
     imagem3.style.display = "block";
     imagem4.style.display = "block";
 
-    //desabilitando botão depois de finalizar o exercício
+    //mudando texto do botão e mostrando botão de mostrar respostas
     let botao = document.querySelector('.botao-resultado');
-    botao.disabled = true;
-    botao.style.cursor = "default";
+    let botao2 = document.querySelector('.botao-respostas');
+    
+    if(botao.innerText === "Conferir resultado"){
+      botao.innerHTML = "Tentar novamente";
+      botao2.style.display = 'inline';
+    } else if(botao.innerText === "Tentar novamente"){
+
+      document.location.reload(true);
+      
+      //scrolla pagina para inicio do teste depois de conferir resultado
+      window.scrollTo(0, 1900);
+
+      //desabilitando botões depois de finalizar o exercício
+      
+      botao.innerHTML = "Conferir resultado";
+      
+      botao2.style.display = "none";
+    }
 
     let expandIcon = document.querySelectorAll('.open-secao4');
 
@@ -131,4 +149,16 @@ function boldSelected3(){
     select4.style.fontWeight = "normal";
   }
   
+}
+
+function mostraResposta(){
+  resultado.style.display = "block";
+
+  //desabilitando botão depois de finalizar o exercício
+  let botao = document.querySelector('.botao-resultado');
+  let botao2 = document.querySelector('.botao-respostas');
+  botao.disabled = true;
+  botao.style.cursor = "default";
+  botao2.disabled = true;
+  botao2.style.cursor = "default";
 }
