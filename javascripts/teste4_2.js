@@ -51,28 +51,37 @@ function geraResultado2(){
       e.style.backgroundImage = "none";
     })
 
-    //mosttra as respostas corretas
-    let resultadoFrases = document.querySelectorAll('.resultado-exercicio4-2');
-
-    resultadoFrases.forEach(e => {
-      e.style.display = "block";
-    })
-
     //ajusta posicionamento dos selects depois de aparecer as respostas
     let selectAfter1 = document.getElementById('selectExe4Box1');
     let selectAfter2 = document.getElementById('selectExe4Box2');
     let selectAfter3 = document.getElementById('selectExe4Box3');
 
-    selectAfter1.style.marginTop = "-40px";
-    selectAfter2.style.marginTop = "-40px";
-    selectAfter3.style.marginTop = "15px";
-
-    //desabilitando botão depois de finalizar o exercício
-    let botao = document.querySelector('#botao-exe4');
-    botao.disabled = true;
-    botao.style.cursor = "default";
+    selectAfter1.style.marginTop = "-120px";
+    selectAfter2.style.marginTop = "-150px";
+    selectAfter3.style.marginTop = "-80px";
 
     window.scrollTo(0, 3800);
+
+    //mudando texto do botão e mostrando botão de mostrar respostas
+    let botaoExe4 = document.querySelector('#botao-exe4');
+    let botao2Exe4 = document.querySelector('#botao2-exe4');
+    
+    if(botaoExe4.innerText === "Conferir resultado"){
+      botaoExe4.innerHTML = "Tentar novamente";
+      botao2Exe4.style.display = 'inline';
+    } else if(botaoExe4.innerText === "Tentar novamente"){
+      
+      //scrolla pagina para inicio do teste depois de conferir resultado
+      window.scrollTo(0, 3800);
+
+      document.location.reload(true);
+
+      //desabilitando botões depois de finalizar o exercício
+      
+      botaoExe4.innerHTML = "Conferir resultado";
+      
+      botao2Exe4.style.display = "none";
+    }
 
   }else{
     alert("Por favor, selecione todas as respostas.");
@@ -104,4 +113,33 @@ function toggleValueSelect2(){
     select3Exe2.style.backgroundColor = "#f2f2f2";
   }
   
+}
+
+function mostraRespostas(){
+  //mosttra as respostas corretas
+  let resultadoFrases = document.querySelectorAll('.resultado-exercicio4-2');
+
+  resultadoFrases.forEach(e => {
+    e.style.display = "block";
+  })
+
+  //ajusta posicionamento dos selects depois de aparecer as respostas
+  let selectAfter1 = document.getElementById('selectExe4Box1');
+  let selectAfter2 = document.getElementById('selectExe4Box2');
+  let selectAfter3 = document.getElementById('selectExe4Box3');
+
+  selectAfter1.style.marginTop = "-40px";
+  selectAfter2.style.marginTop = "-40px";
+  selectAfter3.style.marginTop = "15px";
+
+  //desabilitando botão depois de finalizar o exercício
+  let botao = document.querySelector('#botao-exe4');
+  let botao2Exe4 = document.querySelector('#botao2-exe4');
+  botao.disabled = true;
+  botao.style.cursor = "default";
+  botao2Exe4.disabled = true;
+  botao2Exe4.style.cursor = "default";
+
+  //scrolla pagina para inicio do teste depois de conferir resultado
+  window.scrollTo(0, 3800);
 }
