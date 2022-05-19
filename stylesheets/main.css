@@ -125,7 +125,7 @@ nav .jssocials-shares{
   background-color: #ff9cff;
   padding: 0 0.2em;
 }
-.titulo-solto mark{
+.titulo-solto mark, #intro-mitos mark{
   background-color: #9fffff;
   padding: 0 0.2em;
 }
@@ -135,6 +135,18 @@ nav .jssocials-shares{
 
 .secoes-links{
   margin-left: 15%;
+}
+
+.ilustra01{
+  width: 435px;
+}
+
+.ilustra02{
+  width: 460px;
+}
+
+.ilustra04{
+  width: 470px;
 }
 
 .livro-intro{
@@ -325,6 +337,12 @@ nav .jssocials-shares{
 
 .botao-resultado:hover{
   background-color: rgba(252, 238, 33, .7);
+}
+
+.exercicio-pagina1{
+  width: 590px;
+  margin: 1% 0 5% 3%;
+  height: 145px;
 }
 
 .resultado-teste{
@@ -1034,15 +1052,99 @@ nav .jssocials-shares{
 }
 
 
+/* Telas Grandes */
+@media (min-width: 992px) and (max-width: 1200px){
+  .ilustra01{
+    width: 375px;
+  }
+
+  .ilustra02{
+    width: 365px;
+    margin-top: 5%;
+  }
+
+  .ilustra04{
+    width: 430px;
+  }
+
+  .introducao-tipos p{
+    width: 117%;
+  }
+
+  .card-teste{
+    width: 360px;
+  }
+
+  .info-card:not(:last-of-type) .info-card-imagem::after{
+    top: 740px;
+    left: 290px;
+  }
+
+  .info-conteudo p{
+    width: 75%;
+  }
+
+  #intro-passo p{
+    width: 150%;
+  }
+
+  .box-alternativa-exe2{
+    margin-top: 5%;
+    margin-left: 16%;
+    width: 150px;
+  }
+
+  .box-alternativa2-exe2{
+    margin-left: -210px;
+    width: 150px;
+  }
+
+  .box-alternativa-exe2-done{
+    margin-left: 16%;
+    width: 150px;
+  }
+
+  .box-alternativa2-exe2-done{
+    margin-left: -210px; 
+    width: 150px;
+  }
+
+  .itens-explore{
+    margin-left: 10%;
+  }
+
+  .exercicio-pagina1{
+    width: 500px;
+  }
+
+  .exercicio-pagina1 p{
+    font-size: 14px;
+  }
+
+  .resposta-box-exe1{
+    width: 470px;
+    margin-left: 33%;
+  }
+
+  .textos-secao4 p{
+    width: 45%;
+  }
+
+  .options-area{
+    margin-left: -4%;
+  }
+
+  .card-teste-exercicio2{
+    width: 600px;
+  }
+}
+
+
+/* Telas Extra Extra Grandes */
 @media screen and (min-width: 1440px) {
   .info-card:not(:last-of-type) .info-card-imagem::after{
-    content: "";
-      position: absolute;
-      height: 1325px;
-      border-left: 10px dotted #9fffff;
       top: 68%;
       left: 34%;
-      z-index: -1;
   }
 
   .detaque-mitos{
