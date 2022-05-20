@@ -169,6 +169,14 @@ nav .jssocials-shares{
   background-image: url(https://apps.univesp.br/letramento-academico/assets/05_botaosecao04-hover.svg);
 }
 
+.itens-explore-inicial{
+  border: 3px solid #000;
+}
+
+.itens-explore-inicial img{
+  width: 360px;
+}
+
 .secoes-links a{
   margin-left: 5%;
 }
@@ -193,13 +201,18 @@ nav .jssocials-shares{
   width: 90%;
 }
 
+.ilustra03-pagina1{
+  width: 850px;
+}
+
 .secoes-links2{
   margin-left: 90px;
   margin-top: 40px;
 }
 
 .imagem-lendo-livro{
-  width: 360px;
+  width: 280px; 
+  margin-top: 25px;
 }
 
 .texto-corrido{
@@ -283,6 +296,10 @@ nav .jssocials-shares{
   margin-top: 10%;
   position: relative;
   z-index: 1;
+}
+
+.card-teste:nth-child(3), .card-teste:nth-child(4), .card-teste:nth-child(5){
+  height: 310px;
 }
 
 .card-teste p{
@@ -1052,8 +1069,123 @@ nav .jssocials-shares{
 }
 
 
+/* MEDIA QUERYS */
+
+/* Telas Médias */
+@media (min-width: 768px) and (max-width: 991px){
+  .titulo-rea{
+    background-position: 5% 35%, 5% 93%;
+  }
+
+  .introducao h1{
+    font-size: 48px;
+  }
+
+  .secoes-links{
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+
+  .intro-links1 img{
+    width: 170%;
+  }
+
+  .intro-links2 img{
+    width: 180%;
+  }
+
+  .intro-links1, .intro-links2{
+    display: flex;
+  }
+
+  .secoes-links a{
+    margin-left: 25%;
+  }
+
+  .introducao p{
+    width: 150%;
+  }
+
+  .itens-explore-inicial img{
+    width: 300px;
+  }
+
+  .explore-inicial h3, .explore-inicial2 h3{
+    font-size: 18px;
+  }
+
+  .ilustra01{
+    width: 350px;
+    margin-left: 10%;
+  }
+
+  .introducao-tipos > h1{
+    width: 180%;
+    font-size: 48px !important;
+  }
+
+  .introducao-tipos p{
+    width: 140%;
+  }
+
+  .imagem-lendo-livro{
+    width: 250px; 
+    margin-top: 85px;
+    margin-left: 20%;
+  }
+
+  .sub-section h2{
+    font-size: 26px;
+  }
+
+  .ilustra03-pagina1{
+    width: 620px;
+  }
+
+  .card-teste{
+    width: 280px;
+  }
+
+  .card-teste:nth-child(3), .card-teste:nth-child(4), .card-teste:nth-child(5){
+    height: 340px;
+  }
+
+  .alternativas-exe1{
+    width: 205px;
+  }
+
+  .exercicio-pagina1{
+    height: 155px;
+  }
+
+  .exercicio-pagina1 p{
+    font-size: 12px;
+  }
+
+  .resposta-box-exe1{
+    width: 308px;
+    margin-left: 38%;
+    margin-top: -12px;
+  }
+  #resposta-exe-5{
+    font-size: 12px;
+  }
+
+  .botao-resultado{
+    width: 40%;
+  }
+
+  .itens-explore{
+    margin-left: 10%;
+  }
+}
+
 /* Telas Grandes */
 @media (min-width: 992px) and (max-width: 1200px){
+  .introducao p{
+    width: 130%;
+  }
+
   .ilustra01{
     width: 375px;
   }
