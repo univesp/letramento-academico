@@ -706,6 +706,8 @@ nav .jssocials-shares{
 
 .open-secao4{
   font-size: 42px;
+  margin-top: -10%; 
+  margin-left: 100px;
 }
 
 .options-area{
@@ -1068,6 +1070,15 @@ nav .jssocials-shares{
   width: 82%;
 }
 
+#exe3-img-v{
+  margin-top: 2%;
+}
+
+.imagem-balanca{
+  width: 700px; 
+  margin-top: 30px;
+}
+
 
 /* MEDIA QUERYS */
 
@@ -1178,6 +1189,119 @@ nav .jssocials-shares{
   .itens-explore{
     margin-left: 10%;
   }
+
+  .info-conteudo p{
+    width: 100%;
+  }
+
+  .info-card:not(:last-of-type) .info-card-imagem::after{
+    top: 122%;
+    left: 30%;
+  }
+
+  .card-teste-exe2{
+    width: 50%;
+  }
+
+  .progress{
+    width: 50%;
+    margin-left: 25.5%;
+  }
+
+  .box-alternativa-exe2{
+    margin-top: 8%;
+    margin-left: 11%;
+    width: 150px;
+  }
+
+  .box-alternativa2-exe2{
+    margin-left: -150px;
+    width: 150px;
+  }
+
+  .box-alternativa-exe2-done{
+    margin-left: 11%;
+    width: 150px;
+  }
+
+  .box-alternativa2-exe2-done{
+    margin-left: -150px; 
+    width: 150px;
+  }
+
+  .card-teste-exe2-coluna{
+    width: 320px;
+  }
+
+  .ilustra02{
+    width: 345px;
+    margin-top: 12%;
+    margin-left: 10%;
+  }
+
+  .exe3-card{
+    width: 160px;
+  }
+
+  .card-teste-exe3{
+    margin-right: 15px;
+  }
+
+  .justificativa-exe3 img{
+    margin-top: 3%;
+  }
+
+  #exe3-img-v{
+    margin-top: 10%;
+    width: 6%;
+  }
+
+  .ilustra04{
+    width: 400px;
+    margin-left: 8%;
+  }
+
+  .lista-pagina4 li{
+    width: 170%;
+  }
+
+  .textos-secao4 p{
+    width: 60%;
+  }
+
+  .imagem-balanca{
+    width: 600px;
+  }
+
+  .select-exe4-box select{
+    width: 120px;
+    font-size: 10px;
+  }
+
+  .select-exe4-box hr{
+    width: 82%;
+  }
+
+  .open-secao4{
+    margin-left: 45%;
+  }
+
+  .icone-resultado-exe4{
+    margin-left: 45%;
+  }
+
+  .select-exe4-box2 select{
+    width: 260px;
+  }
+
+  .card-teste-exercicio2{
+    width: 400px;
+  }
+
+  .card-teste-exercicio2 p{
+    font-size: 14px;
+    width: 90%;
+  }
 }
 
 /* Telas Grandes */
@@ -1268,6 +1392,23 @@ nav .jssocials-shares{
 
   .card-teste-exercicio2{
     width: 600px;
+  }
+
+  .justificativa-exe3 img{
+    margin-top: 2%;
+  }
+
+  #exe3-img-v{
+    margin-top: 6%;
+  }
+
+  .select-exe4-box select{
+    width: 177px;
+    font-size: 14px;
+  }
+
+  .icone-resultado-exe4{
+    margin-left: 45%;
   }
 }
 
