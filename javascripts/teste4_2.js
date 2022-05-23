@@ -8,8 +8,6 @@ let imagem3Exe2 = document.getElementById('resultadoImg3-exe2');
 
 let baseURL2 = 'https://apps.univesp.br/letramento-academico/assets/';
 
-console.log('estou aqui')
-
 
 function geraResultado2(){
 

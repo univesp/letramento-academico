@@ -42,7 +42,7 @@ nav .jssocials-shares{
 .titulo-rea{
   background-image: url(https://apps.univesp.br/letramento-academico/assets/00_marcatitulo1.svg), url(https://apps.univesp.br/letramento-academico/assets/01_marcatxt2.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: 5% 40%, 5% 95%;
+  background-position: 5% 30%, 5% 95%;
   background-size: auto, 85%;
 }
 
@@ -52,7 +52,7 @@ nav .jssocials-shares{
   background-position: 0 40%;
   background-size: 65%;
 }
-.explore-inicial h3{
+.explore-inicial h3, .explore-inicial2 h3{
   margin-left: 2%;
 }
 
@@ -62,8 +62,9 @@ nav .jssocials-shares{
   background-position: 0 40%;
   background-size: 58%;
 }
-.explore-inicial2 h3{
-  margin-left: 2%;
+
+.explore-div2{
+  margin-left: 15%;
 }
 
 .introducao-tipos p{
@@ -252,6 +253,12 @@ nav .jssocials-shares{
 .open-dropdown{
   font-size: 64px;
   margin-top: -20px;
+}
+
+.referencia-pagina1{
+  position: relative; 
+  z-index: 10; 
+  top: 43%;
 }
 
 .card-container{
@@ -1081,6 +1088,167 @@ nav .jssocials-shares{
 
 
 /* MEDIA QUERYS */
+
+/* Telas Pequenas */
+@media (min-width: 576px) and (max-width: 767px){
+  .grid-container{
+    display: block;
+    margin-left: 18%;
+  }
+
+  .titulo-rea{
+  background-position: 5% 30%, 5% 95%;
+  background-size: 100%;
+  }  
+
+  .introducao p{
+    width: 220%;
+    margin-top: 7%;
+  }
+
+  .secoes-links{
+    margin-left: -2%;
+    margin-top: 10%;
+  }
+
+  .intro-links2{
+    margin: 5% 0 0 0;
+  }
+
+  .livro-intro2{
+    width: 37%;
+  }
+
+  .explore{
+    text-align: center;
+    height: 700px;
+  }
+
+  .titulo-explore{
+    width: 80%;
+  }
+
+  .itens-explore{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+  }
+
+  .explore-inicial h3{
+    margin-left: -35%;
+    margin-bottom: 5%;
+  }
+
+  .explore-inicial2 h3{
+    margin-left: -42%;
+    margin-bottom: 5%;
+  }
+
+  .explore-div2{
+    margin-left: 0;
+    margin-top: 10%;
+  }
+
+  .introducao-tipos-titulo{
+    margin-left: -12%;
+  }
+
+  .introducao-tipos p{
+    margin-left: -12%;
+  }
+
+  #paragrafo1-pagina1{
+    margin-top: 100% !important;
+  }
+
+  .ilustra01{
+    width: 350px;
+    position: relative;
+    bottom: 670px;
+    margin-bottom: -90%;
+  }
+
+  .sub-section{
+    margin-top: -1%;
+  }
+
+  .sub-section h2{
+    width: 220% !important;
+    margin-left: -23% !important;
+  }
+
+  .sub-section p{
+    width: 210% !important;
+    margin-left: -30% !important;
+  }
+
+  .paragrafo1-sub-section{
+    margin-top: 180% !important;
+  }
+
+  .imagem-lendo-livro{
+    position: relative;
+    bottom: 620px;
+    margin-bottom: -90%;
+    margin-left: -18%;
+  }
+
+  #texto-corrido1{
+    margin-top: -65px !important;
+  }
+
+  .ilustra03-pagina1 {
+    width: 440px;
+  }
+
+  .explore-mobile{
+    display: grid !important;
+    grid-template-columns: 33,3% 33,3% 33,3% !important;
+    grid-template-areas: 
+    "index index index"
+    "pagina1 pagina2 pagina3";
+  }
+
+  .toIndex{
+    grid-area: index;
+    width: 50%;
+    margin-left: 28%;
+    margin-bottom: 5%;
+  }
+  .toPagina1{
+    grid-area: pagina1;
+    width: 130%;
+  }
+  .toPagina2{
+    grid-area: pagina2;
+    width: 130%;
+  }
+  .toPagina3{
+    grid-area: pagina3;
+    width: 130%;
+  }
+
+  .card-container{
+    display: block;
+    height: 1800px;
+    text-align: center;
+  }
+
+  .alinhamento{
+    position: inherit;
+  }
+
+  .card-pagina1{
+    margin-left: 6%;
+  }
+
+  .referencia-pagina1{
+    top: 4%;
+    margin-left: 13%;
+  }
+}
+
 
 /* Telas Médias */
 @media (min-width: 768px) and (max-width: 991px){
