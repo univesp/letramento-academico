@@ -111,7 +111,7 @@
     }
   
     .info-card:not(:last-of-type) .info-card-imagem::after{
-      top: 122%;
+      top: 71%;
       left: 30%;
     }
   
@@ -217,5 +217,18 @@
     .card-teste-exercicio2 p{
       font-size: 14px;
       width: 90%;
+    }
+
+    .botoes-exe3{
+      display: none; 
+    }
+
+    .itens-exe1-pagina4-mobile{
+      display: none;
+    }
+
+    .pagina4-titulo-secao{
+      margin-left: 70px;
+      width: 85%;
     }
   }

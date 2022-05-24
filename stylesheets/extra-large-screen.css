@@ -10,7 +10,7 @@
     }
   
     .destaque p{
-      margin-left: 2.5%;
+      margin-left: 7%;
       width: 55%;
     }
   
@@ -49,5 +49,18 @@
   
     .box-alternativa2-exe2-done{
       margin-left: -400px; 
+    }
+
+    .botoes-exe3{
+      display: none; 
+    }
+
+    .itens-exe1-pagina4-mobile{
+      display: none;
+    }
+
+    .pagina4-titulo-secao{
+      margin-left: 435px;
+      width: 60%;
     }
   }

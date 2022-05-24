@@ -104,4 +104,17 @@
     .icone-resultado-exe4{
       margin-left: 45%;
     }
+
+    .botoes-exe3{
+      display: none; 
+    }
+
+    .itens-exe1-pagina4-mobile{
+      display: none;
+    }
+
+    .pagina4-titulo-secao{
+      margin-left: 90px;
+      width: 80%;
+    }
   }

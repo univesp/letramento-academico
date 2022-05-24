@@ -105,9 +105,9 @@
 
       <div class="grid-container">
         <div class="introducao-tipos" id="intro-mitos">
-          <h1 class="mitos-titulo">Mitos da <br> escrita acadêmica</h1>
+          <h1 class="mitos-titulo" id="titulo3-mobile">Mitos da <br> escrita acadêmica</h1>
 
-          <p style="margin-top:5%;">A escrita acadêmica, ou escrita científica, é a linguagem utilizada para a divulgação de conhecimentos por meio da publicação de textos dentro da comunidade científica. Ela deve ser utilizada em trabalhos acadêmicos, como artigos, dissertações e teses, por exemplo.</p>
+          <p style="margin-top:5%;" id="paragrafo1-pagina3-mobile">A escrita acadêmica, ou escrita científica, é a linguagem utilizada para a divulgação de conhecimentos por meio da publicação de textos dentro da comunidade científica. Ela deve ser utilizada em trabalhos acadêmicos, como artigos, dissertações e teses, por exemplo.</p>
   
           <p style="margin-top: 5%;">A escrita acadêmica é caracterizada pela <mark><strong>impessoalidade</strong></mark> (ou seja, o texto não pode revelar opiniões pessoais) e <mark><strong>argumentação</strong></mark> (o texto deve promover uma reflexão crítica).</p>
         </div>
@@ -117,7 +117,7 @@
         </div>
       </div>
 
-      <div class="titulo-solto">
+      <div class="titulo-solto titulo-solto-mobile">
         <p>Escrever um texto científico pode assustar algumas pessoas em um primeiro momento. Alguns pensamentos negativos podem surgir:</p>
       </div>
 
@@ -127,7 +127,7 @@
         <p style="font-weight: bold;">- Eu não sou capaz.</p>
       </div>
 
-      <div style="margin-top: 1%;" class="titulo-solto">
+      <div style="margin-top: 1%;" class="titulo-solto titulo-solto-mobile">
         <p>Se isso já aconteceu com você, faça o seguinte: primeiro, não dê atenção a esses pensamentos. Depois, faça o exercício a seguir para tirar da cabeça alguns mitos relacionados à escrita acadêmica. Você verá que todos nós somos capazes de escrever um bom texto – basta praticar e ler muito!</p>
       </div>
 
@@ -150,6 +150,10 @@
       <div class="card-teste-exe3">
         <p>Em uma ou duas horas consigo fazer um bom texto acadêmico.</p>
       </div>
+      <button onclick="geraResultado(1), changeColor(1)" class="exe3-card card-v exe3-card-desktop" id="card-v1">Verdadeiro</button>
+      <button onclick="geraResultado(2), changeColorFalse(2)" style="margin-left: 2%;" class="exe3-card card-f exe3-card-desktop" id="card-f1">Falso</button>
+    </div>
+    <div class="botoes-exe3">
       <button onclick="geraResultado(1), changeColor(1)" class="exe3-card card-v" id="card-v1">Verdadeiro</button>
       <button onclick="geraResultado(2), changeColorFalse(2)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f1">Falso</button>
     </div>
@@ -166,6 +170,10 @@
       <div class="card-teste-exe3">
         <p>As pessoas já nascem sabendo escrever um bom texto, é um dom.</p>
       </div>
+      <button onclick="geraResultado(3), changeColor(3)" class="exe3-card card-v exe3-card-desktop" id="card-v2">Verdadeiro</button>
+      <button onclick="geraResultado(4), changeColorFalse(4)" style="margin-left: 2%;" class="exe3-card card-f exe3-card-desktop" id="card-f2">Falso</button>
+    </div>
+    <div class="botoes-exe3">
       <button onclick="geraResultado(3), changeColor(3)" class="exe3-card card-v" id="card-v2">Verdadeiro</button>
       <button onclick="geraResultado(4), changeColorFalse(4)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f2">Falso</button>
     </div>
@@ -182,6 +190,10 @@
       <div class="card-teste-exe3">
         <p>Escrever é colocar no papel algo da minha cabeça, pois já sei muito sobre o assunto.</p>
       </div>
+      <button onclick="geraResultado(5), changeColor(5)" class="exe3-card card-v exe3-card-desktop" id="card-v3">Verdadeiro</button>
+      <button onclick="geraResultado(6), changeColorFalse(6)" style="margin-left: 2%;" class="exe3-card card-f exe3-card-desktop" id="card-f3">Falso</button>
+    </div>
+    <div class="botoes-exe3">
       <button onclick="geraResultado(5), changeColor(5)" class="exe3-card card-v" id="card-v3">Verdadeiro</button>
       <button onclick="geraResultado(6), changeColorFalse(6)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f3">Falso</button>
     </div>
@@ -198,6 +210,10 @@
       <div class="card-teste-exe3">
         <p>A escrita pressupõe saber sobre o uso da gramática.</p>
       </div>
+      <button onclick="geraResultado(7), changeColor(7)" class="exe3-card card-v exe3-card-desktop" id="card-v4">Verdadeiro</button>
+      <button onclick="geraResultado(8), changeColorFalse(8)" style="margin-left: 2%;" class="exe3-card card-f exe3-card-desktop" id="card-f4">Falso</button>
+    </div>
+    <div class="botoes-exe3">
       <button onclick="geraResultado(7), changeColor(7)" class="exe3-card card-v" id="card-v4">Verdadeiro</button>
       <button onclick="geraResultado(8), changeColorFalse(8)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f4">Falso</button>
     </div>
@@ -214,6 +230,10 @@
       <div class="card-teste-exe3">
         <p>As pessoas entram na universidade sabendo fazer bons textos.</p>
       </div>
+      <button onclick="geraResultado(9), changeColor(9)" class="exe3-card card-v exe3-card-desktop" id="card-v5">Verdadeiro</button>
+      <button onclick="geraResultado(10), changeColorFalse(10)" style="margin-left: 2%;" class="exe3-card card-f exe3-card-desktop" id="card-f5">Falso</button>
+    </div>
+    <div class="botoes-exe3">
       <button onclick="geraResultado(9), changeColor(9)" class="exe3-card card-v" id="card-v5">Verdadeiro</button>
       <button onclick="geraResultado(10), changeColorFalse(10)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f5">Falso</button>
     </div>
@@ -230,6 +250,10 @@
       <div class="card-teste-exe3">
         <p>Se eu não sei escrever bem um texto acadêmico, melhor nem tentar!</p>
       </div>
+      <button onclick="geraResultado(11), changeColor(11)" class="exe3-card card-v exe3-card-desktop" id="card-v6">Verdadeiro</button>
+      <button onclick="geraResultado(12), changeColorFalse(12)" style="margin-left: 2%;" class="exe3-card card-f exe3-card-desktop" id="card-f6">Falso</button>
+    </div>
+    <div class="botoes-exe3">
       <button onclick="geraResultado(11), changeColor(11)" class="exe3-card card-v" id="card-v6">Verdadeiro</button>
       <button onclick="geraResultado(12), changeColorFalse(12)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f6">Falso</button>
     </div>
@@ -246,6 +270,10 @@
       <div class="card-teste-exe3">
         <p>Se tenho medo de escrever, melhor não escrever porque sei que ninguém vai entender.</p>
       </div>
+      <button onclick="geraResultado(13), changeColor(13)" class="exe3-card card-v exe3-card-desktop" id="card-v7">Verdadeiro</button>
+      <button onclick="geraResultado(14), changeColorFalse(14)" style="margin-left: 2%;" class="exe3-card card-f exe3-card-desktop" id="card-f7">Falso</button>
+    </div>
+    <div class="botoes-exe3">
       <button onclick="geraResultado(13), changeColor(13)" class="exe3-card card-v" id="card-v7">Verdadeiro</button>
       <button onclick="geraResultado(14), changeColorFalse(14)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f7">Falso</button>
     </div>
@@ -262,6 +290,10 @@
       <div class="card-teste-exe3">
         <p>Eu escrevo e tudo sai perfeito!</p>
       </div>
+      <button onclick="geraResultado(15), changeColor(15)" class="exe3-card card-v exe3-card-desktop" id="card-v8">Verdadeiro</button>
+      <button onclick="geraResultado(16), changeColorFalse(16)" style="margin-left: 2%;" class="exe3-card card-f exe3-card-desktop" id="card-f8">Falso</button>
+    </div>
+    <div class="botoes-exe3">
       <button onclick="geraResultado(15), changeColor(15)" class="exe3-card card-v" id="card-v8">Verdadeiro</button>
       <button onclick="geraResultado(16), changeColorFalse(16)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f8">Falso</button>
     </div>
@@ -278,6 +310,10 @@
       <div class="card-teste-exe3">
         <p>Meu avaliador vai julgar o que estou fazendo, por isso, devo escrever com receio dele.</p>
       </div>
+      <button onclick="geraResultado(17), changeColor(17)" class="exe3-card card-v exe3-card-desktop" id="card-v9">Verdadeiro</button>
+      <button onclick="geraResultado(18), changeColorFalse(18)" style="margin-left: 2%;" class="exe3-card card-f exe3-card-desktop" id="card-f9">Falso</button>
+    </div>
+    <div class="botoes-exe3">
       <button onclick="geraResultado(17), changeColor(17)" class="exe3-card card-v" id="card-v9">Verdadeiro</button>
       <button onclick="geraResultado(18), changeColorFalse(18)" style="margin-left: 2%;" class="exe3-card card-f" id="card-f9">Falso</button>
     </div>
@@ -305,26 +341,26 @@
         <h3 style="margin-top: -20%;">Continue a explorar o tema:</h3>
       </div>
   
-      <div class="itens-explore">
-        <div>
+      <div class="itens-explore explore-mobile">
+        <div class="toIndex">
           <a href="https://apps.univesp.br/letramento-academico/index.html">
             <img style="width: 85%;" class="livro-intro" src="https://apps.univesp.br/letramento-academico/assets/14_paginicial.svg" alt="Letramento acadêmico (Página Inicial)">
           </a>
         </div>
         
-        <div style="margin-left: 2%;">
+        <div class="toPagina1" style="margin-left: 2%;">
             <a href="https://apps.univesp.br/letramento-academico/tipos-trabalho-academico.html">
               <img style="width: 50%;" id="livro1" src="https://apps.univesp.br/letramento-academico/assets/02_botaosecao01.svg" alt="Tipos de trabalho acadêmico.">
             </a>
         </div>
         
-        <div style="margin-left: -8%;">
+        <div class="toPagina2" style="margin-left: -8%;">
           <a href="https://apps.univesp.br/letramento-academico/passo-a-passo.html">
             <img style="width: 50%;" id="livro2" src="https://apps.univesp.br/letramento-academico/assets/03_botaosecao02.svg" alt="Passo a passo do trabalho acadêmico.">
           </a>
         </div>
         
-        <div style="margin-left: -8%;">
+        <div class="toPagina3" style="margin-left: -8%;">
           <a href="https://apps.univesp.br/letramento-academico/citacoes-e-referencias.html">
             <img style="width: 50%;" id="livro4" src="https://apps.univesp.br/letramento-academico/assets/05_botaosecao04.svg" alt="Como fazer citações e referências.">
           </a>

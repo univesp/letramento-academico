@@ -1085,3 +1085,16 @@ nav .jssocials-shares{
   width: 700px; 
   margin-top: 30px;
 }
+
+.botoes-exe3{
+  display: none; 
+}
+
+.itens-exe1-pagina4-mobile{
+  display: none;
+}
+
+.botoes-exe1-pagina4{
+  text-align: center; 
+  margin: 4% 0 -50px 0;
+}

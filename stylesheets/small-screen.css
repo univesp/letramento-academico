@@ -176,6 +176,296 @@
     }
   
     .card-container2{
-      height: 2150px;
+      height: 2100px;
     }
-  }
+
+    .botao-resultado{
+      width: 55%;
+    }
+
+    .resultado-teste{
+     width: 60px;
+     margin-left: 45%;
+     margin-top: -12% !important;
+     margin-bottom: 20% !important;
+     display: none;
+    }
+
+    .resposta-box-exe1 {
+        width: 426px;
+        margin-bottom: 100px;
+        margin-top: -86px;
+        margin-left: 6%;
+    }
+
+    .passo-titulo{
+     background-size: 95%;
+     margin-left: -13%;     
+    }
+
+    #titulo-mobile{
+     font-size: 48px !important;
+    }
+
+    .info-card:not(:last-of-type) .info-card-imagem::after{
+        content: none;
+    }
+
+    .ilustra-pagina2{
+        position: relative;
+        bottom: 320px;
+        margin-left: -5%;
+    }
+
+    #paragrafo1-pagina2-mobile{
+        margin-top: 120% !important;
+        
+    }
+
+    .secoes-links {
+        margin-left: -2%;
+        margin-top: -95%;
+    }
+
+    .info-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        text-align: center;
+        margin-left: -30%;
+    }
+
+    .info-card-imagem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+    }
+
+    .info-conteudo p {
+        width: 90%;
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .destaque{
+        height: 340px;
+    }
+
+    .card-teste-exe2{
+        width: 70%;
+    }
+
+    .progress{
+     width: 70%;
+     margin-left: 15.5%;
+    }
+
+    .box-alternativa-exe2{
+        margin-top: 15%;
+        margin-left: 3%;
+        width: 150px;
+      }
+    
+      .box-alternativa2-exe2{
+        margin-top: -20px;  
+        margin-left: -100px;
+        width: 150px;
+      }
+    
+      .box-alternativa-exe2-done{
+        margin-top: 15%;
+        margin-left: 3%;
+        width: 150px;
+      }
+    
+      .box-alternativa2-exe2-done{
+        margin-top: -20px;  
+        margin-left: -100px;
+        width: 150px;
+      }
+
+      .botao-respostas {
+        margin-left: 0px;
+    }
+
+    .exe2-content {
+        margin-left: 60px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    #titulo3-mobile{
+        font-size: 48px !important;
+        margin-left: -12%;
+    }
+
+    .ilustra02{
+        width: 400px;
+        position: relative;
+        bottom: 220px;
+        margin-left: -5%;
+    }
+
+    #paragrafo1-pagina3-mobile{
+        margin-top: 100% !important;
+    }
+
+    .titulo-solto-mobile > p{ 
+        margin-left: 3%;
+        width: 92%;
+    }
+
+    .exe3-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+        margin-top: -2%;
+      }
+
+      .exe3-card{
+          width: 185px;
+      }
+
+     .botoes-exe3{
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;  
+        margin-top: -2%;
+        margin-bottom: 5%;
+        margin-left: -2%;
+     }
+
+      .card-teste-exe3{
+          width: 85%;
+          box-shadow: none;
+      }
+
+      .exe3-card-desktop{
+          display: none;
+      }
+
+      .justificativa-exe3 {
+        margin: -3.5% 0 30px 9.5%;
+    }
+
+    .citacoes-titulo{
+        margin-left: 5%;
+    }
+
+    .ilustra04{
+        width: 400px;
+        position: relative;
+        bottom: 70px;
+        margin-left: -5%;
+    }
+
+    #paragrafo1-pagina4-mobile{
+        margin-top: 70% !important;
+    }
+
+    .lista-pagina4{
+        margin-left: -10%;
+    }
+
+    .balanca-div{
+        margin-top: 34% !important;
+    }
+
+    .textos-secao4{
+        flex-direction: column;
+    }
+
+    .textos-secao4 p:nth-child(1) {
+        margin-left: 7%;
+    }
+
+    .textos-secao4 p {
+        width: 95%;
+    }
+
+    .imagem-balanca {
+        width: 520px;
+    }
+
+    .destaque-mobile{
+        max-height: 240px !important;
+    }
+
+    .options-area{
+        display: block;
+        margin-left: 110px;
+    }
+
+    .select-exe4-box hr {
+        width: 42%;
+    }
+
+    .itens-exe1-pagina4{
+        display: none;
+    }
+
+    .itens-exe1-pagina4-mobile{
+        display: inline;
+        position: relative; 
+        top: 25px; 
+        left: 2px;
+    }
+
+    .resposta-box {
+        letter-spacing: -0.5px;
+    }
+
+    .resultado-secao4 {
+        margin-top: 10%;
+    }
+
+    .botoes-exe1-pagina4{ 
+        margin-top: 10%;
+      }
+
+    .tipos-de-citacao{
+        margin-top: 20% !important;
+    }
+
+    .exercicio2-secao4 {
+        margin: -10% 0 0 -2%;
+    }
+
+    .exercicio2-container {
+        flex-direction: column;
+        margin-top: 40% !important;
+    }
+
+    .exercicio2-container:nth-child(3) {
+        flex-direction: column;
+        margin-top: 30% !important;
+    }
+
+    .card-teste-exercicio2 {
+        width: 490px;
+        margin-top: 17px;
+        margin-left: -2%;
+    }
+
+    .resultado-teste-secao4{
+        width: 50px;
+        margin-left: -70%;
+        display: none;
+      }
+
+      .select-exe4-box2{
+          margin-top: -55%;
+      }
+
+      .pagina4-titulo-secao{
+        margin-left: 50px;
+        width: 88%;
+      }
+}

@@ -146,7 +146,13 @@ let atualizaJsonDevoFazer = function(i, value) {
   json[i].devoFazer = value;
 }
 let mostraResultado = function() {
-  resultado.style.display = "flex";
+  if (window.matchMedia("(min-width:768px)").matches) {
+    /* a viewport tem pelo menos 768 pixels de largura */
+    resultado.style.display = "flex";
+  } else {
+    /* a viewport menos que 768 pixels de largura */
+    resultado.style.display = "block";
+  }
 }
 let mostraBotoes = function(){
   botoes.style.display = 'block';
@@ -155,8 +161,15 @@ let mostraBotoes = function(){
 function tentarNovamente(){
   document.location.reload(true);
 
-  //scrolla pagina para inicio do teste depois de conferir resultado
-  window.scrollTo(0, 2300);
+  if (window.matchMedia("(min-width:768px)").matches) {
+    /* a viewport tem pelo menos 768 pixels de largura */
+    //scrolla pagina para inicio do teste depois de conferir resultado
+    window.scrollTo(0, 2300);
+  } else {
+    /* a viewport menos que 768 pixels de largura */
+    //scrolla pagina para inicio do teste depois de conferir resultado
+    window.scrollTo(0, 3800);
+  }
 }
 
 function mostraRespostas(){
@@ -180,8 +193,15 @@ function mostraRespostas(){
  //Apagando botões depois de finalizar o exercício
  botoes.style.display = "none";
 
- //scrolla pagina para inicio do teste depois de conferir resultado
- window.scrollTo(0, 2600);
+ if (window.matchMedia("(min-width:768px)").matches) {
+  /* a viewport tem pelo menos 768 pixels de largura */
+  //scrolla pagina para inicio do teste depois de conferir resultado
+  window.scrollTo(0, 2600);
+} else {
+  /* a viewport menos que 768 pixels de largura */
+  //scrolla pagina para inicio do teste depois de conferir resultado
+  window.scrollTo(0, 3800);
+}
  
 }
 

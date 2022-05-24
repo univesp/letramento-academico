@@ -54,11 +54,27 @@ function geraResultado2(){
     let selectAfter2 = document.getElementById('selectExe4Box2');
     let selectAfter3 = document.getElementById('selectExe4Box3');
 
-    selectAfter1.style.marginTop = "-120px";
-    selectAfter2.style.marginTop = "-150px";
-    selectAfter3.style.marginTop = "-80px";
-
-    window.scrollTo(0, 3800);
+    if (window.matchMedia("(min-width:768px)").matches) {
+      /* a viewport tem pelo menos 768 pixels de largura */
+      selectAfter1.style.marginTop = "-120px";
+      selectAfter2.style.marginTop = "-150px";
+      selectAfter3.style.marginTop = "-80px";
+    } else {
+      /* a viewport menos que 768 pixels de largura */
+      selectAfter1.style.marginTop = "-75px";
+    selectAfter2.style.marginTop = "-75px";
+    selectAfter3.style.marginTop = "-72px";
+    }
+    
+    if (window.matchMedia("(min-width:768px)").matches) {
+      /* a viewport tem pelo menos 768 pixels de largura */
+      //scrolla pagina para inicio do teste depois de conferir resultado
+      window.scrollTo(0, 3800);
+    } else {
+      /* a viewport menos que 768 pixels de largura */
+      //scrolla pagina para inicio do teste depois de conferir resultado
+      window.scrollTo(0, 4800);
+    }
 
     //mudando texto do botão e mostrando botão de mostrar respostas
     let botaoExe4 = document.querySelector('#botao-exe4');
@@ -68,9 +84,16 @@ function geraResultado2(){
       botaoExe4.innerHTML = "Tentar novamente";
       botao2Exe4.style.display = 'inline';
     } else if(botaoExe4.innerText === "Tentar novamente"){
-      
-      //scrolla pagina para inicio do teste depois de conferir resultado
-      window.scrollTo(0, 3800);
+
+      if (window.matchMedia("(min-width:768px)").matches) {
+        /* a viewport tem pelo menos 768 pixels de largura */
+        //scrolla pagina para inicio do teste depois de conferir resultado
+        window.scrollTo(0, 3800);
+      } else {
+        /* a viewport menos que 768 pixels de largura */
+        //scrolla pagina para inicio do teste depois de conferir resultado
+        window.scrollTo(0, 4800);
+      }
 
       document.location.reload(true);
 
@@ -126,9 +149,23 @@ function mostraRespostas(){
   let selectAfter2 = document.getElementById('selectExe4Box2');
   let selectAfter3 = document.getElementById('selectExe4Box3');
 
-  selectAfter1.style.marginTop = "-40px";
-  selectAfter2.style.marginTop = "-40px";
-  selectAfter3.style.marginTop = "15px";
+  if (window.matchMedia("(min-width:768px)").matches) {
+    /* a viewport tem pelo menos 768 pixels de largura */
+    selectAfter1.style.marginTop = "-40px";
+    selectAfter2.style.marginTop = "-40px";
+    selectAfter3.style.marginTop = "15px";
+
+    //scrolla pagina para inicio do teste depois de conferir resultado
+    window.scrollTo(0, 3800);
+  } else {
+    /* a viewport menos que 768 pixels de largura */
+    selectAfter1.style.marginTop = "-75px";
+    selectAfter2.style.marginTop = "-75px";
+    selectAfter3.style.marginTop = "-72px";
+
+    //scrolla pagina para inicio do teste depois de conferir resultado
+    window.scrollTo(0, 4800);
+  }
 
   //desabilitando botão depois de finalizar o exercício
   let botao = document.querySelector('#botao-exe4');
@@ -137,7 +174,4 @@ function mostraRespostas(){
   botao.style.cursor = "default";
   botao2Exe4.disabled = true;
   botao2Exe4.style.cursor = "default";
-
-  //scrolla pagina para inicio do teste depois de conferir resultado
-  window.scrollTo(0, 3800);
 }
