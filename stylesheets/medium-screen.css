@@ -1,0 +1,221 @@
+/* Telas Médias */
+@media (min-width: 768px) and (max-width: 991px){
+    .titulo-rea{
+      background-position: 5% 35%, 5% 93%;
+    }
+  
+    .introducao h1{
+      font-size: 48px;
+    }
+  
+    .secoes-links{
+      margin-left: 15%;
+      margin-top: 10%;
+    }
+  
+    .intro-links1 img{
+      width: 170%;
+    }
+  
+    .intro-links2 img{
+      width: 180%;
+    }
+  
+    .intro-links1, .intro-links2{
+      display: flex;
+    }
+  
+    .secoes-links a{
+      margin-left: 25%;
+    }
+  
+    .introducao p{
+      width: 150%;
+    }
+  
+    .itens-explore-inicial img{
+      width: 300px;
+    }
+  
+    .explore-inicial h3, .explore-inicial2 h3{
+      font-size: 18px;
+    }
+  
+    .ilustra01{
+      width: 350px;
+      margin-left: 10%;
+    }
+  
+    .introducao-tipos > h1{
+      width: 180%;
+      font-size: 48px !important;
+    }
+  
+    .introducao-tipos p{
+      width: 140%;
+    }
+  
+    .imagem-lendo-livro{
+      width: 250px; 
+      margin-top: 85px;
+      margin-left: 20%;
+    }
+  
+    .sub-section h2{
+      font-size: 26px;
+    }
+  
+    .ilustra03-pagina1{
+      width: 620px;
+    }
+  
+    .card-teste{
+      width: 280px;
+    }
+  
+    .card-teste:nth-child(3), .card-teste:nth-child(4), .card-teste:nth-child(5){
+      height: 340px;
+    }
+  
+    .alternativas-exe1{
+      width: 205px;
+    }
+  
+    .exercicio-pagina1{
+      height: 155px;
+    }
+  
+    .exercicio-pagina1 p{
+      font-size: 12px;
+    }
+  
+    .resposta-box-exe1{
+      width: 308px;
+      margin-left: 38%;
+      margin-top: -12px;
+    }
+    #resposta-exe-5{
+      font-size: 12px;
+    }
+  
+    .botao-resultado{
+      width: 40%;
+    }
+  
+    .itens-explore{
+      margin-left: 10%;
+    }
+  
+    .info-conteudo p{
+      width: 100%;
+    }
+  
+    .info-card:not(:last-of-type) .info-card-imagem::after{
+      top: 122%;
+      left: 30%;
+    }
+  
+    .card-teste-exe2{
+      width: 50%;
+    }
+  
+    .progress{
+      width: 50%;
+      margin-left: 25.5%;
+    }
+  
+    .box-alternativa-exe2{
+      margin-top: 8%;
+      margin-left: 11%;
+      width: 150px;
+    }
+  
+    .box-alternativa2-exe2{
+      margin-left: -150px;
+      width: 150px;
+    }
+  
+    .box-alternativa-exe2-done{
+      margin-left: 11%;
+      width: 150px;
+    }
+  
+    .box-alternativa2-exe2-done{
+      margin-left: -150px; 
+      width: 150px;
+    }
+  
+    .card-teste-exe2-coluna{
+      width: 320px;
+    }
+  
+    .ilustra02{
+      width: 345px;
+      margin-top: 12%;
+      margin-left: 10%;
+    }
+  
+    .exe3-card{
+      width: 160px;
+    }
+  
+    .card-teste-exe3{
+      margin-right: 15px;
+    }
+  
+    .justificativa-exe3 img{
+      margin-top: 3%;
+    }
+  
+    #exe3-img-v{
+      margin-top: 10%;
+      width: 6%;
+    }
+  
+    .ilustra04{
+      width: 400px;
+      margin-left: 8%;
+    }
+  
+    .lista-pagina4 li{
+      width: 170%;
+    }
+  
+    .textos-secao4 p{
+      width: 60%;
+    }
+  
+    .imagem-balanca{
+      width: 600px;
+    }
+  
+    .select-exe4-box select{
+      width: 120px;
+      font-size: 10px;
+    }
+  
+    .select-exe4-box hr{
+      width: 82%;
+    }
+  
+    .open-secao4{
+      margin-left: 45%;
+    }
+  
+    .icone-resultado-exe4{
+      margin-left: 45%;
+    }
+  
+    .select-exe4-box2 select{
+      width: 260px;
+    }
+  
+    .card-teste-exercicio2{
+      width: 400px;
+    }
+  
+    .card-teste-exercicio2 p{
+      font-size: 14px;
+      width: 90%;
+    }
+  }
