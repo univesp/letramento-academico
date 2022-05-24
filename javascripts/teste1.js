@@ -44,6 +44,16 @@ function geraResultado(){
   if(texto1 === "" || texto2 === "" || texto3 === "" || texto4 === "" || texto5 === ""){
     alert("Por favor, selecione todas as respostas.");
   }else{
+
+    //aumenta area do exercício depois de conferir resultado
+    let areaExe = document.querySelector('.card-container2');
+    if (window.matchMedia("(min-width:768px)").matches) {
+      /* a viewport tem pelo menos 768 pixels de largura */
+      areaExe.style.height = "1500px";
+    } else {
+      /* a viewport menos que 768 pixels de largura */
+      areaExe.style.height = "2700px";
+    }
     
     //mostrando a div dos icones de certo e errado
     resultadoDiv1.style.display = "block";
@@ -77,9 +87,24 @@ function geraResultado(){
       botao.innerHTML = "Tentar novamente";
       botao2.style.display = 'inline';
     } else if(botao.innerText === "Tentar novamente"){
-      
-      //scrolla pagina para inicio do teste depois de conferir resultado
-      window.scrollTo(0, 2200);
+
+      if (window.matchMedia("(min-width:768px)").matches) {
+        /* a viewport tem pelo menos 768 pixels de largura */
+        areaExe.style.height = "1500px";
+      } else {
+        /* a viewport menos que 768 pixels de largura */
+        areaExe.style.height = "2100px";
+      }
+
+      if (window.matchMedia("(min-width:768px)").matches) {
+        /* a viewport tem pelo menos 768 pixels de largura */
+        //scrolla pagina para inicio do teste depois de conferir resultado
+        window.scrollTo(0, 2200);
+      } else {
+        /* a viewport menos que 768 pixels de largura */
+        //scrolla pagina para inicio do teste depois de conferir resultado
+        window.scrollTo(0, 3200);
+      }
 
       resetaExercicio();
 
@@ -91,8 +116,15 @@ function geraResultado(){
     }
     
 
-    //scrolla pagina para inicio do teste depois de conferir resultado
-    window.scrollTo(0, 2200);
+    if (window.matchMedia("(min-width:768px)").matches) {
+      /* a viewport tem pelo menos 768 pixels de largura */
+      //scrolla pagina para inicio do teste depois de conferir resultado
+      window.scrollTo(0, 2200);
+    } else {
+      /* a viewport menos que 768 pixels de largura */
+      //scrolla pagina para inicio do teste depois de conferir resultado
+      window.scrollTo(0, 3200);
+    }
 
     
   }  
@@ -202,12 +234,25 @@ function mostraRespostas(){
   let respostaCerta5 = document.getElementById('resposta-exe-5')
   respostaCerta5.innerHTML = "Resposta certa: " + resposta5.bold() + '.';
 
-  //scrolla pagina para inicio do teste depois de conferir resultado
-  window.scrollTo(0, 2200);
+  if (window.matchMedia("(min-width:768px)").matches) {
+    /* a viewport tem pelo menos 768 pixels de largura */
+    //scrolla pagina para inicio do teste depois de conferir resultado
+    window.scrollTo(0, 2200);
+  } else {
+    /* a viewport menos que 768 pixels de largura */
+    //scrolla pagina para inicio do teste depois de conferir resultado
+    window.scrollTo(0, 3200);
+  }
 
   //aumenta area do exercício depois de conferir resultado
   let areaExe = document.querySelector('.card-container2');
-  areaExe.style.height = "1500px";
+  if (window.matchMedia("(min-width:768px)").matches) {
+    /* a viewport tem pelo menos 768 pixels de largura */
+    areaExe.style.height = "1500px";
+  } else {
+    /* a viewport menos que 768 pixels de largura */
+    areaExe.style.height = "3000px";
+  }
 
   //desabilitando botões depois de finalizar o exercício
   let botao = document.querySelector('.botao-resultado');

@@ -74,12 +74,12 @@
     .ilustra01{
       width: 350px;
       position: relative;
-      bottom: 670px;
+      bottom: 250px;
       margin-bottom: -90%;
     }
   
     .sub-section{
-      margin-top: -1%;
+      margin-top: 100%;
     }
   
     .sub-section h2{
@@ -109,6 +109,10 @@
   
     .ilustra03-pagina1 {
       width: 440px;
+    }
+
+    #resposta-exe-5{
+        font-size: 15px;
     }
   
     .explore-mobile{
