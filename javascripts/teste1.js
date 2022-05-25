@@ -50,9 +50,12 @@ function geraResultado(){
     if (window.matchMedia("(min-width:768px)").matches) {
       /* a viewport tem pelo menos 768 pixels de largura */
       areaExe.style.height = "1500px";
-    } else {
-      /* a viewport menos que 768 pixels de largura */
+    } else if(window.matchMedia("(min-width:576px)").matches) {
+      /* a viewport tem pelo menos 576 pixels de largura */
       areaExe.style.height = "2700px";
+    }else{
+      /* a viewport menos que 576 pixels de largura */
+      areaExe.style.height = "3500px";
     }
     
     //mostrando a div dos icones de certo e errado
@@ -91,19 +94,26 @@ function geraResultado(){
       if (window.matchMedia("(min-width:768px)").matches) {
         /* a viewport tem pelo menos 768 pixels de largura */
         areaExe.style.height = "1500px";
-      } else {
-        /* a viewport menos que 768 pixels de largura */
-        areaExe.style.height = "2100px";
+      } else if(window.matchMedia("(min-width:576px)").matches) {
+        /* a viewport tem pelo menos 576 pixels de largura */
+        areaExe.style.height = "2700px";
+      }else{
+        /* a viewport menos que 576 pixels de largura */
+        areaExe.style.height = "3000px";
       }
 
       if (window.matchMedia("(min-width:768px)").matches) {
         /* a viewport tem pelo menos 768 pixels de largura */
         //scrolla pagina para inicio do teste depois de conferir resultado
         window.scrollTo(0, 2200);
-      } else {
-        /* a viewport menos que 768 pixels de largura */
+      } else if(window.matchMedia("(min-width:576px)").matches) {
+        /* a viewport tem pelo menos 576 pixels de largura */
         //scrolla pagina para inicio do teste depois de conferir resultado
         window.scrollTo(0, 3200);
+      } else{
+        /* a viewport menos que 576 pixels de largura */
+        //scrolla pagina para inicio do teste depois de conferir resultado
+        window.scrollTo(0, 4000);
       }
 
       resetaExercicio();
@@ -120,10 +130,14 @@ function geraResultado(){
       /* a viewport tem pelo menos 768 pixels de largura */
       //scrolla pagina para inicio do teste depois de conferir resultado
       window.scrollTo(0, 2200);
-    } else {
-      /* a viewport menos que 768 pixels de largura */
+    } else if(window.matchMedia("(min-width:576px)").matches) {
+      /* a viewport tem pelo menos 576 pixels de largura */
       //scrolla pagina para inicio do teste depois de conferir resultado
       window.scrollTo(0, 3200);
+    } else{
+      /* a viewport menos que 576 pixels de largura */
+      //scrolla pagina para inicio do teste depois de conferir resultado
+      window.scrollTo(0, 4000);
     }
 
     
@@ -238,10 +252,14 @@ function mostraRespostas(){
     /* a viewport tem pelo menos 768 pixels de largura */
     //scrolla pagina para inicio do teste depois de conferir resultado
     window.scrollTo(0, 2200);
-  } else {
-    /* a viewport menos que 768 pixels de largura */
+  } else if(window.matchMedia("(min-width:576px)").matches) {
+    /* a viewport tem pelo menos 576 pixels de largura */
     //scrolla pagina para inicio do teste depois de conferir resultado
     window.scrollTo(0, 3200);
+  } else{
+    /* a viewport menos que 576 pixels de largura */
+    //scrolla pagina para inicio do teste depois de conferir resultado
+    window.scrollTo(0, 4000);
   }
 
   //aumenta area do exercício depois de conferir resultado
@@ -249,9 +267,12 @@ function mostraRespostas(){
   if (window.matchMedia("(min-width:768px)").matches) {
     /* a viewport tem pelo menos 768 pixels de largura */
     areaExe.style.height = "1500px";
-  } else {
-    /* a viewport menos que 768 pixels de largura */
+  } else if(window.matchMedia("(min-width:576px)").matches) {
+    /* a viewport tem pelo menos 576 pixels de largura */
     areaExe.style.height = "3000px";
+  }else{
+    /* a viewport menos que 576 pixels de largura */
+    areaExe.style.height = "4000px";
   }
 
   //desabilitando botões depois de finalizar o exercício

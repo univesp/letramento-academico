@@ -17,7 +17,7 @@
   
     .secoes-links{
       margin-left: -2%;
-      margin-top: 10%;
+      margin-top: 10% !important;
     }
   
     .intro-links2{
@@ -74,12 +74,12 @@
     .ilustra01{
       width: 350px;
       position: relative;
-      bottom: 250px;
+      bottom: 670px;
       margin-bottom: -90%;
     }
   
     .sub-section{
-      margin-top: 100%;
+      margin-top: 5%;
     }
   
     .sub-section h2{
@@ -217,7 +217,7 @@
 
     .ilustra-pagina2{
         position: relative;
-        bottom: 320px;
+        bottom: 750px;
         margin-left: -5%;
     }
 
@@ -225,6 +225,10 @@
         margin-top: 120% !important;
         
     }
+
+    .info-container {
+      margin: -85% 0 0 18%;
+  }
 
     .secoes-links {
         margin-left: -2%;
@@ -312,7 +316,7 @@
     .ilustra02{
         width: 400px;
         position: relative;
-        bottom: 220px;
+        bottom: 650px;
         margin-left: -5%;
     }
 
@@ -323,6 +327,10 @@
     .titulo-solto-mobile > p{ 
         margin-left: 3%;
         width: 92%;
+    }
+
+    .titulo-solto-mobile{
+      margin-top: -340px;
     }
 
     .exe3-row{
@@ -366,7 +374,7 @@
     .ilustra04{
         width: 400px;
         position: relative;
-        bottom: 70px;
+        bottom: 480px;
         margin-left: -5%;
     }
 
@@ -379,7 +387,7 @@
     }
 
     .balanca-div{
-        margin-top: 34% !important;
+        margin-top: -45% !important;
     }
 
     .textos-secao4{
