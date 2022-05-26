@@ -286,8 +286,8 @@
 }
 
 .passo-titulo{
-  background-size: 95%;
-  margin-left: -13%;     
+  background-size: 85%;
+      
  }
 
  #titulo-mobile{
@@ -300,8 +300,9 @@
 
  .ilustra-pagina2{
      position: relative;
-     bottom: 750px;
+     bottom: 705px;
      margin-left: -5%;
+     width: 250px;
  }
 
  #paragrafo1-pagina2-mobile{
@@ -310,7 +311,7 @@
  }
 
  .info-container {
-   margin: -85% 0 0 18%;
+   margin: -85% 0 0 0;
 }
 
  .secoes-links {
@@ -321,61 +322,76 @@
  .info-card {
      display: flex;
      flex-direction: column;
-     align-items: center;
+     justify-content: center;
      margin-top: 50px;
      text-align: center;
-     margin-left: -30%;
- }
-
- .info-card-imagem{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     margin-left: 5%;
  }
 
  .info-conteudo p {
-     width: 90%;
-     text-align: left;
-     margin-left: 10%;
+     width: 95%;    
  }
 
  .destaque{
-     height: 340px;
+     height: 550px;
  }
 
  .card-teste-exe2{
-     width: 70%;
+     width: 90%;
+ }
+
+ .card-teste-exe2 p{
+   text-align: center;
  }
 
  .progress{
-  width: 70%;
-  margin-left: 15.5%;
+  width: 90%;
+  margin-left: 7%;
+ }
+
+ .seta-direita{
+   margin-bottom: -30%;
  }
 
  .box-alternativa-exe2{
-     margin-top: 15%;
-     margin-left: 1%;
-     width: 150px;
+     margin-top: 30%;
+     margin-left: -10%;
+     width: 120px;
+     font-size: 12px;
    }
  
    .box-alternativa2-exe2{
-     margin-top: -22px;  
-     margin-left: -100px;
-     width: 150px;
+     margin-top: -8px;  
+     margin-left: -50px;
+     width: 120px;
+     font-size: 12px;
    }
  
    .box-alternativa-exe2-done{
-     margin-top: 15%;
-     margin-left: 1%;
-     width: 150px;
+     margin-top: 30%;
+     margin-left: -10%;
+     width: 120px;
+     font-size: 12px;
    }
  
    .box-alternativa2-exe2-done{
-     margin-top: -22px;  
-     margin-left: -100px;
+     margin-top: -8px;  
+     margin-left: -50px;
      width: 150px;
+     width: 120px;
+     font-size: 12px;
+   }
+
+   .card-teste-exe2-coluna{
+    margin-left: 0;
+    width: 300px;
+    box-shadow: none;
+   }
+
+   .exe2-container{
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
    }
 
    .botao-respostas {
@@ -383,7 +399,7 @@
  }
 
  .exe2-content {
-     margin-left: 60px;
+     margin-left: 0;
      text-align: center;
      display: flex;
      flex-direction: column;

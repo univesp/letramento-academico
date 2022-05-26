@@ -70,6 +70,7 @@ let fSeta = function(){
       setaEsquerda.style.cursor = "default";
       setaEsquerda.classList.remove('box-alternativa-exe2');
       setaEsquerda.classList.add('box-alternativa-exe2-done');
+      resultado.style.margin = "30% 0 0 0";
       setTimeout(() => {apagaSetaseCaixaDoMeio()}, 1000);
       setTimeout(() => {mostraResultado()}, 1000);
       setTimeout(() => {fVerifica()}, 1000);
@@ -151,7 +152,7 @@ let mostraResultado = function() {
     resultado.style.display = "flex";
   } else {
     /* a viewport menos que 768 pixels de largura */
-    resultado.style.display = "block";
+    resultado.style.display = "flex";
   }
 }
 let mostraBotoes = function(){
@@ -168,7 +169,7 @@ function tentarNovamente(){
   } else {
     /* a viewport menos que 768 pixels de largura */
     //scrolla pagina para inicio do teste depois de conferir resultado
-    window.scrollTo(0, 3800);
+    window.scrollTo(0, 5000);
   }
 }
 
@@ -200,7 +201,7 @@ function mostraRespostas(){
 } else {
   /* a viewport menos que 768 pixels de largura */
   //scrolla pagina para inicio do teste depois de conferir resultado
-  window.scrollTo(0, 3800);
+  window.scrollTo(0, 5000);
 }
  
 }
