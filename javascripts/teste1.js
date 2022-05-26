@@ -55,7 +55,7 @@ function geraResultado(){
       areaExe.style.height = "2700px";
     }else{
       /* a viewport menos que 576 pixels de largura */
-      areaExe.style.height = "3500px";
+      areaExe.style.height = "2600px";
     }
     
     //mostrando a div dos icones de certo e errado
@@ -99,7 +99,7 @@ function geraResultado(){
         areaExe.style.height = "2700px";
       }else{
         /* a viewport menos que 576 pixels de largura */
-        areaExe.style.height = "3000px";
+        areaExe.style.height = "2200px";
       }
 
       if (window.matchMedia("(min-width:768px)").matches) {
@@ -113,7 +113,7 @@ function geraResultado(){
       } else{
         /* a viewport menos que 576 pixels de largura */
         //scrolla pagina para inicio do teste depois de conferir resultado
-        window.scrollTo(0, 4000);
+        window.scrollTo(0, 4400);
       }
 
       resetaExercicio();
@@ -137,7 +137,7 @@ function geraResultado(){
     } else{
       /* a viewport menos que 576 pixels de largura */
       //scrolla pagina para inicio do teste depois de conferir resultado
-      window.scrollTo(0, 4000);
+      window.scrollTo(0, 4400);
     }
 
     
@@ -259,7 +259,7 @@ function mostraRespostas(){
   } else{
     /* a viewport menos que 576 pixels de largura */
     //scrolla pagina para inicio do teste depois de conferir resultado
-    window.scrollTo(0, 4000);
+    window.scrollTo(0, 4400);
   }
 
   //aumenta area do exercício depois de conferir resultado
@@ -272,7 +272,7 @@ function mostraRespostas(){
     areaExe.style.height = "3000px";
   }else{
     /* a viewport menos que 576 pixels de largura */
-    areaExe.style.height = "4000px";
+    areaExe.style.height = "3100px";
   }
 
   //desabilitando botões depois de finalizar o exercício
@@ -309,3 +309,14 @@ function resetaExercicio(){
   select5.style.cursor = "pointer";
   select5.style.color = "#000";
 }
+
+let collapseMobile = function(){
+  if (window.matchMedia("(max-width:575px)").matches) {
+    
+    window.scrollTo(0, 4300);
+  }
+}
+
+let collapseTwo = document.querySelector('#collapse2');
+
+collapseTwo.addEventListener('click', collapseMobile)

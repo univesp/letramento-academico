@@ -1,21 +1,29 @@
-@media (min-width: 500px) and (max-width: 575px) {
+@media (min-width: 1px) and (max-width: 575px) {
+  body, html{
+    overflow-x: hidden;
+  }
+
   .grid-container{
     display: block;
-    margin-left: 18%;
+    
   }
 
   .titulo-rea{
     background-position: 5% 30%, 5% 95%;
     background-size: 100%;
     }  
+
+    .introducao h1{
+      font-size: 44px;
+    }
   
     .introducao p{
-      width: 220%;
+      width: 250%;
       margin-top: 7%;
     }
   
     .secoes-links{
-      margin-left: -2%;
+      margin-left: 4% !important;
       margin-top: 10% !important;
     }
   
@@ -35,514 +43,10 @@
     .titulo-explore{
       width: 80%;
     }
-  
-    .itens-explore{
-      display: block;
-      justify-content: center;
-      align-items: center;
-      margin-top: 1%;
-    }
-  
-    .explore-inicial h3{
-      margin-left: -35%;
-      margin-bottom: 5%;
-    }
-  
-    .explore-inicial2 h3{
-      margin-left: -42%;
-      margin-bottom: 5%;
-    }
 
-    .explore-div2{
-      margin-left: 0;
-      margin-top: 10%;
-    }
-
-    .introducao-tipos-titulo{
-      margin-left: -12%;
-    }
-
-    .introducao-tipos p{
-      margin-left: -12%;
-    }
-
-    .introducao-tipos > h1 {
-      width: 120%;
-      font-size: 48px !important;
-  }
-
-  #paragrafo1-pagina1{
-    margin-top: 100% !important;
-  }
-
-  .ilustra01{
-    width: 350px;
-    position: relative;
-    bottom: 630px;
-    margin-bottom: -90%;
-  }
-
-  .sub-section{
-    margin-top: 5%;
-  }
-
-  .sub-section h2{
-    width: 220% !important;
-    margin-left: -23% !important;
-  }
-
-  .sub-section p{
-    width: 210% !important;
-    margin-left: -30% !important;
-  }
-
-  .paragrafo1-sub-section{
-    margin-top: 180% !important;
-  }
-
-  .imagem-lendo-livro{
-    position: relative;
-    bottom: 650px;
-    margin-bottom: -90%;
-    margin-left: -28%;
-  }
-
-  #texto-corrido1{
-    margin-top: -65px !important;
-  }
-
-  .ilustra03-pagina1 {
-    width: 440px;
-  }
-
-  #resposta-exe-5{
-    font-size: 13px;
-}
-
-.explore-mobile{
-  display: grid !important;
-  grid-template-columns: 33,3% 33,3% 33,3% !important;
-  grid-template-areas: 
-  "index index index"
-  "pagina1 pagina2 pagina3";
-}
-
-.toIndex{
-  grid-area: index;
-  width: 50%;
-  margin-left: 28%;
-  margin-bottom: 5%;
-}
-.toPagina1{
-  grid-area: pagina1;
-  width: 130%;
-}
-.toPagina2{
-  grid-area: pagina2;
-  width: 130%;
-}
-.toPagina3{
-  grid-area: pagina3;
-  width: 130%;
-}
-
-.card-container{
-  display: block;
-  height: 1800px;
-  text-align: center;
-}
-
-.card-teste{
-  width: 370px;
-}
-
-.alinhamento{
-  position: inherit;
-}
-
-.card-pagina1{
-  margin-left: 6%;
-}
-
-.referencia-pagina1{
-  top: 4%;
-  margin-left: 13%;
-}
-
-.teste-area{
-  flex-direction: column;  
-}
-
-.teste-area:nth-child(1){
-  margin-top: 10%;
-}
-
-.exercicio-pagina1{
-  width: 370px;
-  margin: 1% 0 15% 7%;
-  height: 205px;
-}
-
-.alternativas-exe1{
-  height: 90px;
-}
-
-.card-container2{
-  height: 2100px;
-}
-
-.botao-resultado{
-  width: 55%;
-}
-
-.resultado-teste{
- width: 60px;
- margin-left: 45%;
- margin-top: -12% !important;
- margin-bottom: 20% !important;
- display: none;
-}
-
-.resposta-box-exe1 {
-    width: 385px;
-    margin-bottom: 100px;
-    margin-top: -86px;
-    margin-left: 6%;
-}
-
-.passo-titulo{
-  background-size: 95%;
-  margin-left: -13%;     
- }
-
- #titulo-mobile{
-  font-size: 46px !important;
- }
-
- .info-card:not(:last-of-type) .info-card-imagem::after{
-     content: none;
- }
-
- .ilustra-pagina2{
-     position: relative;
-     bottom: 750px;
-     margin-left: -5%;
- }
-
- #paragrafo1-pagina2-mobile{
-     margin-top: 120% !important;
-     
- }
-
- .info-container {
-   margin: -85% 0 0 18%;
-}
-
- .secoes-links {
-     margin-left: -2%;
-     margin-top: -95%;
- }
-
- .info-card {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     margin-top: 50px;
-     text-align: center;
-     margin-left: -30%;
- }
-
- .info-card-imagem{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     margin-left: 5%;
- }
-
- .info-conteudo p {
-     width: 90%;
-     text-align: left;
-     margin-left: 10%;
- }
-
- .destaque{
-     height: 340px;
- }
-
- .card-teste-exe2{
-     width: 70%;
- }
-
- .progress{
-  width: 70%;
-  margin-left: 15.5%;
- }
-
- .box-alternativa-exe2{
-     margin-top: 15%;
-     margin-left: 1%;
-     width: 150px;
-   }
- 
-   .box-alternativa2-exe2{
-     margin-top: -22px;  
-     margin-left: -100px;
-     width: 150px;
-   }
- 
-   .box-alternativa-exe2-done{
-     margin-top: 15%;
-     margin-left: 1%;
-     width: 150px;
-   }
- 
-   .box-alternativa2-exe2-done{
-     margin-top: -22px;  
-     margin-left: -100px;
-     width: 150px;
-   }
-
-   .botao-respostas {
-     margin-left: 0px;
- }
-
- .exe2-content {
-     margin-left: 60px;
-     text-align: center;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     align-content: center;
- }
-
- #titulo3-mobile{
-     font-size: 48px !important;
-     margin-left: -12%;
- }
-
- .ilustra02{
-     width: 400px;
-     position: relative;
-     bottom: 650px;
-     margin-left: -5%;
- }
-
- #paragrafo1-pagina3-mobile{
-     margin-top: 100% !important;
- }
-
- .titulo-solto-mobile > p{ 
-     margin-left: 3%;
-     width: 92%;
- }
-
- .titulo-solto-mobile{
-   margin-top: -340px;
- }
-
- .exe3-row{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;  
-     margin-top: -2%;
-   }
-
-   .exe3-card{
-       width: 185px;
-   }
-
-  .botoes-exe3{
-     display: flex; 
-     flex-direction: row;
-     justify-content: center;  
-     margin-top: -2%;
-     margin-bottom: 5%;
-     margin-left: -2%;
-  }
-
-   .card-teste-exe3{
-       width: 85%;
-       box-shadow: none;
-   }
-
-   .exe3-card-desktop{
-       display: none;
-   }
-
-   .justificativa-exe3 {
-     margin: -3.5% 0 30px 9.5%;
- }
-
- .citacoes-titulo{
-     margin-left: 5%;
- }
-
- .ilustra04{
-     width: 400px;
-     position: relative;
-     bottom: 480px;
-     margin-left: -5%;
- }
-
- #paragrafo1-pagina4-mobile{
-     margin-top: 70% !important;
- }
-
- .lista-pagina4{
-     margin-left: -10%;
- }
-
- .balanca-div{
-     margin-top: -45% !important;
- }
-
- .textos-secao4{
-     flex-direction: column;
- }
-
- .textos-secao4 p:nth-child(1) {
-     margin-left: 7%;
- }
-
- .textos-secao4 p {
-     width: 95%;
- }
-
- .imagem-balanca {
-     width: 450px;
- }
-
- .destaque-mobile{
-     height: 270px !important;
- }
-
- .options-area{
-     display: block;
-     margin-left: 110px;
- }
-
- .select-exe4-box hr {
-     width: 200px;
- }
-
- .resposta-box {
-  padding: 7px;
-}
-
- .itens-exe1-pagina4{
-     display: none;
- }
-
- .itens-exe1-pagina4-mobile{
-     display: inline;
-     position: relative; 
-     top: 25px; 
-     left: 2px;
- }
-
- .resposta-box {
-     letter-spacing: -0.5px;
- }
-
- .resultado-secao4 {
-     margin-top: 10%;
- }
-
- .botoes-exe1-pagina4{ 
-     margin-top: 10%;
-   }
-
- .tipos-de-citacao{
-     margin-top: 20% !important;
- }
-
- .exercicio2-secao4 {
-     margin: -10% 0 0 -2%;
- }
-
- .exercicio2-container {
-     flex-direction: column;
-     margin-top: 40% !important;
- }
-
- .exercicio2-container:nth-child(3) {
-     flex-direction: column;
-     margin-top: 30% !important;
- }
-
- .card-teste-exercicio2 {
-     width: 460px;
-     margin-top: 17px;
-     margin-left: -2%;
-     box-shadow: none;
- }
-
- .resultado-teste-secao4{
-     width: 50px;
-     margin-left: -80%;
-     display: none;
-   }
-
-   .select-exe4-box2{
-       margin-top: -55%;
-   }
-
-   .pagina4-titulo-secao{
-     margin-left: 50px;
-     width: 88%;
-   }
-}
-
-
-
-@media (min-width: 1px) and (max-width: 499px) {
-  body, html{
-    overflow-x: hidden;
-  }
-
-  .grid-container{
-    display: block;
-    margin-left: 3%;
-  }
-
-  .titulo-rea{
-    background-position: 5% 30%, 5% 95%;
-    background-size: 100%;
-    font-size: 48px !important;
-  }  
-
-  .introducao{
-    text-align: center;
-  }
-  
-    .introducao p{
-      width: 250%;
-      margin-top: 7%;
-      text-align: left;
-    }
-  
-    .secoes-links{
-      margin-left: 7% !important;
-      margin-top: 10% !important;
-    }
-  
-    .intro-links2{
-      margin: 5% 0 0 0;
-    }
-  
-    .livro-intro2{
-      width: 37%;
-    }
-  
-    .explore{
-      text-align: center;
-      height: 700px;
-    }
-  
-    .titulo-explore{
-      width: 95%;
+    .titulo-explore h3{
+      font-size: 18px;
+      margin-top: -20%;
     }
   
     .itens-explore{
@@ -553,19 +57,19 @@
     }
 
     .itens-explore-inicial img {
-      width: 270px;
+      width: 275px;
   }
   
     .explore-inicial h3{
       margin-left: -35%;
       margin-bottom: 5%;
-      font-size: 17px;
+      font-size: 16px;
     }
   
     .explore-inicial2 h3{
       margin-left: -42%;
       margin-bottom: 5%;
-      font-size: 17px;
+      font-size: 16px;
     }
 
     .explore-div2{
@@ -573,92 +77,72 @@
       margin-top: 10%;
     }
 
-    .introducao-tipos-titulo{
-      margin-left: -5%;
+    .grid-container-mobile{
+      margin-left: 5%;
+      
     }
 
     .introducao-tipos p{
-      margin-left: -5%;
+      width: 97%;
     }
 
     .introducao-tipos > h1 {
-      width: 110%;
-      font-size: 34px !important;
+      font-size: 48px !important;
+      width: 107%;
   }
 
+  .introducao-tipos-titulo {
+    background-position: 0px 97%;
+    background-size: 92%;
+}
+
   #paragrafo1-pagina1{
-    margin-top: 120% !important;
+    margin-top: 115% !important;
+  }
+
+  .ilustra01-div{
+    display: flex;
+    justify-content: center;
+    margin-top: -5% !important;
   }
 
   .ilustra01{
-    width: 250px;
+    width: 115%;
     position: relative;
     bottom: 640px;
     margin-bottom: -90%;
   }
 
   .sub-section{
-    margin-top: -5%;
+    margin-top: -10%;
   }
 
   .sub-section h2{
-    width: 195% !important;
-    margin-left: -9% !important;
-    font-size: 22px;
+    width: 220% !important;
+    
   }
 
   .sub-section p{
-    width: 210% !important;
-    margin-left: -10% !important;
-  }
-
-  .paragrafo1-sub-section{
-    margin-top: 180% !important;
+    width: 180% !important;
+    
   }
 
   .imagem-lendo-livro{
-    width: 180px;
-    position: relative;
-    bottom: 625px;
-    margin-bottom: -90%;
-    margin-left: -37%;
+    width: 250px;
+    margin-bottom: 50%;
+    margin-left: -50%;
   }
-
-  .texto-corrido {
-    margin-left: -3%;
-    width: 105%;
-}
 
   #texto-corrido1{
-    margin-top: -80px !important;
-  }
-
-  #pagina-1 p{
-    margin-left: -7%;
-    width: 110%;
-  }
-
-  #pagina-1 h2{
-    margin-left: -7%;
-    width: 115%;
-    font-size: 22px;
+    margin-top: -65px !important;
   }
 
   .ilustra03-pagina1 {
-    width: 265px;
-    margin-left: -7%;
+    width: 270px;
   }
 
   #resposta-exe-5{
-    font-size: 13px;
-}
-
-.explore-small-screen {
-  height: 400px;
-}
-
-#livro3{
-  margin-left: 10px;
+    margin-top: 1%;
 }
 
 .explore-mobile{
@@ -667,6 +151,10 @@
   grid-template-areas: 
   "index index index"
   "pagina1 pagina2 pagina3";
+}
+
+.explore-small-screen{
+  height: 380px;
 }
 
 .toIndex{
@@ -686,98 +174,115 @@
 .toPagina3{
   grid-area: pagina3;
   width: 130%;
+  margin-left: -17%;
 }
 
 .card-container{
-  display: block;
-  height: 2050px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2000px;
+  margin-top: -35%;
 }
 
 .card-teste{
-  width: 217px;
-  height: 290px;
+  width: 230px;
   box-shadow: none;
 }
 
-.card-pagina1 p{
-  font-size: 14px;
+.card-teste:nth-child(3), .card-teste:nth-child(4), .card-teste:nth-child(5) {
+  height: 350px;
 }
 
-.card-teste:nth-child(3), .card-teste:nth-child(4), .card-teste:nth-child(5) {
-  height: 385px;
+.card-teste p{
+  font-size: 14px;
 }
 
 .alinhamento{
   position: inherit;
 }
 
-.card-pagina1{
-  margin-left: 6%;
+.referencia-pagina1{
+  top: 2%;
+  margin-left: 13%;
 }
 
-.referencia-pagina1{
-  top: 4%;
-  margin-left: 13%;
+.dropdown-teste h2{
+  font-size: 17px !important;
 }
 
 .teste-area{
   flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+}
+
+.select-exe1-box > span{
+  font-size: 16px;
+  margin-bottom: -10px;
+  margin-top: 60px;
+  margin-left: 0;
 }
 
 .teste-area:nth-child(1){
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .exercicio-pagina1{
-  width: 214px;
-  margin: 1% 0 15% 7%;
-  height: 367px;
+  width: 230px;
+  margin: 1% 0 15% 0;
+  height: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .alternativas-exe1{
-  height: 90px;
-  margin-left: 11px;
-}
-
-.select-exe1-box > span {
-  margin-top: 25%;
-  margin-left: 11px;
+  height: 58px;
+  width: 190px;
+  font-size: .8em;
+  background-size: 50px;
+  background-position-y: 30px;
+  margin-left: 0;
 }
 
 .card-container2{
-  height: 3000px;
+  height: 2200px;
 }
 
 .botao-resultado{
-  margin-top: 15%;
-  width: 95%;
-}
-
-.botao-respostas{
-  margin-top: 3%;
+  width: 86%;
+  font-size: 18px;
 }
 
 .resultado-teste{
- width: 40px;
- margin-left: 40%;
+ width: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
  margin-top: -12% !important;
  margin-bottom: 20% !important;
  display: none;
+ margin-left: 0;
 }
 
 .resposta-box-exe1 {
-    width: 215px;
+    width: 230px;
     margin-bottom: 100px;
-    margin-top: -50px;
+    margin-top: -45px;
+    margin-left: 0;
     margin-left: 6%;
-    height: 55px;
 }
 
 .resposta-box-exe1 p {
-  margin-left: 3%;
-  margin-top: 9%;
+  margin-left: 5%;
+  margin-top: 4.5%;
   font-size: 12px;
+}
+
+.referencia-exe1{
+  font-size: 13px;
 }
 
 .passo-titulo{
@@ -1064,3 +569,6 @@
      width: 88%;
    }
 }
+
+
+
