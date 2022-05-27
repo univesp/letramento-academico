@@ -407,15 +407,22 @@
      align-content: center;
  }
 
+ #intro-mitos{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
  #titulo3-mobile{
      font-size: 48px !important;
-     margin-left: -12%;
+     
  }
 
  .ilustra02{
-     width: 400px;
+     width: 250px;
      position: relative;
-     bottom: 650px;
+     bottom: 680px;
      margin-left: -5%;
  }
 
@@ -429,7 +436,7 @@
  }
 
  .titulo-solto-mobile{
-   margin-top: -340px;
+   margin-top: -210px;
  }
 
  .exe3-row{
@@ -441,7 +448,17 @@
    }
 
    .exe3-card{
-       width: 185px;
+       width: 130px;
+       height: 45px;
+       font-size: 12px;
+   }
+
+   .card-teste-exe3 p{
+     font-size: 14px;
+   }
+
+   .icone-v-f{
+     display: none;
    }
 
   .botoes-exe3{
@@ -465,6 +482,10 @@
    .justificativa-exe3 {
      margin: -3.5% 0 30px 9.5%;
  }
+
+ .justificativa-exe3 p{
+  font-size: 14px;
+}
 
  .citacoes-titulo{
      margin-left: 5%;

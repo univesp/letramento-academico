@@ -70,11 +70,14 @@ let fSeta = function(){
       setaEsquerda.style.cursor = "default";
       setaEsquerda.classList.remove('box-alternativa-exe2');
       setaEsquerda.classList.add('box-alternativa-exe2-done');
-      resultado.style.margin = "30% 0 0 0";
       setTimeout(() => {apagaSetaseCaixaDoMeio()}, 1000);
       setTimeout(() => {mostraResultado()}, 1000);
       setTimeout(() => {fVerifica()}, 1000);
       setTimeout(() => {mostraBotoes()}, 1000);
+
+      if (window.matchMedia("(max-width:575px)").matches) { 
+        resultado.style.margin = "30% 0 0 0";
+      }
     }
   }  
 }
