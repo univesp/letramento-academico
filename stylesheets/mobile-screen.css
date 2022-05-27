@@ -487,19 +487,15 @@
   font-size: 14px;
 }
 
- .citacoes-titulo{
-     margin-left: 5%;
- }
-
  .ilustra04{
-     width: 400px;
+     width: 250px;
      position: relative;
-     bottom: 480px;
-     margin-left: -5%;
+     bottom: 430px;
  }
 
  #paragrafo1-pagina4-mobile{
      margin-top: 70% !important;
+     width: 105% !important;
  }
 
  .lista-pagina4{
@@ -519,24 +515,43 @@
  }
 
  .textos-secao4 p {
-     width: 95%;
+     width: 88%;
  }
 
  .imagem-balanca {
-     width: 450px;
+     width: 300px;
  }
 
  .destaque-mobile{
-     height: 270px !important;
+     height: 310px !important;
  }
 
  .options-area{
-     display: block;
-     margin-left: 110px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
  }
+
+ .select-exe4-box {
+  margin-top: 2px;
+}
+
+#alternativas4, #hr4-pagina4{
+  margin-left: 28px;
+}
 
  .select-exe4-box hr {
      width: 200px;
+     margin-left: 0;
+ }
+
+ .botoes-exe1-pagina4 {
+  margin: 4% 0 0px 0;
+}
+
+ .open-secao4{
+   display: none;
  }
 
  .resposta-box {
@@ -554,8 +569,16 @@
      left: 2px;
  }
 
+ .icone-resultado-exe4{
+   margin-left: 75px;
+ }
+ #resultadoImg4{
+   margin-left: 105px;
+ }
+
  .resposta-box {
      letter-spacing: -0.5px;
+     font-size: 14px;
  }
 
  .resultado-secao4 {
@@ -563,11 +586,15 @@
  }
 
  .botoes-exe1-pagina4{ 
-     margin-top: 10%;
+     margin-top: 15%;
    }
 
  .tipos-de-citacao{
      margin-top: 20% !important;
+ }
+
+ #destaque2-mobile{
+   height: 90px !important;
  }
 
  .exercicio2-secao4 {
@@ -576,25 +603,49 @@
 
  .exercicio2-container {
      flex-direction: column;
-     margin-top: 40% !important;
+     justify-content: center;
+     align-items: center;
+     margin-top: 60% !important;
+     margin-left: 0;
  }
 
  .exercicio2-container:nth-child(3) {
      flex-direction: column;
-     margin-top: 30% !important;
+     justify-content: center;
+     align-items: center;
+     margin-top: 40% !important;
+     margin-left: 0;
  }
 
  .card-teste-exercicio2 {
-     width: 460px;
+     width: 300px;
      margin-top: 17px;
-     margin-left: -2%;
+     margin-left: 0;
      box-shadow: none;
+ }
+
+ .select-exe4-box2 select{
+   width: 245px;
+   height: 78px;
+   margin-left: 0;
+   font-size: 14px;
+ }
+
+ #last-option-mobile{
+   width: 120%;
+   font-size: 12px;
+   margin-left: -5%;
  }
 
  .resultado-teste-secao4{
      width: 50px;
-     margin-left: -80%;
+     margin-left: -76%;
      display: none;
+   }
+
+   .resultado-teste-secao4 img{
+     width: 40%;
+     margin-top: -70%;
    }
 
    .select-exe4-box2{
@@ -602,7 +653,7 @@
    }
 
    .pagina4-titulo-secao{
-     margin-left: 50px;
+     margin-left: 20px;
      width: 88%;
    }
 }

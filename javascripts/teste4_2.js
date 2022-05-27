@@ -70,11 +70,17 @@ function geraResultado2(){
       /* a viewport tem pelo menos 768 pixels de largura */
       //scrolla pagina para inicio do teste depois de conferir resultado
       window.scrollTo(0, 3800);
+    }else if (window.matchMedia("(max-width:575px)").matches) {
+      /* a viewport tem menos que 576 pixels de largura */
+      //scrolla pagina para inicio do teste depois de conferir resultado
+      window.scrollTo(0, 6200);
     } else {
       /* a viewport menos que 768 pixels de largura */
       //scrolla pagina para inicio do teste depois de conferir resultado
       window.scrollTo(0, 4800);
     }
+
+    
 
     //mudando texto do botão e mostrando botão de mostrar respostas
     let botaoExe4 = document.querySelector('#botao-exe4');
@@ -89,6 +95,10 @@ function geraResultado2(){
         /* a viewport tem pelo menos 768 pixels de largura */
         //scrolla pagina para inicio do teste depois de conferir resultado
         window.scrollTo(0, 3800);
+      }else if (window.matchMedia("(max-width:575px)").matches) {
+        /* a viewport tem menos que 576 pixels de largura */
+        //scrolla pagina para inicio do teste depois de conferir resultado
+        window.scrollTo(0, 6200);
       } else {
         /* a viewport menos que 768 pixels de largura */
         //scrolla pagina para inicio do teste depois de conferir resultado
@@ -157,6 +167,10 @@ function mostraRespostas(){
 
     //scrolla pagina para inicio do teste depois de conferir resultado
     window.scrollTo(0, 3800);
+  } else if (window.matchMedia("(max-width:575px)").matches) {
+    /* a viewport tem menos que 576 pixels de largura */
+    //scrolla pagina para inicio do teste depois de conferir resultado
+    window.scrollTo(0, 6200);
   } else {
     /* a viewport menos que 768 pixels de largura */
     selectAfter1.style.marginTop = "-75px";

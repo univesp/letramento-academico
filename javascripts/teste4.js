@@ -21,6 +21,12 @@ function geraResultado(){
   let valueSelected4 = document.getElementById('alternativas4').value;
 
   if(valueSelected1 !== "" && valueSelected2 !== "" && valueSelected3 !== "" && valueSelected4 !== ""){
+
+    if (window.matchMedia("(max-width:575px)").matches) {
+      /* a viewport tem menos que 576 pixels de largura */
+      //scrolla pagina para inicio do teste depois de conferir resultado
+      window.scrollTo(0, 2750);
+    } 
     
     imagem1.style.display = "block";
     imagem2.style.display = "block";
@@ -38,8 +44,16 @@ function geraResultado(){
 
       document.location.reload(true);
       
-      //scrolla pagina para inicio do teste depois de conferir resultado
-      window.scrollTo(0, 1900);
+      
+
+      if (window.matchMedia("(max-width:575px)").matches) {
+        /* a viewport tem menos que 576 pixels de largura */
+        //scrolla pagina para inicio do teste depois de conferir resultado
+        window.scrollTo(0, 2750);
+      } else{
+        //scrolla pagina para inicio do teste depois de conferir resultado
+        window.scrollTo(0, 1900);
+      }
 
       //desabilitando botões depois de finalizar o exercício
       
