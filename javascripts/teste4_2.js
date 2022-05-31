@@ -8,6 +8,8 @@ let imagem3Exe2 = document.getElementById('resultadoImg3-exe2');
 
 let baseURL2 = 'https://apps.univesp.br/letramento-academico/assets/';
 
+let cardsExe = document.querySelectorAll('.card-teste-exercicio2');
+
 
 function geraResultado2(){
 
@@ -16,6 +18,10 @@ function geraResultado2(){
   let valueSelected3Exe2 = document.getElementById('alternativas3-exe2').value;
   
   if(valueSelected1Exe2 !== "" && valueSelected2Exe2 !== "" && valueSelected3Exe2 !== ""){
+
+    cardsExe.forEach(e => {
+      e.style.marginTop = '30px';
+    })
 
     //Mostra os icones de certo ou errado
     let iconesResultado = document.querySelectorAll('.resultado-teste-secao4');
@@ -147,13 +153,23 @@ function toggleValueSelect2(){
 }
 
 function mostraRespostas(){
+  cardsExe.forEach(e => {
+    e.style.marginTop = '-55px';
+  })
+
   //mosttra as respostas corretas
   let resultadoFrases = document.querySelectorAll('.resultado-exercicio4-2');
 
-  resultadoFrases.forEach(e => {
-    e.style.display = "block";
-  })
-
+  if(window.matchMedia("(min-width:576px)").matches){
+    resultadoFrases.forEach(e => {
+      e.style.display = "block";
+    })  
+  }else{
+    resultadoFrases.forEach(e => {
+      e.style.display = "flex";
+    })  
+  }
+  
   //ajusta posicionamento dos selects depois de aparecer as respostas
   let selectAfter1 = document.getElementById('selectExe4Box1');
   let selectAfter2 = document.getElementById('selectExe4Box2');

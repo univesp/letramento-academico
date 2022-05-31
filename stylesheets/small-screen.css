@@ -180,6 +180,10 @@
   
     .card-container2{
       height: 2100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .botao-resultado{

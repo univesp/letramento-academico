@@ -278,8 +278,7 @@ nav .jssocials-shares{
 }
 
 .card-container2{
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: block;
   margin-left: 5%;
   background-color: #ffffa0;
   width: 92%;
