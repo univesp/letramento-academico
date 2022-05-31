@@ -103,17 +103,26 @@
     display: flex;
     justify-content: center;
     margin-top: -5% !important;
+    margin-left: 0 !important;
+  }
+
+  .ilustra02-div{
+    display: flex;
+    justify-content: center;
+    margin-top: -5% !important;
+    margin-left: 25% !important;
   }
 
   .ilustra01{
-    width: 115%;
+    width: 300px;
+    height: 300px;
     position: relative;
     bottom: 640px;
     margin-bottom: -90%;
   }
 
   .sub-section{
-    margin-top: -10%;
+    margin-top: 10%;
   }
 
   .sub-section h2{
@@ -215,6 +224,7 @@
   flex-direction: column;  
   align-items: center;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
 .select-exe1-box > span{
@@ -225,7 +235,7 @@
 }
 
 .teste-area:nth-child(1){
-  margin-top: -10%;
+  margin-top: 10%;
 }
 
 .exercicio-pagina1{
@@ -244,6 +254,9 @@
   background-size: 50px;
   background-position-y: 30px;
   margin-left: 0;
+  text-align-last: center;
+  text-indent: 15px;
+  background-position-x: 50%
 }
 
 .card-container2{
@@ -275,7 +288,6 @@
     margin-bottom: 100px;
     margin-top: -45px;
     margin-left: 0;
-    margin-left: 6%;
 }
 
 .resposta-box-exe1 p {
@@ -540,8 +552,12 @@
   margin-top: 2px;
 }
 
-#alternativas4, #hr4-pagina4{
+#alternativas4{
   margin-left: 0;
+}
+
+.alternativas-exe1-pagina4-4, #hr4-pagina4{
+  margin-left: 27px !important;
 }
 
  .select-exe4-box hr {
@@ -577,6 +593,12 @@
  }
  #resultadoImg4{
    margin-left: 105px;
+ }
+
+ .icone4-exe1-pagina1{
+   margin-left: 0 !important;
+   width: 50px !important;
+   height: 51px !important;
  }
 
  .resposta-box {

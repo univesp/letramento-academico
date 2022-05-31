@@ -170,7 +170,7 @@
   
     .exercicio-pagina1{
       width: 400px;
-      margin: 1% 0 15% 7%;
+      margin: 1% 0 15% 0;
       height: 205px;
     }
   
@@ -187,7 +187,7 @@
     }
 
     .botao-resultado{
-      width: 55%;
+      width: 100%;
     }
 
     .resultado-teste{
@@ -201,8 +201,8 @@
     .resposta-box-exe1 {
         width: 426px;
         margin-bottom: 100px;
-        margin-top: -86px;
-        margin-left: 6%;
+        margin-top: -65px;
+        margin-left: 0%;
     }
 
     .passo-titulo{
