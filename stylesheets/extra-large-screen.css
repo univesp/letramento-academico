@@ -1,10 +1,5 @@
 /* Telas Extra Extra Grandes */
-@media screen and (min-width: 1440px) {
-    .info-card:not(:last-of-type) .info-card-imagem::after{
-        top: 68%;
-        left: 34%;
-    }
-  
+@media screen and (min-width: 1440px) {  
     .detaque-mitos{
       margin-left: 19%;
     }

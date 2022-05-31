@@ -8,17 +8,16 @@
     
   }
 
-  .titulo-rea{
-    background-position: 5% 30%, 5% 95%;
-    background-size: 100%;
-    }  
+    .introducao{
+      max-width: 300px;
+    }
 
     .introducao h1{
       font-size: 44px;
     }
   
     .introducao p{
-      width: 250%;
+      width: 95%;
       margin-top: 7%;
     }
   

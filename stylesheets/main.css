@@ -475,13 +475,17 @@ nav .jssocials-shares{
   width: 110px;
 }
 
+.info-card-imagem{
+  position: relative;
+}
+
 .info-card:not(:last-of-type) .info-card-imagem::after{
   content: "";
     position: absolute;
-    height: 1320px;
+    height: 100%;
     border-left: 10px dotted #9fffff;
-    top: 110%;
-    left: 28%;
+    top: 10px;
+    left: calc(50% - 3px);
     z-index: -1;
 }
 

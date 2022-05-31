@@ -110,11 +110,6 @@
       width: 100%;
     }
   
-    .info-card:not(:last-of-type) .info-card-imagem::after{
-      top: 71%;
-      left: 30%;
-    }
-  
     .card-teste-exe2{
       width: 50%;
     }

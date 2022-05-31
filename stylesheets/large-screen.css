@@ -25,11 +25,6 @@
       width: 360px;
     }
   
-    .info-card:not(:last-of-type) .info-card-imagem::after{
-      top: 740px;
-      left: 290px;
-    }
-  
     .info-conteudo p{
       width: 75%;
     }
