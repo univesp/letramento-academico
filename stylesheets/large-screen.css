@@ -16,6 +16,10 @@
     .ilustra04{
       width: 430px;
     }
+
+    .ilustra-mobile1, .ilustra-mobile2, .ilustra-mobile3, .ilustra-mobile4{
+      display: none;
+    }
   
     .introducao-tipos p{
       width: 117%;

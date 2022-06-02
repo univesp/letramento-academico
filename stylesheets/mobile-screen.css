@@ -78,7 +78,13 @@
 
     .grid-container-mobile{
       margin-left: 5%;
+    }
+
+    .introducao-tipos{
       
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .introducao-tipos p{
@@ -95,10 +101,6 @@
     background-size: 92%;
 }
 
-  #paragrafo1-pagina1{
-    margin-top: 115% !important;
-  }
-
   .ilustra01-div{
     display: flex;
     justify-content: center;
@@ -113,12 +115,8 @@
     margin-left: 25% !important;
   }
 
-  .ilustra01{
-    width: 300px;
-    height: 300px;
-    position: relative;
-    bottom: 640px;
-    margin-bottom: -90%;
+  .ilustra01, .ilustra02, .ilustra04, .ilustra-pagina2{
+    display: none;
   }
 
   .sub-section{
@@ -126,7 +124,8 @@
   }
 
   .sub-section h2{
-    width: 220% !important;
+    width: 190% !important;
+    font-size: 23px;
     
   }
 
@@ -301,8 +300,17 @@
 }
 
 .passo-titulo{
-  background-size: 85%;
-      
+  background-size: 85%;  
+ }
+
+ .ilustra-mobile1, .ilustra-mobile3, .ilustra-mobile4{
+   display: flex;
+   width: 100%;
+ }
+
+ .ilustra-mobile2{
+   width: 90%;
+   display: flex;
  }
 
  #titulo-mobile{
@@ -313,20 +321,8 @@
      content: none;
  }
 
- .ilustra-pagina2{
-     position: relative;
-     bottom: 705px;
-     margin-left: -5%;
-     width: 250px;
- }
-
- #paragrafo1-pagina2-mobile{
-     margin-top: 120% !important;
-     
- }
-
  .info-container {
-   margin: -85% 0 0 0;
+   margin: 0 0 0 0;
 }
 
  .secoes-links {
@@ -434,15 +430,8 @@
      
  }
 
- .ilustra02{
-     width: 250px;
-     position: relative;
-     bottom: 680px;
-     margin-left: -5%;
- }
-
- #paragrafo1-pagina3-mobile{
-     margin-top: 100% !important;
+ .titulo-solto h2{
+   font-size: 24px;
  }
 
  .titulo-solto-mobile > p{ 
@@ -451,7 +440,7 @@
  }
 
  .titulo-solto-mobile{
-   margin-top: -210px;
+   margin-top: 0;
  }
 
  .exe3-row{
@@ -502,23 +491,8 @@
   font-size: 14px;
 }
 
- .ilustra04{
-     width: 250px;
-     position: relative;
-     bottom: 430px;
- }
-
- #paragrafo1-pagina4-mobile{
-     margin-top: 70% !important;
-     width: 105% !important;
- }
-
  .lista-pagina4{
      margin-left: -10%;
- }
-
- .balanca-div{
-     margin-top: -45% !important;
  }
 
  .textos-secao4{

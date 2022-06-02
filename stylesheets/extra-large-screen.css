@@ -1,5 +1,9 @@
 /* Telas Extra Extra Grandes */
-@media screen and (min-width: 1440px) {  
+@media screen and (min-width: 1440px) { 
+  .ilustra-mobile1, .ilustra-mobile2, .ilustra-mobile3, .ilustra-mobile4{
+    display: none;
+  }
+
     .detaque-mitos{
       margin-left: 19%;
     }

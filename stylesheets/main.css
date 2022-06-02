@@ -206,6 +206,10 @@ nav .jssocials-shares{
   width: 90%;
 }
 
+.ilustra-mobile1, .ilustra-mobile2, .ilustra-mobile3, .ilustra-mobile4{
+  display: none;
+}
+
 .ilustra03-pagina1{
   width: 850px;
 }

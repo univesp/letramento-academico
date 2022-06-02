@@ -45,6 +45,10 @@
       width: 350px;
       margin-left: 10%;
     }
+
+    .ilustra-mobile1, .ilustra-mobile2, .ilustra-mobile3, .ilustra-mobile4{
+      display: none;
+    }
   
     .introducao-tipos > h1{
       width: 180%;

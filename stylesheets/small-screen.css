@@ -76,6 +76,10 @@
       bottom: 670px;
       margin-bottom: -90%;
     }
+
+    .ilustra-mobile1, .ilustra-mobile2, .ilustra-mobile3, .ilustra-mobile4{
+      display: none;
+    }
   
     .sub-section{
       margin-top: 5%;
