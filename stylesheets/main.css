@@ -1,3 +1,21 @@
+@media print{
+
+  body *:not(#printSection):not(#printSection *){
+      visibility: hidden;
+  }
+
+  .apaga-citacao{
+    visibility: hidden !important;
+  }
+
+  #printSection{
+      visibility: visible !important;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+}
+
 body {
   background-color: #FFF; 
   overflow-x: hidden;  
@@ -1116,4 +1134,78 @@ nav .jssocials-shares{
 
 .toPagina3{
   margin-left: -8%;
+}
+
+.print-document{
+  width: 100%;
+  height: auto;
+  border: 10px solid #ff9cff;
+  margin-top: 3%;
+}
+
+textarea{
+  border-color: transparent;
+  margin-left: 5%;
+  height: 245px;
+  width: 90%;
+}
+textarea:focus{
+  border-color: transparent;
+  outline: none;
+}
+
+table{
+  width: 100%;
+  border: 1px solid #DFE6E8;
+}
+
+th{
+  padding: 20px;
+  max-width: 70px;
+  background-color: #ff9cff;
+  font-family: 'Noto Serif', sans-serif;
+}
+
+.print-buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  gap: 10%;
+}
+
+.print-buttons > button{
+  outline: none;
+  border: 0;
+  font-family: 'Noto Serif', sans-serif;
+  background-color: #ff9cff;
+  padding: 15px;
+  font-weight: bold;
+  width: 240px;
+  cursor: pointer;
+}
+
+.print-buttons > a > .edit-version{
+  outline: none;
+  border: 0;
+  font-family: 'Noto Serif', sans-serif;
+  background-color: #9fffff;
+  padding: 15px;
+  font-weight: bold;
+  width: 270px;
+  cursor: pointer;
+  margin-top: 10%;
+  font-size: 18px;
+}
+
+.apaga-citacao{
+  background-color: #ff9cff;
+  position: absolute;
+  margin-top: 3%;
+  right: 8%;
+  width: 40px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

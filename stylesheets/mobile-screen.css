@@ -667,7 +667,55 @@
      
      justify-content: center;
    }
+
+   
+    .print-buttons{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 3%;
+      
+    }
+  
+    .print-buttons > button{
+      margin-top: 5%;
+    }
+  
 }
 
+@media (min-width: 500px) and (max-width: 575px){
+  .apaga-citacao{
+    margin-top: 18%;
+    right: 2%;
+    height: 100px;
+  }
 
+  th{
+    padding: 5px;
+  }
+}
 
+@media (min-width: 400px) and (max-width: 499px){
+  .apaga-citacao{
+    margin-top: 25%;
+    right: 2%;
+    height: 85px;
+  }
+
+  th{
+    padding: 5px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 399px){
+  .apaga-citacao{
+    margin-top: 35%;
+    right: 1%;
+    height: 70px;
+  }
+
+  th{
+    padding: 5px;
+  }
+}

@@ -230,4 +230,49 @@
       margin-left: 70px;
       width: 85%;
     }
+
+    .print-buttons{
+      gap: 4%;
+    }
+
+    .print-buttons > button{
+      padding: 5px;
+      width: 191px;
+      height: 56px;
+      font-size: 16px;
+    }
+
+    .apaga-citacao{
+      margin-top: 7%;
+      right: 12%;
+      width: 40px;
+      height: 120px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 800px){
+    .apaga-citacao{
+      margin-top: 9%;
+      right: 2%;
+      width: 40px;
+      height: 120px;
+    }
+  }
+
+  @media (min-width: 801px) and (max-width: 925px){
+    .apaga-citacao{
+      margin-top: 9%;
+      right: 6%;
+      width: 40px;
+      height: 120px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1114px){
+    .apaga-citacao{
+      margin-top: 7%;
+      right: 2.5%;
+      width: 40px;
+      height: 120px;
+    }
   }

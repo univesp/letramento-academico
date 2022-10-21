@@ -453,7 +453,46 @@
       <h3 style="margin-top: 0; margin-left: 1%; font-size: 20px;" class="secao4-titulo">Ferramenta 1:</h3>
     </div>
     
-    <p>No modelo <a target="_blank" href="https://apps.univesp.br/letramento-academico/data/Estrategia_de_estudo.docx"><mark><strong><u>Estratégia de estudo</u></strong></mark></a> você encontrará uma ferramenta de documentação dos textos que você está lendo. Periodicamente você pode ir agregando novas ideias para, quando precisar, consultar o documento.</p>
+    <p>No modelo <mark><strong><u>Estratégia de estudo</u></strong></mark> você encontrará uma ferramenta de documentação dos textos que você está lendo. Periodicamente você pode ir agregando novas ideias para, quando precisar, consultar o documento.</p>
+    
+    <h3 style="margin-top: 6%; margin-bottom: 2%; font-size: 17px;" class="secao4-titulo">Para não cometer fraude acadêmica!</h3>
+
+    <p>Sabemos que realizar citações não é algo fácil. Para isso, elaboramos este documento na tentativa de ajudar os nossos estudantes a organizar as citações.</p>
+
+    <p><mark><strong>Passo 1:</strong></mark> ao ler os textos para as disciplinas, veja se existem trechos de interesse para serem citados no trabalho final do curso.</p>
+    <p><mark><strong>Passo 2:</strong></mark> copie e cole a citação neste documento.</p>
+    <p><mark><strong>Passo 3:</strong></mark> ao lado da citação, deixe o nome do autor, o ano, o nome do texto e o número da página, de acordo às normas ABNT.</p>
+    <p><mark><strong>Passo 4:</strong></mark> quando você for solicitado a realizar a sua produção acadêmica, pode consultar este documento e citar estes fragmentos. Você pode utilizar este arquivo como ferramenta de estudo ao longo da sua formação na universidade.</p>
+
+    <p>Utilize quantos espaços você considerar necessário. Este documento é seu e pode ser modificado sempre que achar pertinente.</p>
+
+    <p>Vamos lá!</p>
+
+    <section class="print-document" id="printSection">
+
+      <table border="1" id="tabela-citacao">
+        <tr>
+            <th class="m_text-center">Nome do autor, nome do texto, ano e número da página.</th>
+            <th class="m_text-center">Qual é o trecho que você deseja citar?</th>
+            <th class="m_text-center">Com as suas palavras, qual é ideia do texto?</th>
+        </tr>
+    </table>
+
+    </section>
+
+    <div class="print-buttons">
+
+      <button onclick="addCitacao()">Adicionar citação <i style="margin-left: 25px;" class="fa fa-plus fa-lg"></i></button>
+
+      <button onclick="window.print()">Imprimir <i style="margin-left: 25px;" class="fa fa-print fa-lg"></i></button>
+
+      <button onclick="deleteRows()">Apagar tudo <i style="margin-left: 25px;" class="fa fa-trash fa-lg"></i></button>
+
+    </div>
+
+    <div class="print-buttons">
+      <a target="_blank" href="https://apps.univesp.br/letramento-academico/data/Estrategia_de_estudo.docx"><button class="edit-version">Baixar versão editável</button></a>
+    </div>
   </div>
 
   <div class="titulo-solto">
@@ -657,6 +696,7 @@
   <script type="text/javascript" src="javascripts/events.js"></script>
   <script type="text/javascript" src="javascripts/teste4.js"></script>
   <script type="text/javascript" src="javascripts/teste4_2.js"></script>
+  <script type="text/javascript" src="javascripts/citacao.js"></script>
 
   <!-- MathJax. Descomente se for utilizar. Caso contrário, remova. -->
   <!-- <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->

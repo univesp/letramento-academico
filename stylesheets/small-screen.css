@@ -488,3 +488,45 @@
         width: 88%;
       }
 }
+
+@media (min-width: 635px) and (max-width: 767px){
+  .print-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    
+  }
+
+  .apaga-citacao{
+    margin-top: 12%;
+    right: 8%;
+    height: 110px;
+  }
+
+  .print-buttons > button{
+    margin-top: 5%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 635px){
+  .print-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    
+  }
+
+  .apaga-citacao{
+    margin-top: 15%;
+    right: 4%;
+    height: 110px;
+  }
+
+  .print-buttons > button{
+    margin-top: 5%;
+  }
+}
